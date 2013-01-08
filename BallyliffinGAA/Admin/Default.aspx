@@ -221,7 +221,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="tbl1cell1">
-                                                        <img src="images/email_in.png" alt="sent" />
+                                                        <img src="images/email_sent.png" alt="sent" />
                                                     </td>
                                                     <td colspan="1" valign="middle" class="tbl1cell2">
                                                         <asp:Button ID="btnReminders" runat="server" PostBackUrl="~/Admin/Emails_Reminders.aspx?returnurl=Default.aspx"
