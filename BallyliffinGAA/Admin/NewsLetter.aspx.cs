@@ -15,7 +15,12 @@ namespace Ballyliffin_Gaa.Admin
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!Page.IsPostBack)
+            {
+                BallyliffinDataContext db = new BallyliffinDataContext();
+                if (db.sp_Email_NewsletterLastSent().Count() > 1)
+                lbl_lastSent.Text = "The last Newsletter was sent on " + db.sp_Email_NewsletterLastSent().SingleOrDefault().SentDate.ToShortDateString();
+            }
         }
 
         protected void btnSend_Click(object sender, EventArgs e)

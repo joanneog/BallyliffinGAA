@@ -6,7 +6,7 @@
         
         </style>
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="PageContentPlaceHolder" runat="Server">
+<asp:content id="Content2" contentplaceholderid="PageContentPlaceHolder" runat="Server">
     <div class="contentbox" style="background: #999999; padding: 1px; width: 100%;">
         <div class="contentheader">
             <h2 style="position: relative;">
@@ -144,6 +144,42 @@
                                                 </tr>
                                             </table>
                                         </td>
+                                        <td valign="top" rowspan="2" style="padding: 0px 15px 0px 0px; width:350px">
+                                             <table cellpadding="5" cellspacing="0" class="Dash" width="100%">
+                                                <tr>
+
+                                                    <td valign="middle" align="left" class="headerCell" style="padding: 8px 0px 5px 10px;
+                                                        font-size: 16px; border-bottom: 1px solid #6e7070; text-align: left;" colspan="2">
+                                                        This Weeks Fixtures
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tbl1cell1" >
+                           <telerik:RadGrid id="gridFixtures" runat="server" DataSourceID="sqlDS_Fixtures">
+                                                          
+                            <MasterTableView AutoGenerateColumns="false" DataSourceID="sqlDS_Fixtures" Font-Names="Arial"
+                                AllowFilteringByColumn="false" ShowHeader="false">
+                                <Columns>
+                                    <telerik:GridBoundColumn HeaderText="TeamADesc" DataField="TeamADesc" SortExpression="TeamADesc" UniqueName="TeamADesc">
+                                    </telerik:GridBoundColumn>
+                                   
+                                    <telerik:GridBoundColumn HeaderText="TeamBDesc" DataField="TeamBDesc" SortExpression="TeamBDesc" UniqueName="TeamBDesc">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn HeaderText="MatchDate" DataField="MatchDate" SortExpression="MatchDate" UniqueName="MatchDate">
+                                    </telerik:GridBoundColumn>
+                                   
+                                    <telerik:GridBoundColumn HeaderText="VenueDesc" DataField="VenueDesc" SortExpression="VenueDesc" UniqueName="VenueDesc">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn HeaderText="RefereeName" DataField="RefereeName" SortExpression="RefereeName" UniqueName="RefereeName">
+                                    </telerik:GridBoundColumn>
+                                </Columns>
+                            </MasterTableView></telerik:RadGrid>
+                        <asp:SqlDataSource runat="server" ID="sqlDS_Fixtures" ConnectionString="<%$ ConnectionStrings:BallyliffinGaaConnectionString %>"
+                            SelectCommand="sp_Dash_MatchesThisWeek" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td valign="top" style="padding: 10px 15px 0px 0px; width:350px">
@@ -188,6 +224,15 @@
                                                         <img src="images/email_in.png" alt="sent" />
                                                     </td>
                                                     <td colspan="1" valign="middle" class="tbl1cell2">
+                                                        <asp:Button ID="btnReminders" runat="server" PostBackUrl="~/Admin/Emails_Reminders.aspx?returnurl=Default.aspx"
+                                                            CssClass="custombtng" Text="Send Reminders" Width="160px" />
+                                                    </td>
+                                                    </tr>
+                                                <tr>
+                                                    <td class="tbl1cell1">
+                                                        <img src="images/email_in.png" alt="sent" />
+                                                    </td>
+                                                    <td colspan="1" valign="middle" class="tbl1cell2">
                                                         <asp:Button ID="btnMessages" runat="server" PostBackUrl="~/Admin/ContactUs_List.aspx?returnurl=Default.aspx"
                                                             CssClass="custombtng" Text="Messages" Width="160px" />
                                                     </td>
@@ -203,4 +248,4 @@
             </div>
         </div>
     </div>
-</asp:Content>
+</asp:content>

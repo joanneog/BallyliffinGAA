@@ -10,7 +10,7 @@
 namespace Ballyliffin_Gaa.Admin {
     
     
-    public partial class NewsLetter {
+    public partial class Emails_Reminders {
         
         /// <summary>
         /// AjaxManager1 control.
@@ -31,15 +31,6 @@ namespace Ballyliffin_Gaa.Admin {
         protected global::Telerik.Web.UI.RadAjaxLoadingPanel RadAjaxLoadingPanel1;
         
         /// <summary>
-        /// btnSend control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSend;
-        
-        /// <summary>
         /// divInfo control.
         /// </summary>
         /// <remarks>
@@ -58,21 +49,12 @@ namespace Ballyliffin_Gaa.Admin {
         protected global::System.Web.UI.WebControls.Label lbl_lastSent;
         
         /// <summary>
-        /// btnGenerate control.
+        /// btnSend control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnGenerate;
-        
-        /// <summary>
-        /// txt_Body control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Telerik.Web.UI.RadEditor txt_Body;
+        protected global::System.Web.UI.WebControls.Button btnSend;
     }
 }

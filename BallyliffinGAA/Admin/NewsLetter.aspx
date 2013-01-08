@@ -38,6 +38,8 @@
         Text="Send Newsletter" onclick="btnSend_Click" Visible="false" />
 
     <div class="InfoContainer" runat="server" id="divInfo">
+        <asp:label id="lbl_lastSent" runat="server"></asp:label>
+        <br /><br />
         The News Letter will contain all news stories from the past week. Once you click
         generate a preview will be displayed. A button will also appear to allow you to
         send it. This will send it to all members who have signed up to receive the news

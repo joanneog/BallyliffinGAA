@@ -94,6 +94,24 @@ namespace Ballyliffin_Gaa.Admin {
         protected global::System.Web.UI.WebControls.Button btnRoles;
         
         /// <summary>
+        /// gridFixtures control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Telerik.Web.UI.RadGrid gridFixtures;
+        
+        /// <summary>
+        /// sqlDS_Fixtures control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource sqlDS_Fixtures;
+        
+        /// <summary>
         /// btnCompose control.
         /// </summary>
         /// <remarks>
@@ -119,6 +137,15 @@ namespace Ballyliffin_Gaa.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnNewsletter;
+        
+        /// <summary>
+        /// btnReminders control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnReminders;
         
         /// <summary>
         /// btnMessages control.
