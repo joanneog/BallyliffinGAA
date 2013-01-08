@@ -1,0 +1,600 @@
+﻿body
+{
+    font-family: Georgia, "Times New Roman" , Times, serif;
+    font-size: 12px;
+    margin: 0px auto;
+    color: #333;
+    font-variant: normal !important;
+    text-align: left !important;
+    background-color: #6ec151 !important;
+}
+
+h2
+{
+    font-weight: normal;
+    color: #333;
+    font-style: normal;
+    font-size: 16pt;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-family: Georgia, "Times New Roman" , Times, serif;
+}
+div, p
+{
+    margin: 0;
+    padding: 0;
+    font-family: "HelveticaNeue-Light" , "Helvetica Neue Light" , "Helvetica Neue" ,sans-serif;
+}
+
+a
+{
+    color: #2a5db0;
+}
+
+#namelink
+{
+    color: #FF3300;
+    text-decoration: none;
+}
+
+#delnamelink
+{
+    color: #000000;
+    text-decoration: line-through;
+}
+
+#namelink:hover
+{
+    color: #44C8EE !important;
+    text-decoration: underline;
+}
+
+.noline
+{
+    text-decoration: none;
+}
+
+div.container
+{
+    width: 100%;
+    margin: 0px;
+    background-color: #6ec151;
+}
+
+div.left
+{
+    float: left;
+    width: 200px;
+    margin: 5px 0px 0px 10px;
+}
+div.content
+{
+    margin-left: 200px;
+    margin-right: 2px;
+}
+
+div.contentheader
+{
+    padding: 5px 8px;
+    height: 26px;
+    background-image: url('img/cotent_heaser_bg.gif');
+    background-repeat: repeat-x;
+}
+
+#sitetoolbar1
+{
+    height: 25px;
+    width: 100%;
+    display: block;
+}
+
+.siteheader
+{
+    height: 65px;
+    width: 100%;
+    display: inline-block;
+}
+.maintable
+{
+    width: 100%;
+}
+.navcell
+{
+    width: 100px;
+    min-width: 100px;
+}
+.contentcell
+{
+    width: 26%;
+}
+
+.tooltipbtn
+{
+    border: solid 1px #7ab7e6;
+    padding: 3px;
+    background-color: #e8f4f9;
+    margin: 5px;
+    width: 120px;
+}
+
+.packedittable
+{
+    border: solid 3px #7ab7e6;
+    margin: 4px;
+    background-color: #F2F8FF;
+}
+
+input.custombtn
+{
+    border-top: 1px solid #bbb;
+    border-left: 1px solid #bbb;
+    border-bottom: 1px solid #808080;
+    border-right: 1px solid #808080;
+    background: #ddd url(img/bg-button.gif) repeat-x 0 0;
+    margin: 0;
+    padding: 1px 7px;
+    cursor: pointer;
+    font-size: 11px;
+    height: 21px;
+}
+
+input.custombtn:hover
+{
+    background-position: 0px -400px;
+    border-color: #805900;
+}
+
+input.custombtn:active
+{
+    outline: none;
+}
+
+.newsLetterContainer
+{
+    padding: 10px;
+    font-family: Arial;
+}
+
+.newsLetterHeadLine
+{
+    color: #0f0;
+    font-size: 16px;
+}
+textarea
+{
+    border-top: 1px solid #808080;
+    border-left: 1px solid #808080;
+    border-bottom: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+}
+
+input.custombtng:hover
+{
+    background-position: 0px -400px;
+    border-color: #FFBD24;
+}
+
+input.custombtng:active
+{
+    outline: none;
+}
+
+input.custombtng
+{
+    border-top: 1px solid #4081af;
+    border-left: 1px solid #4081af;
+    border-bottom: 1px solid #20559a;
+    border-right: 1px solid #20559a;
+    background: #6ec151 url(img/bg-buttong.gif) repeat-x 0 0;
+    padding: 1px 7px;
+    cursor: pointer;
+    font-size: 11px;
+    height: 21px;
+    width: 60px;
+    color: White;
+    font-weight: bold;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+input.GenerateEmail
+{
+    border-top: 1px solid #4081af;
+    border-left: 1px solid #4081af;
+    border-bottom: 1px solid #20559a;
+    border-right: 1px solid #20559a;
+    background: #3b88d8 url(img/bg-buttonb.gif) repeat-x 0 0;
+    margin: auto;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    padding: 1px 7px;
+    cursor: pointer;
+    font-size: 11px;
+    height: 21px;
+    width: 300px;
+    color: White;
+    font-weight: bold;
+}
+
+input.custombtng:hover
+{
+    background-position: 0px -400px;
+    border-color: #1D4889;
+}
+
+input.custombtng:active
+{
+    outline: none;
+}
+
+input.backbtn
+{
+    background: url(img/backbtn.gif) repeat-x 0 0;
+    border: none;
+    margin: 0;
+    padding: 0px 0px;
+    cursor: pointer;
+    height: 21px;
+    width: 65px;
+    margin-left: 4px;
+    margin-right: 7px;
+}
+
+
+input.backbtn:active
+{
+    outline: none;
+}
+
+
+input.custombtnEdit
+{
+    border-top: 1px solid #bbb;
+    border-left: 1px solid #bbb;
+    border-bottom: 1px solid #808080;
+    border-right: 1px solid #808080;
+    background: #ffd647 url(img/bg-buttonEdit.gif) repeat-x 0 0;
+    margin: 0;
+    padding: 1px 4px 1px 11px;
+    cursor: pointer;
+    font-size: 11px;
+    height: 21px;
+}
+
+input.custombtnEdit:hover
+{
+    background-position: 0px -400px;
+    border-color: #684115;
+}
+
+input.custombtnEdit:active
+{
+    outline: none;
+}
+
+.msgbox
+{
+    border: 1px solid #FFDE99;
+    background-color: #FFFFC1;
+    font-weight: bold;
+    padding: 3px 10px 3px 30px;
+    margin: 3px 7px;
+    color: #BF2D2D;
+    background-image: url('img/warning.gif');
+    background-repeat: no-repeat;
+    background-position: 8px 2px;
+}
+
+.gridcontainer
+{
+    min-height: 680px;
+}
+
+
+textarea
+{
+    font: 12px "segoe ui" ,arial,sans-serif;
+}
+
+.sitetoolbarholder
+{
+    width: 100%;
+    height: 28px;
+    display: block;
+    background-image: url('img/topbar_bg.gif');
+    background-repeat: repeat-x;
+}
+
+
+.hilight
+{
+    color: #932500;
+    background-color: #FFFFCC;
+    font-weight: bold; /*text-decoration: underline;*/
+    font-size: 14px;
+}
+
+
+
+/* Top Menu */
+
+#topmenu
+{
+    margin: 0;
+    padding: 0;
+    z-index: 30;
+}
+
+
+#topmenu div
+{
+    margin: 0;
+    padding: 0px 10px 0px 10px;
+    float: left;
+    font: bold 11px arial;
+}
+
+
+#topmenu a
+{
+    margin: 0;
+    padding: 9px 10px 7px 10px;
+    min-width: 70px;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+}
+
+#topmenu div a:hover
+{
+    background: #6ec151;
+}
+
+input[type="text"], input[type="password"], input[type="DateTime"]
+{
+    margin-top: 1px;
+    margin-right: 2px;
+    font-size: 12px;
+    padding: 3px;
+    margin-bottom: 6px;
+    background: #fdfdfd;
+    border: 1px solid #CCC;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    height: 20px !important;
+    color: #666 !important;
+    font-family: "HelveticaNeue-Light" , "Helvetica Neue Light" , "Helvetica Neue" ,sans-serif !important;
+}
+
+
+select
+{
+    margin-right: 2px;
+    font-size: 14px;
+    padding: 3px;
+    margin-bottom: 6px;
+    background: #fdfdfd;
+    border: 1px solid #CCC;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    height: 24px;
+    color: #666;
+}
+
+
+
+/*  Edit Page Style */
+
+
+.editPageTitleCell
+{
+    width: 140px;
+    background-color: #efefef;
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+
+table.editForm
+{
+    border: 1px solid #666666;
+    width: 800px;
+    background-color: #F6F6F6;
+}
+
+table.editForm td
+{
+    border-bottom: 1px solid #cccccc;
+    border-right: 1px solid #b0b0b0;
+}
+
+table.editForm td p
+{
+    font-size: 10px;
+}
+
+.editH2Title
+{
+    position: relative;
+}
+
+.contentPageBoxHolderHi
+{
+    min-height: 680px;
+}
+
+.contentPageBoxHolder
+{
+    background-color: #c9c9c9;
+    padding: 5px;
+}
+
+.contentPageBox
+{
+    background-color: #fbfbfb !important;
+    min-height: 680px;
+}
+
+.editPageToolbar
+{
+    font-weight: 700;
+    background-color: #808080;
+    color: #fff;
+    padding: 5px;
+    border-bottom: 1px solid #5f6161;
+}
+
+.editPageToolbarBottomHolder
+{
+    position: relative;
+    width: 100%;
+}
+.editPageToolbarBottom
+{
+    display: block;
+    font-weight: 700;
+    background-color: #808080;
+    color: #fff;
+    padding: 5px;
+    border-bottom: 1px solid #5f6161;
+    margin-right: 24px;
+}
+
+.editPageToolbarBottmRel
+{
+    margin-top: 14px;
+    font-weight: 700;
+    background-color: #808080;
+    color: #fff;
+    padding: 5px;
+    border-bottom: 1px solid #5f6161;
+}
+
+.detailsPageDeletedRow
+{
+    background-color: #FFDECA;
+    padding: 10px;
+    font-weight: bold;
+    color: #3C0A06;
+    font-size: 13px;
+}
+
+.paddedContentBox
+{
+    width: 100%;
+    padding: 0px;
+}
+
+/* End of Edit Page Styles */
+
+
+.smallInfoPrint
+{
+    color: #666666;
+    font-size: 10px;
+    margin-left: 7px;
+}
+
+.infoIcon
+{
+    position: relative;
+    top: 7px;
+}
+
+.deletedRecord
+{
+    text-decoration: line-through;
+    color: #8e8e8e;
+}
+
+.notDeletedRecord
+{
+    color: #000;
+    font-weight: bold;
+}
+
+.req_asterisk
+{
+    background-image: url('img/req_asterisk.gif');
+    background-repeat: no-repeat;
+    width: 6px;
+    height: 7px;
+    display: block;
+    float: right;
+    position: relative;
+    margin-right: 7px;
+}
+
+.detailsPageCommentBox
+{
+    max-height: 200px;
+    overflow: auto;
+    outline: #dedede solid 1px;
+    background-color: #fafafa;
+    padding: 5px;
+}
+
+
+.namelink
+{
+    color: #0D86FF !important;
+    text-decoration: none;
+}
+
+.namelink:hover
+{
+    color: #0977FF !important;
+    text-decoration: underline;
+}
+
+/* DashBoard */
+
+.tbl1cell1
+        {
+            background-color: #efefef;
+            padding: 0px;
+            padding-left: 5px;
+            width: 100px;
+        }
+        
+        .tbl1cell2
+        {
+            background-color: #efefef;
+            padding: 15px;
+            padding-left: 15px;
+            width: 70%;
+        }
+        
+        .headerCell
+        {
+            background-color: #C0C0C0;
+            font-weight: 700;
+            width: 250px;
+        }
+        
+        table.Dash
+        {
+            border: 1px solid #666666;
+            background-color: #F6F6F6;
+            margin-bottom: 6px;
+        }
+        
+        table.Dash td
+        {
+            border-bottom: 1px solid #cccccc;
+            border-right: 1px solid #b0b0b0;
+            text-align: center;
+        }
+        
+        table.Dash td p
+        {
+            font-size: 10px;
+        }
+        
+
+

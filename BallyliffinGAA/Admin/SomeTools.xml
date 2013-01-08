@@ -1,0 +1,44 @@
+<root>
+
+
+	<tools enabled="true" DockingZone="Top">
+		<tool name="Bold" />
+		<tool name="Italic" />
+		<tool name="Underline" />
+		<tool separator="true"/>
+		<tool name="JustifyLeft" />
+		<tool name="JustifyCenter" />
+		<tool name="JustifyRight" />
+
+
+
+    <tool separator="true"/>
+    <!--<tool name="FontName"/>-->
+    <tool name="FontSize"/>
+
+    <tool separator="true"/>
+
+        <tool name="Outdent" />
+		<tool name="Indent" />
+		
+		<tool name="InsertOrderedList" />
+		<tool name="InsertUnorderedList"/>
+
+		<!--<tool name="LinkManager" />
+		<tool name="Unlink" />
+
+
+
+    <tool separator="true"/>
+
+    <tool name="Paste" shortcut="CTRL+!"/>
+    <tool name="PastePlainText" />
+    <tool name="PasteAsHtml"  />-->
+
+	</tools>
+
+	
+  
+
+
+</root>

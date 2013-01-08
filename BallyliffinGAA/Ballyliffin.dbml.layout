@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 12, 8.5" name="Ballyliffin">
+  <DataContextMoniker Name="/BallyliffinDataContext" />
+  <nestedChildShapes>
+    <classShape Id="0a027814-d252-4156-af84-ba36e8ebf9b0" absoluteBounds="9.75, 1.875, 2, 1.9631982421875003">
+      <DataClassMoniker Name="/BallyliffinDataContext/New" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0411f60a-df8d-4979-b126-24f706d5e319" absoluteBounds="9.765, 2.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

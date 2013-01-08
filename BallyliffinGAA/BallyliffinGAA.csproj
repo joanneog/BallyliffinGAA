@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{422F7E47-266F-4BB3-91BC-72E66A7FFE8D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BallyliffinGAA</RootNamespace>
+    <AssemblyName>BallyliffinGAA</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="Telerik.Web.UI, Version=2012.2.912.35, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Administrator_Management.aspx" />
+    <Content Include="Admin\Admin_Add.aspx" />
+    <Content Include="Admin\Admin_ChangePassword.aspx" />
+    <Content Include="Admin\Admin_Edit.aspx" />
+    <Content Include="Admin\ContactUs_Details.aspx" />
+    <Content Include="Admin\ContactUs_List.aspx" />
+    <Content Include="Admin\Default.aspx" />
+    <Content Include="Admin\Divisions_Add.aspx" />
+    <Content Include="Admin\Divisions_Edit.aspx" />
+    <Content Include="Admin\Divisions_List.aspx" />
+    <Content Include="Admin\Emails_Compose.aspx" />
+    <Content Include="Admin\Emails_List.aspx" />
+    <Content Include="Admin\images\arrow.png" />
+    <Content Include="Admin\images\ball.png" />
+    <Content Include="Admin\images\Delete.gif" />
+    <Content Include="Admin\images\delete_btn.gif" />
+    <Content Include="Admin\images\Edit_btn.gif" />
+    <Content Include="Admin\images\email.png" />
+    <Content Include="Admin\images\email_compose.png" />
+    <Content Include="Admin\images\email_in.png" />
+    <Content Include="Admin\images\email_sent.png" />
+    <Content Include="Admin\images\information.png" />
+    <Content Include="Admin\images\jersey.png" />
+    <Content Include="Admin\images\match.png" />
+    <Content Include="Admin\images\Members.png" />
+    <Content Include="Admin\images\news.png" />
+    <Content Include="Admin\images\news_letter.png" />
+    <Content Include="Admin\images\Ok.gif" />
+    <Content Include="Admin\images\redbox_required.gif" />
+    <Content Include="Admin\images\redbox_required_r.gif" />
+    <Content Include="Admin\images\Search.gif" />
+    <Content Include="Admin\images\teams.png" />
+    <Content Include="Admin\images\Unlock.png" />
+    <Content Include="Admin\images\venue.jpg" />
+    <Content Include="Admin\Matches_Add.aspx" />
+    <Content Include="Admin\Matches_Edit.aspx" />
+    <Content Include="Admin\Matches_List.aspx" />
+    <Content Include="Admin\Members_Add.aspx" />
+    <Content Include="Admin\Members_Edit.aspx" />
+    <Content Include="Admin\Members_List.aspx" />
+    <Content Include="Admin\NewsLetter.aspx" />
+    <Content Include="Admin\News_Add.aspx" />
+    <Content Include="Admin\News_Details.aspx" />
+    <Content Include="Admin\News_Edit.aspx" />
+    <Content Include="Admin\News_List.aspx" />
+    <Content Include="Admin\Roles_Add.aspx" />
+    <Content Include="Admin\Roles_Edit.aspx" />
+    <Content Include="Admin\Roles_List.aspx" />
+    <Content Include="Admin\SomeTools.xml" />
+    <Content Include="Admin\Teams_Add.aspx" />
+    <Content Include="Admin\Teams_Edit.aspx" />
+    <Content Include="Admin\Teams_List.aspx" />
+    <Content Include="Admin\Venues_Add.aspx" />
+    <Content Include="Admin\Venues_Edit.aspx" />
+    <Content Include="Admin\Venues_List.aspx" />
+    <Content Include="App_Themes\DefaultTheme\img\backbtn.gif" />
+    <Content Include="App_Themes\DefaultTheme\img\bg-button.gif" />
+    <Content Include="App_Themes\DefaultTheme\img\bg-buttonAudit.gif" />
+    <Content Include="App_Themes\DefaultTheme\img\bg-buttonb.gif" />
+    <Content Include="App_Themes\DefaultTheme\img\bg-buttonEdit.gif" />
+    <Content Include="App_Themes\DefaultTheme\img\bg-buttonFlag.gif" />
+    <Content Include="App_Themes\DefaultTheme\img\bg-buttong.gif" />
+    <Content Include="App_Themes\DefaultTheme\img\bg-buttonr.gif" />
+    <Content Include="App_Themes\DefaultTheme\img\bg-buttonReject.gif" />
+    <Content Include="App_Themes\DefaultTheme\img\bg-buttony.gif" />
+    <Content Include="App_Themes\DefaultTheme\img\clock_history_frame.png" />
+    <Content Include="App_Themes\DefaultTheme\img\cotent_heaser_bg.gif" />
+    <Content Include="App_Themes\DefaultTheme\img\cotent_heaser_bg.png" />
+    <Content Include="App_Themes\DefaultTheme\img\custombtn_bg.gif" />
+    <Content Include="App_Themes\DefaultTheme\img\email.png" />
+    <Content Include="App_Themes\DefaultTheme\img\iconset.png" />
+    <Content Include="App_Themes\DefaultTheme\img\icon_set.gif" />
+    <Content Include="App_Themes\DefaultTheme\img\icon_set.png" />
+    <Content Include="App_Themes\DefaultTheme\img\req_asterisk.gif" />
+    <Content Include="App_Themes\DefaultTheme\img\topbar_bg.gif" />
+    <Content Include="App_Themes\DefaultTheme\img\Warning.gif" />
+    <Content Include="App_Themes\DefaultTheme\Style.css" />
+    <Content Include="bin\Telerik.Web.Design.dll" />
+    <Content Include="bin\Telerik.Web.UI.dll" />
+    <Content Include="bin\Telerik.Web.UI.Skins.dll" />
+    <Content Include="bin\Telerik.Web.UI.xml" />
+    <Content Include="images\Delete.gif" />
+    <Content Include="images\delete_btn.gif" />
+    <Content Include="images\Edit_btn.gif" />
+    <Content Include="images\information.png" />
+    <Content Include="images\Ok.gif" />
+    <Content Include="images\redbox_required.gif" />
+    <Content Include="images\redbox_required_r.gif" />
+    <Content Include="login.aspx" />
+    <Content Include="Modules\SiteToolbar.ascx" />
+    <Content Include="obj\Debug\Ballyliffin Gaa.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Ballyliffin Gaa.dll" />
+    <Content Include="obj\Debug\Ballyliffin Gaa.pdb" />
+    <Content Include="obj\Debug\Interop.TelerikCodeWeaverProfilerLib.dll" />
+    <Content Include="obj\Debug\TempPE\App_Code.Alpha1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_Code.Ballyliffin.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Ballyliffin.designer.cs.dll" />
+    <Content Include="Scripts\Ajax.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery.curvycorners.min.js" />
+    <Content Include="Scripts\pdfobject.js" />
+    <Content Include="Scripts\RadGridScripts.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Administrator_Management.aspx.cs">
+      <DependentUpon>Administrator_Management.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Administrator_Management.aspx.designer.cs">
+      <DependentUpon>Administrator_Management.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminMaster.master.cs">
+      <DependentUpon>AdminMaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_Add.aspx.cs">
+      <DependentUpon>Admin_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_Add.aspx.designer.cs">
+      <DependentUpon>Admin_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_ChangePassword.aspx.cs">
+      <DependentUpon>Admin_ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_ChangePassword.aspx.designer.cs">
+      <DependentUpon>Admin_ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_Edit.aspx.cs">
+      <DependentUpon>Admin_Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_Edit.aspx.designer.cs">
+      <DependentUpon>Admin_Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Commagent.cs" />
+    <Compile Include="Admin\ContactUs_Details.aspx.cs">
+      <DependentUpon>ContactUs_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ContactUs_Details.aspx.designer.cs">
+      <DependentUpon>ContactUs_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ContactUs_List.aspx.cs">
+      <DependentUpon>ContactUs_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ContactUs_List.aspx.designer.cs">
+      <DependentUpon>ContactUs_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Divisions_Add.aspx.cs">
+      <DependentUpon>Divisions_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Divisions_Add.aspx.designer.cs">
+      <DependentUpon>Divisions_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Divisions_Edit.aspx.cs">
+      <DependentUpon>Divisions_Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Divisions_Edit.aspx.designer.cs">
+      <DependentUpon>Divisions_Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Divisions_List.aspx.cs">
+      <DependentUpon>Divisions_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Divisions_List.aspx.designer.cs">
+      <DependentUpon>Divisions_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Emails_Compose.aspx.cs">
+      <DependentUpon>Emails_Compose.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Emails_Compose.aspx.designer.cs">
+      <DependentUpon>Emails_Compose.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Emails_List.aspx.cs">
+      <DependentUpon>Emails_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Emails_List.aspx.designer.cs">
+      <DependentUpon>Emails_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Matches_Add.aspx.cs">
+      <DependentUpon>Matches_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Matches_Add.aspx.designer.cs">
+      <DependentUpon>Matches_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Matches_Edit.aspx.cs">
+      <DependentUpon>Matches_Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Matches_Edit.aspx.designer.cs">
+      <DependentUpon>Matches_Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Matches_List.aspx.cs">
+      <DependentUpon>Matches_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Matches_List.aspx.designer.cs">
+      <DependentUpon>Matches_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Members_Add.aspx.cs">
+      <DependentUpon>Members_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Members_Add.aspx.designer.cs">
+      <DependentUpon>Members_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Members_Edit.aspx.cs">
+      <DependentUpon>Members_Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Members_Edit.aspx.designer.cs">
+      <DependentUpon>Members_Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Members_List.aspx.cs">
+      <DependentUpon>Members_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Members_List.aspx.designer.cs">
+      <DependentUpon>Members_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NewsLetter.aspx.cs">
+      <DependentUpon>NewsLetter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NewsLetter.aspx.designer.cs">
+      <DependentUpon>NewsLetter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\News_Add.aspx.cs">
+      <DependentUpon>News_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\News_Add.aspx.designer.cs">
+      <DependentUpon>News_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\News_Details.aspx.cs">
+      <DependentUpon>News_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\News_Details.aspx.designer.cs">
+      <DependentUpon>News_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\News_Edit.aspx.cs">
+      <DependentUpon>News_Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\News_Edit.aspx.designer.cs">
+      <DependentUpon>News_Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\News_List.aspx.cs">
+      <DependentUpon>News_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\News_List.aspx.designer.cs">
+      <DependentUpon>News_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Roles_Add.aspx.cs">
+      <DependentUpon>Roles_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Roles_Add.aspx.designer.cs">
+      <DependentUpon>Roles_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Roles_Edit.aspx.cs">
+      <DependentUpon>Roles_Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Roles_Edit.aspx.designer.cs">
+      <DependentUpon>Roles_Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Roles_List.aspx.cs">
+      <DependentUpon>Roles_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Roles_List.aspx.designer.cs">
+      <DependentUpon>Roles_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Teams_Add.aspx.cs">
+      <DependentUpon>Teams_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Teams_Add.aspx.designer.cs">
+      <DependentUpon>Teams_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Teams_Edit.aspx.cs">
+      <DependentUpon>Teams_Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Teams_Edit.aspx.designer.cs">
+      <DependentUpon>Teams_Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Teams_List.aspx.cs">
+      <DependentUpon>Teams_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Teams_List.aspx.designer.cs">
+      <DependentUpon>Teams_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ToolsBLL.cs" />
+    <Compile Include="Admin\Venues_Add.aspx.cs">
+      <DependentUpon>Venues_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Venues_Add.aspx.designer.cs">
+      <DependentUpon>Venues_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Venues_Edit.aspx.cs">
+      <DependentUpon>Venues_Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Venues_Edit.aspx.designer.cs">
+      <DependentUpon>Venues_Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Venues_List.aspx.cs">
+      <DependentUpon>Venues_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Venues_List.aspx.designer.cs">
+      <DependentUpon>Venues_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ballyliffin.designer.cs" />
+    <Compile Include="Ballyliffin1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ballyliffin.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\SiteToolbar.ascx.cs">
+      <DependentUpon>SiteToolbar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\AdminMaster.master" />
+    <Content Include="Admin\Web.config" />
+    <None Include="App_Themes\DefaultTheme\img\desktop %281%29.ini" />
+    <None Include="Ballyliffin.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Ballyliffin1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Telerik.Web.UI.dll.refresh" />
+    <None Include="obj\Debug\Ballyliffin Gaa.csproj.ResolveComReference.cache" />
+    <None Include="obj\Debug\Ballyliffin Gaa.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ballyliffin.dbml.layout">
+      <DependentUpon>Ballyliffin.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1986</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

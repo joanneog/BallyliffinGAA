@@ -1,0 +1,531 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BallyliffinGaa" Class="BallyliffinDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=JOANNE-TOSH\SQL08FULL;Initial Catalog=BallyliffinGaa;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="BallyliffinGaaConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.News" Member="News">
+    <Type Name="New">
+      <Column Name="NewsID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NewsHeadLine" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="NewsContent" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="NewsDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="NewsKey" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Function Name="dbo.sp_Divisions_Delete" Method="sp_Divisions_Delete">
+    <Parameter Name="DivisionID" Parameter="divisionID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_visitorContacts_ViewAll" Method="sp_visitorContacts_ViewAll">
+    <ElementType Name="sp_visitorContacts_ViewAllResult">
+      <Column Name="VisitorContactID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="VisitorContactDesc" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="ContactName" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="EmailAddress" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="ContactMessage" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ContactDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="VisitorContactKey" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="timestamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Divisions_Insert" Method="sp_Divisions_Insert">
+    <Parameter Name="DivisionDesc" Parameter="divisionDesc" Type="System.String" DbType="VarChar(200)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_Divisions_ShortView" Method="sp_Divisions_ShortView">
+    <Parameter Name="DivisionID" Parameter="divisionID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_Divisions_ShortViewResult">
+      <Column Name="DivisionID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DivisionDesc" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Divisions_SignleRecord" Method="sp_Divisions_SignleRecord">
+    <Parameter Name="DivisionKey" Parameter="divisionKey" Type="System.Guid" DbType="UniqueIdentifier" />
+    <ElementType Name="sp_Divisions_SignleRecordResult">
+      <Column Name="DivisionID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DivisionDesc" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DivisionKey" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="timestamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Divisions_Update" Method="sp_Divisions_Update">
+    <Parameter Name="DivisionKey" Parameter="divisionKey" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="DivisionDesc" Parameter="divisionDesc" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="IsDeleted" Parameter="isDeleted" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="timestamp" Type="System.Data.Linq.Binary" DbType="rowversion" />
+    <Parameter Name="Result" Parameter="result" Type="System.Boolean" DbType="Bit" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_Divisions_ViewAll" Method="sp_Divisions_ViewAll">
+    <ElementType Name="sp_Divisions_ViewAllResult">
+      <Column Name="DivisionID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DivisionDesc" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DivisionKey" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="timestamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Emails_Delete" Method="sp_Emails_Delete">
+    <Parameter Name="EmailID" Parameter="emailID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_Emails_Insert" Method="sp_Emails_Insert">
+    <Parameter Name="EmailTo" Parameter="emailTo" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="EmailFrom" Parameter="emailFrom" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="EmailSubject" Parameter="emailSubject" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="EmailMessage" Parameter="emailMessage" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="SentDate" Parameter="sentDate" Type="System.DateTime" DbType="DateTime" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_Emails_ShortView" Method="sp_Emails_ShortView">
+    <Parameter Name="EmailID" Parameter="emailID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_Emails_ShortViewResult">
+      <Column Name="EmailID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EmailSubject" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Emails_SignleRecord" Method="sp_Emails_SignleRecord">
+    <Parameter Name="EmailKey" Parameter="emailKey" Type="System.Guid" DbType="UniqueIdentifier" />
+    <ElementType Name="sp_Emails_SignleRecordResult">
+      <Column Name="EmailID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EmailTo" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="EmailFrom" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="EmailSubject" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="EmailMessage" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="SentDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="EmailKey" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="timestamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Emails_Update" Method="sp_Emails_Update">
+    <Parameter Name="EmailKey" Parameter="emailKey" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="EmailTo" Parameter="emailTo" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="EmailFrom" Parameter="emailFrom" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="EmailSubject" Parameter="emailSubject" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="EmailMessage" Parameter="emailMessage" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="SentDate" Parameter="sentDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="IsDeleted" Parameter="isDeleted" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="timestamp" Type="System.Data.Linq.Binary" DbType="rowversion" />
+    <Parameter Name="Result" Parameter="result" Type="System.Boolean" DbType="Bit" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_Emails_ViewAll" Method="sp_Emails_ViewAll">
+    <ElementType Name="sp_Emails_ViewAllResult">
+      <Column Name="EmailID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EmailTo" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="EmailFrom" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="EmailSubject" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="EmailMessage" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="SentDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="EmailKey" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="timestamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_News_Delete" Method="sp_News_Delete">
+    <Parameter Name="NewsID" Parameter="newsID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_News_Insert" Method="sp_News_Insert">
+    <Parameter Name="NewsHeadLine" Parameter="newsHeadLine" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="NewsContent" Parameter="newsContent" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="NewsDate" Parameter="newsDate" Type="System.DateTime" DbType="Date" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_News_ShortView" Method="sp_News_ShortView">
+    <Parameter Name="NewsID" Parameter="newsID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_News_ShortViewResult">
+      <Column Name="NewsID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NewsHeadline" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_News_SignleRecord" Method="sp_News_SignleRecord">
+    <Parameter Name="NewsKey" Parameter="newsKey" Type="System.Guid" DbType="UniqueIdentifier" />
+    <ElementType Name="sp_News_SignleRecordResult">
+      <Column Name="NewsID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NewsHeadLine" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="NewsContent" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="NewsDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="NewsKey" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="timestamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_News_Update" Method="sp_News_Update">
+    <Parameter Name="NewsKey" Parameter="newsKey" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="NewsHeadLine" Parameter="newsHeadLine" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="NewsContent" Parameter="newsContent" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="NewsDate" Parameter="newsDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="IsDeleted" Parameter="isDeleted" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="timestamp" Type="System.Data.Linq.Binary" DbType="rowversion" />
+    <Parameter Name="Result" Parameter="result" Type="System.Boolean" DbType="Bit" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_News_ViewAll" Method="sp_News_ViewAll">
+    <ElementType Name="sp_News_ViewAllResult">
+      <Column Name="NewsID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NewsHeadLine" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="NewsContent" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="NewsDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="NewsKey" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="timestamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Roles_Delete" Method="sp_Roles_Delete">
+    <Parameter Name="RoleID" Parameter="roleID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_Roles_Insert" Method="sp_Roles_Insert">
+    <Parameter Name="RoleDesc" Parameter="roleDesc" Type="System.String" DbType="VarChar(200)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_Roles_ShortView" Method="sp_Roles_ShortView">
+    <Parameter Name="RoleID" Parameter="roleID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_Roles_ShortViewResult">
+      <Column Name="RoleID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RoleDesc" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Roles_SignleRecord" Method="sp_Roles_SignleRecord">
+    <Parameter Name="RoleKey" Parameter="roleKey" Type="System.Guid" DbType="UniqueIdentifier" />
+    <ElementType Name="sp_Roles_SignleRecordResult">
+      <Column Name="RoleID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RoleDesc" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="RoleKey" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="timestamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Roles_Update" Method="sp_Roles_Update">
+    <Parameter Name="RoleKey" Parameter="roleKey" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="RoleDesc" Parameter="roleDesc" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="IsDeleted" Parameter="isDeleted" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="timestamp" Type="System.Data.Linq.Binary" DbType="rowversion" />
+    <Parameter Name="Result" Parameter="result" Type="System.Boolean" DbType="Bit" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_Roles_ViewAll" Method="sp_Roles_ViewAll">
+    <ElementType Name="sp_Roles_ViewAllResult">
+      <Column Name="RoleID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RoleDesc" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="RoleKey" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="timestamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Teams_Delete" Method="sp_Teams_Delete">
+    <Parameter Name="TeamID" Parameter="teamID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_Teams_Insert" Method="sp_Teams_Insert">
+    <Parameter Name="TeamDesc" Parameter="teamDesc" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="DivisionID" Parameter="divisionID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IsOurs" Parameter="isOurs" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_Teams_ShortView" Method="sp_Teams_ShortView">
+    <Parameter Name="TeamID" Parameter="teamID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_Teams_ShortViewResult">
+      <Column Name="TeamID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TeamDesc" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Teams_SignleRecord" Method="sp_Teams_SignleRecord">
+    <Parameter Name="TeamKey" Parameter="teamKey" Type="System.Guid" DbType="UniqueIdentifier" />
+    <ElementType Name="sp_Teams_SignleRecordResult">
+      <Column Name="TeamID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TeamDesc" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="DivisionID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsOurs" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="TeamKey" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="timestamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" />
+      <Column Name="DivisionDesc" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Teams_Update" Method="sp_Teams_Update">
+    <Parameter Name="TeamKey" Parameter="teamKey" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="TeamDesc" Parameter="teamDesc" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="DivisionID" Parameter="divisionID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IsOurs" Parameter="isOurs" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="IsDeleted" Parameter="isDeleted" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="timestamp" Type="System.Data.Linq.Binary" DbType="rowversion" />
+    <Parameter Name="Result" Parameter="result" Type="System.Boolean" DbType="Bit" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_Teams_ViewAll" Method="sp_Teams_ViewAll">
+    <ElementType Name="sp_Teams_ViewAllResult">
+      <Column Name="TeamID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TeamDesc" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="DivisionID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsOurs" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="TeamKey" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="timestamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" />
+      <Column Name="DivisionDesc" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_visitorContacts_Delete" Method="sp_visitorContacts_Delete">
+    <Parameter Name="visitorContactID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_visitorContacts_Insert" Method="sp_visitorContacts_Insert">
+    <Parameter Name="visitorContactDesc" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="ContactName" Parameter="contactName" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="EmailAddress" Parameter="emailAddress" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="Message" Parameter="message" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="ContactDate" Parameter="contactDate" Type="System.DateTime" DbType="DateTime" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_visitorContacts_ShortView" Method="sp_visitorContacts_ShortView">
+    <Parameter Name="visitorContactID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_visitorContacts_ShortViewResult">
+      <Column Name="visitorContactID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="visitorContactDesc" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_visitorContacts_SignleRecord" Method="sp_visitorContacts_SignleRecord">
+    <Parameter Name="visitorContactKey" Type="System.Guid" DbType="UniqueIdentifier" />
+    <ElementType Name="sp_visitorContacts_SignleRecordResult">
+      <Column Name="VisitorContactID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="VisitorContactDesc" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="ContactName" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="EmailAddress" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="ContactMessage" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ContactDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="VisitorContactKey" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="timestamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_visitorContacts_Update" Method="sp_visitorContacts_Update">
+    <Parameter Name="visitorContactKey" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="visitorContactDesc" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="ContactName" Parameter="contactName" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="EmailAddress" Parameter="emailAddress" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="Message" Parameter="message" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="ContactDate" Parameter="contactDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="IsDeleted" Parameter="isDeleted" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="timestamp" Type="System.Data.Linq.Binary" DbType="rowversion" />
+    <Parameter Name="Result" Parameter="result" Type="System.Boolean" DbType="Bit" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_Venues_Delete" Method="sp_Venues_Delete">
+    <Parameter Name="VenueID" Parameter="venueID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_Venues_ViewAll" Method="sp_Venues_ViewAll">
+    <ElementType Name="sp_Venues_ViewAllResult">
+      <Column Name="VenueID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="VenueDesc" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="VenueKey" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="timestamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Venues_Insert" Method="sp_Venues_Insert">
+    <Parameter Name="VenueDesc" Parameter="venueDesc" Type="System.String" DbType="VarChar(200)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_Venues_ShortView" Method="sp_Venues_ShortView">
+    <Parameter Name="VenueID" Parameter="venueID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_Venues_ShortViewResult">
+      <Column Name="VenueID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="VenueDesc" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Venues_SignleRecord" Method="sp_Venues_SignleRecord">
+    <Parameter Name="VenueKey" Parameter="venueKey" Type="System.Guid" DbType="UniqueIdentifier" />
+    <ElementType Name="sp_Venues_SignleRecordResult">
+      <Column Name="VenueID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="VenueDesc" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="VenueKey" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="timestamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Venues_Update" Method="sp_Venues_Update">
+    <Parameter Name="VenueKey" Parameter="venueKey" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="VenueDesc" Parameter="venueDesc" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="IsDeleted" Parameter="isDeleted" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="timestamp" Type="System.Data.Linq.Binary" DbType="rowversion" />
+    <Parameter Name="Result" Parameter="result" Type="System.Boolean" DbType="Bit" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_NewsLetter_Contents" Method="sp_NewsLetter_Contents">
+    <ElementType Name="sp_NewsLetter_ContentsResult">
+      <Column Name="NewsID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NewsHeadLine" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="NewsContent" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="NewsDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="NewsKey" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="timestamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_email_getAddresses" Method="sp_email_getAddresses">
+    <ElementType Name="sp_email_getAddressesResult">
+      <Column Name="EmailAddress" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_MembersByRole_ShortView" Method="sp_MembersByRole_ShortView">
+    <ElementType Name="sp_MembersByRole_ShortViewResult">
+      <Column Name="RoleID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RoleDesc" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Total" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Members_ViewAll" Method="sp_Members_ViewAll">
+    <Parameter Name="Role" Parameter="role" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_Members_ViewAllResult">
+      <Column Name="MemberID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EmailAddress" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="PhoneNo" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="TeamID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RoleID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DOB" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DateJoined" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="MemberKey" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="timestamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" />
+      <Column Name="RoleDesc" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="TeamDesc" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Members_Delete" Method="sp_Members_Delete">
+    <Parameter Name="MemberID" Parameter="memberID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_Members_Insert" Method="sp_Members_Insert">
+    <Parameter Name="FirstName" Parameter="firstName" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="LastName" Parameter="lastName" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="EmailAddress" Parameter="emailAddress" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="PhoneNo" Parameter="phoneNo" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="TeamID" Parameter="teamID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="RoleID" Parameter="roleID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DOB" Parameter="dOB" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="DateJoined" Parameter="dateJoined" Type="System.DateTime" DbType="Date" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_Members_ShortView" Method="sp_Members_ShortView">
+    <Parameter Name="MemberID" Parameter="memberID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_Members_ShortViewResult">
+      <Column Name="MemberID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="" Member="Column1" Type="System.String" DbType="VarChar(101) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Members_SignleRecord" Method="sp_Members_SignleRecord">
+    <Parameter Name="MemberKey" Parameter="memberKey" Type="System.Guid" DbType="UniqueIdentifier" />
+    <ElementType Name="sp_Members_SignleRecordResult">
+      <Column Name="MemberID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EmailAddress" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="PhoneNo" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="TeamID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RoleID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DOB" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DateJoined" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="MemberKey" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="timestamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" />
+      <Column Name="RoleDesc" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="TeamDesc" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Members_Update" Method="sp_Members_Update">
+    <Parameter Name="MemberKey" Parameter="memberKey" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="FirstName" Parameter="firstName" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="LastName" Parameter="lastName" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="EmailAddress" Parameter="emailAddress" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="PhoneNo" Parameter="phoneNo" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="TeamID" Parameter="teamID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="RoleID" Parameter="roleID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DOB" Parameter="dOB" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="DateJoined" Parameter="dateJoined" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="IsDeleted" Parameter="isDeleted" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="timestamp" Type="System.Data.Linq.Binary" DbType="rowversion" />
+    <Parameter Name="Result" Parameter="result" Type="System.Boolean" DbType="Bit" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_Matches_ViewAll" Method="sp_Matches_ViewAll">
+    <ElementType Name="sp_Matches_ViewAllResult">
+      <Column Name="MatchID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TeamAID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TeamBID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RefereeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TeamAScore" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TeamBScore" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsPlayed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="MatchDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="VenueID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="MatchKey" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="timestamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Matches_Delete" Method="sp_Matches_Delete">
+    <Parameter Name="MatchID" Parameter="matchID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_Matches_Insert" Method="sp_Matches_Insert">
+    <Parameter Name="TeamAID" Parameter="teamAID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TeamBID" Parameter="teamBID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="RefereeID" Parameter="refereeID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TeamAScore" Parameter="teamAScore" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TeamBScore" Parameter="teamBScore" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IsPlayed" Parameter="isPlayed" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="MatchDate" Parameter="matchDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="VenueID" Parameter="venueID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_Matches_SignleRecord" Method="sp_Matches_SignleRecord">
+    <Parameter Name="MatchKey" Parameter="matchKey" Type="System.Guid" DbType="UniqueIdentifier" />
+    <ElementType Name="sp_Matches_SignleRecordResult">
+      <Column Name="MatchID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TeamAID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TeamBID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RefereeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TeamAScore" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TeamBScore" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsPlayed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="MatchDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="VenueID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="MatchKey" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="timestamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Matches_Update" Method="sp_Matches_Update">
+    <Parameter Name="MatchKey" Parameter="matchKey" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="TeamAID" Parameter="teamAID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TeamBID" Parameter="teamBID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="RefereeID" Parameter="refereeID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TeamAScore" Parameter="teamAScore" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TeamBScore" Parameter="teamBScore" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IsPlayed" Parameter="isPlayed" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="MatchDate" Parameter="matchDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="VenueID" Parameter="venueID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IsDeleted" Parameter="isDeleted" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="timestamp" Type="System.Data.Linq.Binary" DbType="rowversion" />
+    <Parameter Name="Result" Parameter="result" Type="System.Boolean" DbType="Bit" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_Managers_ShortView" Method="sp_Managers_ShortView">
+    <Parameter Name="MemberID" Parameter="memberID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_Managers_ShortViewResult">
+      <Column Name="MemberID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="" Member="Column1" Type="System.String" DbType="VarChar(101) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.aspnet_Membership_GetAllUsers" Method="aspnet_Membership_GetAllUsers">
+    <Parameter Name="ApplicationName" Parameter="applicationName" Type="System.String" DbType="NVarChar(256)" />
+    <Parameter Name="PageIndex" Parameter="pageIndex" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PageSize" Parameter="pageSize" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>
