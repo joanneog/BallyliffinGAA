@@ -55,7 +55,7 @@
                                             <%# Eval("LastName")%>
                                         </ItemTemplate>
                                     </telerik:GridTemplateColumn>
-                                    <telerik:GridTemplateColumn HeaderText="Email" DataField="Email" SortExpression="EmailAddress" UniqueName="EmailAddress" AutoPostBackOnFilter="True" CurrentFilterFunction="Contains" FilterControlWidth="140px" FilterImageToolTip="Search" FilterImageUrl="images/Search.gif">
+                                    <telerik:GridTemplateColumn HeaderText="Email" DataField="EmailAddress" SortExpression="EmailAddress" UniqueName="EmailAddress" AutoPostBackOnFilter="True" CurrentFilterFunction="Contains" FilterControlWidth="140px" FilterImageToolTip="Search" FilterImageUrl="images/Search.gif">
                                         <ItemTemplate>
                                             <%# Eval("EmailAddress") %>
                                         </ItemTemplate>
