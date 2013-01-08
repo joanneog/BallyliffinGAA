@@ -13,7 +13,7 @@ namespace Ballyliffin_Gaa
         {
             if (!Page.IsPostBack)
             {
-                btnBack.PostBackUrl = String.IsNullOrEmpty(Request.QueryString["returnurl"]) ? "Admin/Default.aspx" : HttpUtility.UrlDecode(Request.Url.Query.Substring(Request.Url.Query.IndexOf("returnurl") + 10));
+                btnBack.PostBackUrl = String.IsNullOrEmpty(Request.QueryString["returnurl"]) ? "/Default.aspx" : HttpUtility.UrlDecode(Request.Url.Query.Substring(Request.Url.Query.IndexOf("returnurl") + 10));
                 btn_Add.PostBackUrl = "Roles_Add.aspx?returnUrl=Roles_List.aspx" + Request.Url.Query;
             } 
         }

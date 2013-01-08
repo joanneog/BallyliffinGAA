@@ -16,7 +16,7 @@ namespace Ballyliffin_Gaa.Admin
             {
                 LoadData();
                 btn_Add.PostBackUrl = "Admin_Add.aspx?returnurl=Administrator_Management.aspx" + Request.Url.Query;
-                btnBack.PostBackUrl = String.IsNullOrEmpty(Request.QueryString["returnurl"]) ? "Admin/Default.aspx" : HttpUtility.UrlDecode(Request.Url.Query.Substring(Request.Url.Query.IndexOf("returnurl") + 10));
+                btnBack.PostBackUrl = String.IsNullOrEmpty(Request.QueryString["returnurl"]) ? "/Default.aspx" : HttpUtility.UrlDecode(Request.Url.Query.Substring(Request.Url.Query.IndexOf("returnurl") + 10));
             }
         }
 

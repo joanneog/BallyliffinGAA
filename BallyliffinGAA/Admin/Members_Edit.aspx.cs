@@ -39,6 +39,8 @@ namespace Ballyliffin_Gaa
                 txt_Email.Text = record.EmailAddress;
                 date_DOB.SelectedDate = record.DOB;
                 date_Joined.SelectedDate = record.DateJoined;
+                ddl_Team.SelectedValue = record.TeamID.Value.ToString();
+
                 for (int i = 0; i < ddl_Roles.Items.Count; i++)
                 {
                     if (record.RoleID == Convert.ToInt32(ddl_Roles.Items[i].Value))
@@ -47,14 +49,7 @@ namespace Ballyliffin_Gaa
                         break;
                     }
                 }
-                for (int i = 0; i < ddl_Team.Items.Count; i++)
-                {
-                    if (record.TeamID == Convert.ToInt32(ddl_Team.Items[i].Value))
-                    {
-                        ddl_Team.Items[i].Selected = true;
-                        break;
-                    }
-                }
+
                 chk_IsDeleted.Checked = record.IsDeleted.Value;
                 h_timestamp.Value = ToolsBLL.TimestampToString(record.timestamp).ToString();
             }
