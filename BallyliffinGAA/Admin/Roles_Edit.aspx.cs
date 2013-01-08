@@ -21,6 +21,8 @@ namespace Ballyliffin_Gaa
                 // Loads the selected record data into the form, sets the back button link, page default field focus and default action button
                 LoadData();
                 btnBack.PostBackUrl = String.IsNullOrEmpty(Request.QueryString["returnurl"]) ? "~/Admin/Default.aspx" : HttpUtility.UrlDecode(Request.Url.Query.Substring(Request.Url.Query.IndexOf("returnurl") + 10));
+                Page.Form.DefaultFocus = txt_RoleDesc.ClientID;
+
                 Page.Form.DefaultButton = btnSave.UniqueID;
             }
         }

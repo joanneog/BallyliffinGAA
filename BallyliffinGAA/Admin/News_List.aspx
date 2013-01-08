@@ -62,20 +62,21 @@
                                     <%# Eval("NewsDate","{0:d}") %>
                                     </ItemTemplate>
                                     </telerik:GridTemplateColumn>   
-                                    <telerik:GridTemplateColumn HeaderText="Edit" AllowFiltering="false">
+                                      <telerik:GridTemplateColumn HeaderText="Edit" AllowFiltering="false">
                                         <ItemTemplate>
-                                                <img style="border: 0px; vertical-align: middle;" alt="Edit..." src="Images/Edit_btn.gif" />
+                                        <asp:ImageButton ID="imgb_Edit" runat="server" ToolTip="Edit..." ImageUrl="~/Images/Edit_btn.gif" CausesValidation="false" PostBackUrl='<%# "~/Admin/News_Edit.aspx?key="+Eval("NewsKey")+"&returnurl=News_List.aspx"+ Request.Url.Query %>'/>
                                         </ItemTemplate>
                                         <ItemStyle HorizontalAlign="Center" Width="20px" />
                                         <HeaderStyle HorizontalAlign="Center" />
                                     </telerik:GridTemplateColumn>
                                     <telerik:GridTemplateColumn UniqueName="Delete" AllowFiltering="false">
                                         <ItemTemplate>
-                                            <img src="images/delete_btn.gif"  />
+                                            <asp:ImageButton ID="imgb_Delete" runat="server" Visible='<%# ! Convert.ToBoolean(Eval("IsDeleted")) %>' CausesValidation="false" CommandName="Delete" OnClientClick="return confirm('Are you sure you want to delete this record?');" ImageUrl="~/Images/Delete_btn.gif" ToolTip="Delete this record" />
+                                            <asp:Image runat="server" ID="img_Deleted" ImageUrl="~/images/Delete.gif" Visible='<%# Eval("IsDeleted") %>' ToolTip="This record is deleted." />
                                         </ItemTemplate>
                                         <ItemStyle HorizontalAlign="Center" Width="18px" />
                                         <HeaderStyle HorizontalAlign="Center" />
-                                    </telerik:GridTemplateColumn>         
+                                    </telerik:GridTemplateColumn>          
                                 </Columns>
                                 </MasterTableView></telerik:radgrid>
                                

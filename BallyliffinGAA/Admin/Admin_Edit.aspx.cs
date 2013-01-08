@@ -12,10 +12,16 @@ namespace Ballyliffin_Gaa.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
+        }
+
+        protected void Page_PreRenderComplete(object sender, EventArgs e)
+        {
             if (!Page.IsPostBack)
             {
-                btnBack.PostBackUrl = String.IsNullOrEmpty(Request.QueryString["returnurl"]) ? "/Default.aspx" : HttpUtility.UrlDecode(Request.Url.Query.Substring(Request.Url.Query.IndexOf("returnurl") + 10));
                 LoadData();
+                btnBack.PostBackUrl = String.IsNullOrEmpty(Request.QueryString["returnurl"]) ? "Admin/Default.aspx" : HttpUtility.UrlDecode(Request.Url.Query.Substring(Request.Url.Query.IndexOf("returnurl") + 10));
+                
             }
         }
 

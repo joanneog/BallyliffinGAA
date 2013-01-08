@@ -49,16 +49,16 @@
                                             <%# Eval("DivisionDesc") %>
                                         </ItemTemplate>
                                     </telerik:GridTemplateColumn>
-                                         <telerik:GridTemplateColumn HeaderText="Edit" AllowFiltering="false">
+                                             <telerik:GridTemplateColumn HeaderText="Edit" AllowFiltering="false">
                                         <ItemTemplate>
-                                        <asp:ImageButton ID="ImageButton1" runat="server" ToolTip="Edit..." ImageUrl="~/Images/Edit_btn.gif" CausesValidation="false" PostBackUrl='<%# "~/Admin/Divisions_Edit.aspx?key="+Eval("DivisionKey")+"&returnurl=Divisions_List.aspx" %>'/>
+                                        <asp:ImageButton ID="imgb_Edit" runat="server" ToolTip="Edit..." ImageUrl="~/Images/Edit_btn.gif" CausesValidation="false" PostBackUrl='<%# "~/Admin/Divisions_Edit.aspx?key="+Eval("DivisionKey")+"&returnurl=Divisions_List.aspx" + Request.Url.Query%>'/>
                                         </ItemTemplate>
                                         <ItemStyle HorizontalAlign="Center" Width="20px" />
                                         <HeaderStyle HorizontalAlign="Center" />
                                     </telerik:GridTemplateColumn>
                                     <telerik:GridTemplateColumn UniqueName="Delete" AllowFiltering="false">
                                         <ItemTemplate>
-                                            <asp:ImageButton ID="ImageButton1" runat="server" Visible='<%# ! Convert.ToBoolean(Eval("IsDeleted")) %>' CausesValidation="false" CommandName="Delete" OnClientClick="return confirm('Are you sure you want to delete this record?');" Text="Delete" ImageUrl="~/Images/Delete_btn.gif" ToolTip="Delete this record" />
+                                            <asp:ImageButton ID="imgb_Delete" runat="server" Visible='<%# ! Convert.ToBoolean(Eval("IsDeleted")) %>' CausesValidation="false" CommandName="Delete" OnClientClick="return confirm('Are you sure you want to delete this record?');" ImageUrl="~/Images/Delete_btn.gif" ToolTip="Delete this record" />
                                             <asp:Image runat="server" ID="img_Deleted" ImageUrl="~/images/Delete.gif" Visible='<%# Eval("IsDeleted") %>' ToolTip="This record is deleted." />
                                         </ItemTemplate>
                                         <ItemStyle HorizontalAlign="Center" Width="18px" />
