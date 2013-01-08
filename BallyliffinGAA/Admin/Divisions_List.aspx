@@ -38,31 +38,28 @@
                             Width="80px" onclick="btn_Refresh_Click" />
                     </div>
                     <div class="paddedContentBox">
-                        <telerik:RadGrid ID="grid_Divisions" PageSize="20" runat="server" AllowPaging="True" OnDeleteCommand="grid_Divisions_Delete"
-                            ShowStatusBar="True" GridLines="None" Width="100%" AllowSorting="True" DataSourceID="sqlDS_Divisions" AllowFilteringByColumn="true">
-                            <GroupingSettings CaseSensitive="false" />
+                        <telerik:RadGrid ID="grid_Divisions" PageSize="20" runat="server" AllowPaging="True" OnDeleteCommand="grid_Divisions_DeleteCommand"
+                            ShowStatusBar="True" GridLines="None" Width="100%" AllowSorting="True" AllowFilteringByColumn="true" DataSourceID="sqlDS_Divisions"
+                            CellSpacing="0">
                             <MasterTableView AutoGenerateColumns="false" DataSourceID="sqlDS_Divisions" Font-Names="Arial"
-                                AllowFilteringByColumn="true">
+                                AllowFilteringByColumn="true" DataKeyNames="DivisionID">
                                 <Columns>
-                                    <telerik:GridTemplateColumn HeaderText="Division" DataField="DivisionDesc" SortExpression="DivisionDesc" UniqueName="DivisionDesc" AutoPostBackOnFilter="True" CurrentFilterFunction="Contains" FilterControlWidth="140px" FilterImageToolTip="Search" FilterImageUrl="images/Search.gif">
+                                    <telerik:GridTemplateColumn HeaderText="Division"  DataField="DivisionDesc" SortExpression="DivisionDesc" UniqueName="DivisionDesc" AutoPostBackOnFilter="True" CurrentFilterFunction="Contains" FilterControlWidth="140px" FilterImageToolTip="Search" FilterImageUrl="images/Search.gif">
                                         <ItemTemplate>
                                             <%# Eval("DivisionDesc") %>
-                                            <%--<asp:HyperLink ID="HyperLink1" runat="server" Text=' <%# Eval("DivisionDesc") %>' NavigateUrl='<%# "~/Admin/Division_Edit.aspx?key="+Eval("DivisionsKey")+"&returnurl=Divisions_List.aspx"+Request.Url.Query %>'></asp:HyperLink>--%>
-                                    
                                         </ItemTemplate>
                                     </telerik:GridTemplateColumn>
-                                     <telerik:GridTemplateColumn HeaderText="Edit" AllowFiltering="false">
+                                         <telerik:GridTemplateColumn HeaderText="Edit" AllowFiltering="false">
                                         <ItemTemplate>
-                                        <asp:ImageButton ID="ImageButton1" runat="server" ToolTip="Edit..." CausesValidation="false" NavigateUrl='<%# "~/Admin/Divisions_Edit.aspx?key="+Eval("DivisionKey")+"&returnurl=Divisions_List.aspx" %>'/>
-                                            <img style="border: 0px; vertical-align: middle;" alt="Edit..." src="Images/Edit_btn.gif" />
+                                        <asp:ImageButton ID="ImageButton1" runat="server" ToolTip="Edit..." ImageUrl="~/Images/Edit_btn.gif" CausesValidation="false" PostBackUrl='<%# "~/Admin/Divisions_Edit.aspx?key="+Eval("DivisionKey")+"&returnurl=Divisions_List.aspx" %>'/>
                                         </ItemTemplate>
                                         <ItemStyle HorizontalAlign="Center" Width="20px" />
                                         <HeaderStyle HorizontalAlign="Center" />
                                     </telerik:GridTemplateColumn>
                                     <telerik:GridTemplateColumn UniqueName="Delete" AllowFiltering="false">
                                         <ItemTemplate>
-                                        <asp:ImageButton ID="ImageButton1" runat="server" Visible='<%# ! Convert.ToBoolean(Eval("IsDeleted")) %>' CausesValidation="false" CommandName="Delete" OnClientClick="return confirm('Are you sure you want to delete this record?');" Text="Delete" ImageUrl="~/Images/Delete_btn.gif" ToolTip="Delete this record" />
-                                           <asp:Image ID="Image1" runat="server" src="images/delete.gif" alt="delete" Visible='<%# Convert.ToBoolean(Eval("IsDeleted")) %>'/>
+                                            <asp:ImageButton ID="ImageButton1" runat="server" Visible='<%# ! Convert.ToBoolean(Eval("IsDeleted")) %>' CausesValidation="false" CommandName="Delete" OnClientClick="return confirm('Are you sure you want to delete this record?');" Text="Delete" ImageUrl="~/Images/Delete_btn.gif" ToolTip="Delete this record" />
+                                            <asp:Image runat="server" ID="img_Deleted" ImageUrl="~/images/Delete.gif" Visible='<%# Eval("IsDeleted") %>' ToolTip="This record is deleted." />
                                         </ItemTemplate>
                                         <ItemStyle HorizontalAlign="Center" Width="18px" />
                                         <HeaderStyle HorizontalAlign="Center" />

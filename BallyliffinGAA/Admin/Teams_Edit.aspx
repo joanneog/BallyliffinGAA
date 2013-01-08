@@ -19,6 +19,7 @@
                             CausesValidation="false" TabIndex="1" />
                         <asp:Button ID="btnSave" runat="server" Text="Save" CssClass="custombtng" Width="80px"
                             TabIndex="40" onclick="btnSave_Click" />
+                        <asp:Label ID="lbl_Msg" runat="server" EnableViewState="false" CssClass="msgbox" Visible="false"></asp:Label>
                     </div>
                     <div style="width: 100%; padding: 7px;">
                         <table cellpadding="3" cellspacing="0" class="editForm">

@@ -19,7 +19,7 @@ namespace Ballyliffin_Gaa
             }
         }
 
-        protected void grid_Divisions_Delete(object sender, Telerik.Web.UI.GridCommandEventArgs e)
+        protected void grid_Divisions_DeleteCommand(object sender, Telerik.Web.UI.GridCommandEventArgs e)
         {
             int id = Convert.ToInt32((e.Item as GridDataItem).OwnerTableView.DataKeyValues[e.Item.ItemIndex]["DivisionID"]);
             BallyliffinDataContext db = new BallyliffinDataContext();

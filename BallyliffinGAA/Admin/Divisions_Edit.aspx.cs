@@ -46,7 +46,7 @@ namespace Ballyliffin_Gaa
                 BallyliffinDataContext db = new BallyliffinDataContext();
 
                 bool? result = false;
-                db.sp_Venues_Update(new Guid(Request["key"]), txt_DivisionDesc.Text, chk_IsDeleted.Checked, ToolsBLL.StringToTimestamp(h_timestamp.Value), ref  result);
+                db.sp_Divisions_Update(new Guid(Request["key"]), txt_DivisionDesc.Text, chk_IsDeleted.Checked, ToolsBLL.StringToTimestamp(h_timestamp.Value), ref  result);
 
                 if (result.Value)
                 {
