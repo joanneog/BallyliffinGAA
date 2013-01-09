@@ -32,16 +32,16 @@
                         <asp:Button ID="btnBack" runat="server" ToolTip="Back" CssClass="backbtn" CausesValidation="false"
                             TabIndex="1" />
                         <asp:Button ID="btn_Add" runat="server" Text="+ Add" CssClass="custombtng" 
-                            Width="80px" onclick="btn_Add_Click" />
+                            Width="80px" />
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:Button ID="btn_Refresh" runat="server" Text="Refresh" CssClass="custombtn" Width="80px" />
+                        <asp:Button ID="btn_Refresh" OnClick="btn_Refresh_Click" runat="server" Text="Refresh" CssClass="custombtn" Width="80px" />
                     </div>
                     <div class="paddedContentBox">
                         <telerik:radgrid id="grid_Roles" pagesize="20" runat="server"
-                            allowpaging="True" showstatusbar="True" gridlines="None"
+                            allowpaging="True" showstatusbar="True" gridlines="None" OnDeleteCommand="grid_Roles_Delete"
                             width="100%" allowsorting="True" DataSourceID="sqlDS_Roles" AllowFilteringByColumn="true">
                             <GroupingSettings CaseSensitive="false" />
-                            <MasterTableView AutoGenerateColumns="false" DataSourceID="sqlDS_Roles" Font-Names="Arial" AllowFilteringByColumn="true">
+                            <MasterTableView AutoGenerateColumns="false" DataSourceID="sqlDS_Roles" Font-Names="Arial" AllowFilteringByColumn="true" DataKeyNames="RoleID">
                                 <Columns>
                                     <telerik:GridTemplateColumn HeaderText="Role" DataField="RoleDesc" SortExpression="RoleDesc" UniqueName="RoleDesc" AutoPostBackOnFilter="True" CurrentFilterFunction="Contains" FilterControlWidth="140px" FilterImageToolTip="Search" FilterImageUrl="images/Search.gif">
                                     <ItemTemplate>

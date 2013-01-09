@@ -28,7 +28,7 @@
                                     Subject
                                 </td>
                                 <td>
-                                    <asp:Label ID="lbl_Subject" runat="server">Fixtures Clashing</asp:Label>
+                                    <asp:Label ID="lbl_Subject" runat="server"></asp:Label>
                                 </td>
                             </tr>
                             <tr>
@@ -36,7 +36,7 @@
                                     Contact Name
                                 </td>
                                 <td>
-                                    <asp:Label ID="lbl_ContactName" runat="server">Davin Kelly</asp:Label>
+                                    <asp:Label ID="lbl_ContactName" runat="server"></asp:Label>
                                 </td>
                             </tr>
                             <tr>
@@ -44,7 +44,7 @@
                                     Email Address
                                 </td>
                                 <td>
-                                    <asp:Label ID="lbl_Email" runat="server">DavinKelly@mail.com</asp:Label>
+                                    <asp:Label ID="lbl_Email" runat="server"></asp:Label>
                                 </td>
                             </tr>
                             <tr>
@@ -52,7 +52,7 @@
                                     Contact Date
                                 </td>
                                 <td>
-                                    <asp:Label ID="lbl_ContactDate" runat="server">2012/09/03</asp:Label>
+                                    <asp:Label ID="lbl_ContactDate" runat="server"></asp:Label>
                                 </td>
                             </tr>
 
@@ -61,7 +61,7 @@
                                     Message
                                 </td>
                                 <td>
-                                    <div id="lbl_Message" runat="server"  class="detailsPageCommentBox">The fixtures shown are clashing. There are two matches on at the same time and Venue on Sunday</div>
+                                    <div id="lbl_Message" runat="server"  class="detailsPageCommentBox"></div>
                                 </td>
                             </tr>
                             <tr id="tr_DeleteF" runat="server" >

@@ -34,25 +34,26 @@
                                     <telerik:GridClientSelectColumn UniqueName="column">
                                         <ItemStyle Width="30px" />
                                     </telerik:GridClientSelectColumn>
-                                    <telerik:GridTemplateColumn HeaderText="Subject">
+
+                                    <telerik:GridTemplateColumn HeaderText="Subject" DataField="EmailSubject" SortExpression="EmailSubject" UniqueName="EmailSubject" AutoPostBackOnFilter="True" CurrentFilterFunction="Contains" FilterControlWidth="140px" FilterImageToolTip="Search" FilterImageUrl="images/Search.gif">
                                     <ItemTemplate>
                                     <%# Eval("EmailSubject") %>
                                     </ItemTemplate>
                                     </telerik:GridTemplateColumn>            
                                     
-                                    <telerik:GridTemplateColumn HeaderText="To">
+                                    <telerik:GridTemplateColumn HeaderText="To" DataField="EmailTo" SortExpression="EmailTo" UniqueName="EmailTo" AutoPostBackOnFilter="True" CurrentFilterFunction="Contains" FilterControlWidth="140px" FilterImageToolTip="Search" FilterImageUrl="images/Search.gif">
                                     <ItemTemplate>
                                     <%# Eval("EmailTo") %>
                                     </ItemTemplate>
                                     </telerik:GridTemplateColumn>            
                                     
-                                    <telerik:GridTemplateColumn HeaderText="From">
+                                    <telerik:GridTemplateColumn HeaderText="From" DataField="EmailFrom" SortExpression="EmailFrom" UniqueName="EmailFrom" AutoPostBackOnFilter="True" CurrentFilterFunction="Contains" FilterControlWidth="140px" FilterImageToolTip="Search" FilterImageUrl="images/Search.gif">
                                     <ItemTemplate>
                                     <%# Eval("EmailFrom") %>
                                     </ItemTemplate>
                                     </telerik:GridTemplateColumn>            
                                     
-                                    <telerik:GridTemplateColumn HeaderText="Sent">
+                                    <telerik:GridTemplateColumn HeaderText="Sent" AllowFiltering="false" SortExpression="SentDate">
                                     <ItemTemplate>
                                     <%# Eval("SentDate", "{0:d}") %>
                                     </ItemTemplate>

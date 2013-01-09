@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Telerik.Web.UI;
 
 namespace Ballyliffin_Gaa
 {
@@ -17,5 +18,19 @@ namespace Ballyliffin_Gaa
             }
 
         }
+
+        protected void grid_VisitorContacts_Delete(object sender, Telerik.Web.UI.GridCommandEventArgs e)
+        {
+            int id = Convert.ToInt32((e.Item as GridDataItem).OwnerTableView.DataKeyValues[e.Item.ItemIndex]["VisitorContactID"]);
+            BallyliffinDataContext db = new BallyliffinDataContext();
+            db.sp_visitorContacts_Delete(id);
+            grid_VisitorContacts.Rebind();
+        }
+
+        protected void btn_Refresh_Click(object sender, EventArgs e)
+        {
+            grid_VisitorContacts.Rebind();
+        }
+
     }
 }

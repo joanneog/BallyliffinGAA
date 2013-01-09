@@ -20,9 +20,8 @@ namespace Ballyliffin_Gaa
             {
                 // Loads the selected record data into the form, sets the back button link, page default field focus and default action button
                 LoadData();
-                btnBack.PostBackUrl = String.IsNullOrEmpty(Request.QueryString["returnurl"]) ? "~/Admin/Default.aspx" : HttpUtility.UrlDecode(Request.Url.Query.Substring(Request.Url.Query.IndexOf("returnurl") + 10));
+                btnBack.PostBackUrl = String.IsNullOrEmpty(Request.QueryString["returnurl"]) ? "~/Default.aspx" : HttpUtility.UrlDecode(Request.Url.Query.Substring(Request.Url.Query.IndexOf("returnurl") + 10));
                 Page.Form.DefaultFocus = txt_RoleDesc.ClientID;
-
                 Page.Form.DefaultButton = btnSave.UniqueID;
             }
         }
@@ -34,6 +33,8 @@ namespace Ballyliffin_Gaa
                 BallyliffinDataContext dbbally = new BallyliffinDataContext();
                 sp_Roles_SignleRecordResult record = dbbally.sp_Roles_SignleRecord(new Guid(Request["key"])).SingleOrDefault(); // sp_Venues_SignleRecord(new Guid(Request["key"])).SingleOrDefault();
                 txt_RoleDesc.Text = record.RoleDesc;
+                chk_IsDeleted.Checked = record.IsDeleted;
+                h_timestamp.Value = record.timestamp.TimestampToString();
             }
         }
         protected void btnSave_Click(object sender, EventArgs e)

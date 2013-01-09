@@ -42,7 +42,7 @@
                             DataSourceID="sqlDS_Venues" CellSpacing="0" OnDeleteCommand="grid_Venues_Delete" AllowFilteringByColumn="true">
                             <GroupingSettings CaseSensitive="false" />
                             <MasterTableView AutoGenerateColumns="false" DataSourceID="sqlDS_Venues" Font-Names="Arial"
-                                AllowFilteringByColumn="true">
+                                AllowFilteringByColumn="true" DataKeyNames="VenueID">
                                 <Columns>
                                     <telerik:GridTemplateColumn HeaderText="Venue" DataField="VenueDesc" SortExpression="VenueDesc" UniqueName="VenueDesc" AutoPostBackOnFilter="True" CurrentFilterFunction="Contains" FilterControlWidth="140px" FilterImageToolTip="Search" FilterImageUrl="images/Search.gif">
                                         <ItemTemplate>
