@@ -49,6 +49,8 @@
                                     <telerik:RadDateInput ID="date_NewsDate" runat="server" DateFormat="dd/MM/YYYY" DisplayDateFormat="dd/MM/yyyy"
                                         Culture="en-IE" MinDate="1900-01-01" EmptyMessage="__/__/____">
                                     </telerik:RadDateInput>
+                                     <asp:RequiredFieldValidator ID="reqVal_NesDate" runat="server" ErrorMessage="!"
+                                        ControlToValidate="date_NewsDate" SetFocusOnError="True"><img alt="Required" title="Required" src="images/redbox_required.gif" /></asp:RequiredFieldValidator>
                                 </td>
                             </tr>
                             <tr>

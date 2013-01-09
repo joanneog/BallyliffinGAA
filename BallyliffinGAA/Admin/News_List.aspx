@@ -42,7 +42,7 @@
                             width="100%" allowsorting="True" DataSourceID="sqlDS_News" 
                             OnDeleteCommand="grid_News_Delete" AllowFilteringByColumn="true">
                             <GroupingSettings CaseSensitive="false" />
-                            <MasterTableView AutoGenerateColumns="false" DataSourceID="sqlDS_News" Font-Names="Arial" AllowFilteringByColumn="true">
+                            <MasterTableView AutoGenerateColumns="false" DataSourceID="sqlDS_News" Font-Names="Arial" AllowFilteringByColumn="true" DataKeyNames="NewsID">
                                 <Columns>
                                     <telerik:GridTemplateColumn HeaderText="Headline" DataField="NewsHeadline" SortExpression="NewsHeadline" UniqueName="NewsHeadline" AutoPostBackOnFilter="True" CurrentFilterFunction="Contains" FilterControlWidth="140px" FilterImageToolTip="Search" FilterImageUrl="images/Search.gif">
                                     <ItemTemplate>
