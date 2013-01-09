@@ -23,7 +23,7 @@ namespace Ballyliffin_Gaa
         {
             int id = Convert.ToInt32((e.Item as GridDataItem).OwnerTableView.DataKeyValues[e.Item.ItemIndex]["TeamID"]);
             BallyliffinDataContext db = new BallyliffinDataContext();
-            db.sp_Venues_Delete(id);
+            db.sp_Teams_Delete(id);
             grid_Teams.Rebind();
         }
 

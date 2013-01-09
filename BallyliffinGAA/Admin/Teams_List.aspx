@@ -41,7 +41,7 @@
                             allowpaging="True" showstatusbar="True" gridlines="None"
                             width="100%" allowsorting="True" DataSourceID="sqlDS_Teams" OnDeleteCommand="grid_Teams_Delete" AllowFilteringByColumn="true">
                             <GroupingSettings CaseSensitive="false"/>
-                            <MasterTableView AutoGenerateColumns="false" DataSourceID="sqlDS_Teams" Font-Names="Arial" AllowFilteringByColumn="true">
+                            <MasterTableView AutoGenerateColumns="false" DataSourceID="sqlDS_Teams" Font-Names="Arial" AllowFilteringByColumn="true" DataKeyNames="TeamID">
                                 <Columns>
                                     <telerik:GridTemplateColumn HeaderText="Team"  DataField="TeamDesc" SortExpression="TeamDesc" UniqueName="TeamDesc" AutoPostBackOnFilter="True" CurrentFilterFunction="Contains" FilterControlWidth="140px" FilterImageToolTip="Search" FilterImageUrl="images/Search.gif">
                                     <ItemTemplate>
@@ -57,7 +57,7 @@
                                     
                                     <telerik:GridTemplateColumn HeaderText="Ours" AllowFiltering="false">
                                     <ItemTemplate>
-                                    <asp:Image runat="server" ImageUrl="Admin/images/Ok.gif" Visible='<%#Eval("IsOurs") %>' />
+                                    <asp:Image runat="server" ImageUrl="images/Ok.gif" Visible='<%#Eval("IsOurs") %>' />
                                     </ItemTemplate>
                                     </telerik:GridTemplateColumn>   
                                    <telerik:GridTemplateColumn HeaderText="Edit" AllowFiltering="false">

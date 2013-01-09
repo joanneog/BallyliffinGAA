@@ -27,33 +27,26 @@
                                     <asp:TextBox ID="txt_TeamDesc" runat="server" Width="400px" MaxLength="200" TabIndex="1"></asp:TextBox>
 									<asp:RequiredFieldValidator ID="reqVal_TeamDesc" runat="server" ErrorMessage="!" ControlToValidate="txt_TeamDesc" SetFocusOnError="True"><img alt="Required" title="Required" src="images/redbox_required.gif" /></asp:RequiredFieldValidator>
                                 </td>
-                            </tr> <tr>
+                            </tr> 
+                            <tr>
                                 <td class="editPageTitleCell">
-                                    Division
+                                    Division<span class="req_asterisk"></span>
                                 </td>
                                 <td>
-                                    <asp:DropDownList ID="ddl_Division" runat="server" DataSourceID="sqlDS_Divisions" DataTextField="DivisionDesc"
-                                        DataValueField="DivisionID" AppendDataBoundItems="true">
+                                    <asp:DropDownList ID="ddl_Division" runat="server" DataSourceID="sqlDS_Divisions"
+                                        DataTextField="DivisionDesc" DataValueField="DivisionID" AppendDataBoundItems="true">
                                         <asp:ListItem Value="" Text="-Select-"></asp:ListItem>
                                     </asp:DropDownList>
+                                    <asp:RequiredFieldValidator ID="reqVal_Division" runat="server" ErrorMessage="!"
+                                        ControlToValidate="ddl_Division" SetFocusOnError="True"><img alt="Required" title="Required" src="images/redbox_required.gif" /></asp:RequiredFieldValidator>
                                     <asp:SqlDataSource ID="sqlDS_Divisions" runat="server" ConnectionString="<%$ ConnectionStrings:BallyliffinGaaConnectionString %>"
-                                        SelectCommand="SELECT DivisionDesc, DivisionID FROM Divisions WHERE (IsDeleted = 0)"></asp:SqlDataSource>
-                                </td>
-                            </tr>
-                            <%--<tr>
-                                <td class="editPageTitleCell">
-                                    Manager
-                                </td>
-                                <td>
-                                    <asp:DropDownList ID="ddl_Manager" runat="server" DataSourceID="sqlDS_Managers" DataTextField="MemberDesc"
-                                        DataValueField="MemberID" AppendDataBoundItems="true">
-                                        <asp:ListItem Value="" Text="-Select-"></asp:ListItem>
-                                    </asp:DropDownList>
-                                    <asp:SqlDataSource ID="sqlDS_Managers" runat="server" ConnectionString="<%$ ConnectionStrings:BallyliffinGaaConnectionString %>"
-                                        SelectCommand="SELECT Members.FirstName + ' ' + Members.LastName AS MemberDesc, Members.MemberID FROM Members INNER JOIN Roles ON Members.RoleID = Roles.RoleID WHERE (Members.IsDeleted = 0) AND (Roles.RoleID = 2)">
+                                        SelectCommand="sp_Divisions_ShortView" SelectCommandType="StoredProcedure" CancelSelectOnNullParameter="false">
+                                        <SelectParameters>
+                                            <asp:Parameter Name="DivisionID" Type="Int32" />
+                                        </SelectParameters>
                                     </asp:SqlDataSource>
                                 </td>
-                            </tr>--%>
+                            </tr>
                             <tr>
                                 <td class="editPageTitleCell">
                                     Our Team
