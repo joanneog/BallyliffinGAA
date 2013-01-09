@@ -24,18 +24,18 @@
                         <telerik:radgrid id="grid_Matches" pagesize="20" runat="server"
                             allowpaging="True" showstatusbar="True" gridlines="None"
                             width="100%" allowsorting="True" DataSourceID="sqlDS_Matches" 
-                            CellSpacing="0">
+                            CellSpacing="0" OnDeleteCommand="grid_Matches_Delete">
                             <GroupingSettings CaseSensitive="false" />
-                            <MasterTableView AutoGenerateColumns="false" DataSourceID="sqlDS_Matches" Font-Names="Arial" AllowFilteringByColumn="true">
+                            <MasterTableView AutoGenerateColumns="false" DataSourceID="sqlDS_Matches" DataKeyNames="MatchID" Font-Names="Arial" AllowFilteringByColumn="true">
                                 <Columns>
                                 
-                                    <telerik:GridTemplateColumn HeaderText="Referee">
+                                    <telerik:GridTemplateColumn HeaderText="Referee"  DataField="RefereeName" SortExpression="RefereeName" UniqueName="RefereeName" AutoPostBackOnFilter="True" CurrentFilterFunction="Contains" FilterControlWidth="140px" FilterImageToolTip="Search" FilterImageUrl="images/Search.gif">
                                     <ItemTemplate>
                                     <%# Eval("RefereeName") %>
                                     </ItemTemplate>
                                     </telerik:GridTemplateColumn>          
                                     
-                                    <telerik:GridTemplateColumn HeaderText="Home Team">
+                                    <telerik:GridTemplateColumn HeaderText="Home Team"  DataField="TeamADesc" SortExpression="TeamADesc" UniqueName="TeamADesc" AutoPostBackOnFilter="True" CurrentFilterFunction="Contains" FilterControlWidth="140px" FilterImageToolTip="Search" FilterImageUrl="images/Search.gif">
                                     <ItemTemplate>
                                     <%# Eval("TeamADesc") %>
                                     </ItemTemplate>
@@ -48,17 +48,17 @@
                                     
                                     <telerik:GridTemplateColumn HeaderText="Score" AllowFiltering="false">
                                     <ItemTemplate>
-                                    <%# Eval("TeamBScore") %>
+                                    <%# Eval("TeamBScore") %> 
                                     </ItemTemplate>
                                     </telerik:GridTemplateColumn>          
                                     
-                                    <telerik:GridTemplateColumn HeaderText="Away Team">
+                                    <telerik:GridTemplateColumn HeaderText="Away Team" DataField="TeamBDesc" SortExpression="TeamBDesc" UniqueName="TeamBDesc" AutoPostBackOnFilter="True" CurrentFilterFunction="Contains" FilterControlWidth="140px" FilterImageToolTip="Search" FilterImageUrl="images/Search.gif">
                                     <ItemTemplate>
                                     <%# Eval("TeamBDesc") %>
                                     </ItemTemplate>
                                     </telerik:GridTemplateColumn>  
                                     
-                                    <telerik:GridTemplateColumn HeaderText="Venue">
+                                    <telerik:GridTemplateColumn HeaderText="Venue" DataField="VenueDesc" SortExpression="VenueDesc" UniqueName="VenueDesc" AutoPostBackOnFilter="True" CurrentFilterFunction="Contains" FilterControlWidth="140px" FilterImageToolTip="Search" FilterImageUrl="images/Search.gif">
                                     <ItemTemplate>
                                     <%# Eval("VenueDesc") %>
                                     </ItemTemplate>
@@ -66,7 +66,7 @@
                                     
                                     <telerik:GridTemplateColumn HeaderText="Played" AllowFiltering="false">
                                     <ItemTemplate>
-                                    <asp:Image runat="server" Visible='<%# Eval("IsPlayed") %>' ImageUrl="Admin/images/Ok.gif" />
+                                    <asp:Image runat="server" Visible='<%# Eval("IsPlayed") %>' ImageUrl="~/images/Ok.gif" />
                                     </ItemTemplate>
                                     </telerik:GridTemplateColumn>
 
