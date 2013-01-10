@@ -15,7 +15,10 @@ namespace Ballyliffin_Gaa
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!Page.IsPostBack)
+            {
+                btnBack.PostBackUrl = String.IsNullOrEmpty(Request.QueryString["returnurl"]) ? "/Default.aspx" : HttpUtility.UrlDecode(Request.Url.Query.Substring(Request.Url.Query.IndexOf("returnurl") + 10));
+            } 
         }
 
         protected void btn_Add_Click(object sender, EventArgs e)

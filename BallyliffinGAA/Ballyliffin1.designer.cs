@@ -487,6 +487,27 @@ namespace BallyliffinGAA
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), applicationName, pageIndex, pageSize);
 			return ((int)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Email_MatchReminders")]
+		public ISingleResult<sp_Email_MatchRemindersResult> sp_Email_MatchReminders()
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+			return ((ISingleResult<sp_Email_MatchRemindersResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Email_ReminderLastSent")]
+		public ISingleResult<sp_Email_ReminderLastSentResult> sp_Email_ReminderLastSent()
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+			return ((ISingleResult<sp_Email_ReminderLastSentResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Email_NewsletterLastSent")]
+		public ISingleResult<sp_Email_NewsletterLastSentResult> sp_Email_NewsletterLastSent()
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+			return ((ISingleResult<sp_Email_NewsletterLastSentResult>)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.News")]
@@ -3252,7 +3273,7 @@ namespace BallyliffinGAA
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_timestamp", DbType="rowversion", CanBeNull=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_timestamp", DbType="rowversion")]
 		public System.Data.Linq.Binary timestamp
 		{
 			get
@@ -3556,7 +3577,7 @@ namespace BallyliffinGAA
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_timestamp", DbType="rowversion", CanBeNull=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_timestamp", DbType="rowversion")]
 		public System.Data.Linq.Binary timestamp
 		{
 			get
@@ -4092,6 +4113,552 @@ namespace BallyliffinGAA
 				if ((this._Column1 != value))
 				{
 					this._Column1 = value;
+				}
+			}
+		}
+	}
+	
+	public partial class sp_Email_MatchRemindersResult
+	{
+		
+		private int _MatchID;
+		
+		private int _TeamAID;
+		
+		private int _TeamBID;
+		
+		private int _RefereeID;
+		
+		private System.Nullable<int> _TeamAScore;
+		
+		private System.Nullable<int> _TeamBScore;
+		
+		private bool _IsPlayed;
+		
+		private System.Nullable<System.DateTime> _MatchDate;
+		
+		private int _VenueID;
+		
+		private bool _IsDeleted;
+		
+		private System.Guid _MatchKey;
+		
+		private System.Data.Linq.Binary _timestamp;
+		
+		private System.Nullable<int> _MemberID;
+		
+		private string _FirstName;
+		
+		private string _LastName;
+		
+		private string _EmailAddress;
+		
+		private string _PhoneNo;
+		
+		private System.Nullable<int> _TeamID;
+		
+		private System.Nullable<int> _RoleID;
+		
+		private System.Nullable<System.DateTime> _DOB;
+		
+		private System.Nullable<System.DateTime> _DateJoined;
+		
+		private System.Nullable<bool> _IsDeleted1;
+		
+		private System.Nullable<System.Guid> _MemberKey;
+		
+		private System.Data.Linq.Binary _timestamp1;
+		
+		private string _TeamA;
+		
+		private string _TeamB;
+		
+		private string _VenueDesc;
+		
+		public sp_Email_MatchRemindersResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MatchID", DbType="Int NOT NULL")]
+		public int MatchID
+		{
+			get
+			{
+				return this._MatchID;
+			}
+			set
+			{
+				if ((this._MatchID != value))
+				{
+					this._MatchID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TeamAID", DbType="Int NOT NULL")]
+		public int TeamAID
+		{
+			get
+			{
+				return this._TeamAID;
+			}
+			set
+			{
+				if ((this._TeamAID != value))
+				{
+					this._TeamAID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TeamBID", DbType="Int NOT NULL")]
+		public int TeamBID
+		{
+			get
+			{
+				return this._TeamBID;
+			}
+			set
+			{
+				if ((this._TeamBID != value))
+				{
+					this._TeamBID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RefereeID", DbType="Int NOT NULL")]
+		public int RefereeID
+		{
+			get
+			{
+				return this._RefereeID;
+			}
+			set
+			{
+				if ((this._RefereeID != value))
+				{
+					this._RefereeID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TeamAScore", DbType="Int")]
+		public System.Nullable<int> TeamAScore
+		{
+			get
+			{
+				return this._TeamAScore;
+			}
+			set
+			{
+				if ((this._TeamAScore != value))
+				{
+					this._TeamAScore = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TeamBScore", DbType="Int")]
+		public System.Nullable<int> TeamBScore
+		{
+			get
+			{
+				return this._TeamBScore;
+			}
+			set
+			{
+				if ((this._TeamBScore != value))
+				{
+					this._TeamBScore = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsPlayed", DbType="Bit NOT NULL")]
+		public bool IsPlayed
+		{
+			get
+			{
+				return this._IsPlayed;
+			}
+			set
+			{
+				if ((this._IsPlayed != value))
+				{
+					this._IsPlayed = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MatchDate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> MatchDate
+		{
+			get
+			{
+				return this._MatchDate;
+			}
+			set
+			{
+				if ((this._MatchDate != value))
+				{
+					this._MatchDate = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VenueID", DbType="Int NOT NULL")]
+		public int VenueID
+		{
+			get
+			{
+				return this._VenueID;
+			}
+			set
+			{
+				if ((this._VenueID != value))
+				{
+					this._VenueID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsDeleted", DbType="Bit NOT NULL")]
+		public bool IsDeleted
+		{
+			get
+			{
+				return this._IsDeleted;
+			}
+			set
+			{
+				if ((this._IsDeleted != value))
+				{
+					this._IsDeleted = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MatchKey", DbType="UniqueIdentifier NOT NULL")]
+		public System.Guid MatchKey
+		{
+			get
+			{
+				return this._MatchKey;
+			}
+			set
+			{
+				if ((this._MatchKey != value))
+				{
+					this._MatchKey = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_timestamp", DbType="rowversion NOT NULL", CanBeNull=false)]
+		public System.Data.Linq.Binary timestamp
+		{
+			get
+			{
+				return this._timestamp;
+			}
+			set
+			{
+				if ((this._timestamp != value))
+				{
+					this._timestamp = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemberID", DbType="Int")]
+		public System.Nullable<int> MemberID
+		{
+			get
+			{
+				return this._MemberID;
+			}
+			set
+			{
+				if ((this._MemberID != value))
+				{
+					this._MemberID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FirstName", DbType="VarChar(50)")]
+		public string FirstName
+		{
+			get
+			{
+				return this._FirstName;
+			}
+			set
+			{
+				if ((this._FirstName != value))
+				{
+					this._FirstName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LastName", DbType="VarChar(50)")]
+		public string LastName
+		{
+			get
+			{
+				return this._LastName;
+			}
+			set
+			{
+				if ((this._LastName != value))
+				{
+					this._LastName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmailAddress", DbType="VarChar(200)")]
+		public string EmailAddress
+		{
+			get
+			{
+				return this._EmailAddress;
+			}
+			set
+			{
+				if ((this._EmailAddress != value))
+				{
+					this._EmailAddress = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PhoneNo", DbType="VarChar(15)")]
+		public string PhoneNo
+		{
+			get
+			{
+				return this._PhoneNo;
+			}
+			set
+			{
+				if ((this._PhoneNo != value))
+				{
+					this._PhoneNo = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TeamID", DbType="Int")]
+		public System.Nullable<int> TeamID
+		{
+			get
+			{
+				return this._TeamID;
+			}
+			set
+			{
+				if ((this._TeamID != value))
+				{
+					this._TeamID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RoleID", DbType="Int")]
+		public System.Nullable<int> RoleID
+		{
+			get
+			{
+				return this._RoleID;
+			}
+			set
+			{
+				if ((this._RoleID != value))
+				{
+					this._RoleID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DOB", DbType="Date")]
+		public System.Nullable<System.DateTime> DOB
+		{
+			get
+			{
+				return this._DOB;
+			}
+			set
+			{
+				if ((this._DOB != value))
+				{
+					this._DOB = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DateJoined", DbType="Date")]
+		public System.Nullable<System.DateTime> DateJoined
+		{
+			get
+			{
+				return this._DateJoined;
+			}
+			set
+			{
+				if ((this._DateJoined != value))
+				{
+					this._DateJoined = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsDeleted1", DbType="Bit")]
+		public System.Nullable<bool> IsDeleted1
+		{
+			get
+			{
+				return this._IsDeleted1;
+			}
+			set
+			{
+				if ((this._IsDeleted1 != value))
+				{
+					this._IsDeleted1 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemberKey", DbType="UniqueIdentifier")]
+		public System.Nullable<System.Guid> MemberKey
+		{
+			get
+			{
+				return this._MemberKey;
+			}
+			set
+			{
+				if ((this._MemberKey != value))
+				{
+					this._MemberKey = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_timestamp1", DbType="rowversion")]
+		public System.Data.Linq.Binary timestamp1
+		{
+			get
+			{
+				return this._timestamp1;
+			}
+			set
+			{
+				if ((this._timestamp1 != value))
+				{
+					this._timestamp1 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TeamA", DbType="VarChar(200)")]
+		public string TeamA
+		{
+			get
+			{
+				return this._TeamA;
+			}
+			set
+			{
+				if ((this._TeamA != value))
+				{
+					this._TeamA = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TeamB", DbType="VarChar(200)")]
+		public string TeamB
+		{
+			get
+			{
+				return this._TeamB;
+			}
+			set
+			{
+				if ((this._TeamB != value))
+				{
+					this._TeamB = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VenueDesc", DbType="VarChar(200)")]
+		public string VenueDesc
+		{
+			get
+			{
+				return this._VenueDesc;
+			}
+			set
+			{
+				if ((this._VenueDesc != value))
+				{
+					this._VenueDesc = value;
+				}
+			}
+		}
+	}
+	
+	public partial class sp_Email_ReminderLastSentResult
+	{
+		
+		private System.DateTime _SentDate;
+		
+		public sp_Email_ReminderLastSentResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SentDate", DbType="DateTime NOT NULL")]
+		public System.DateTime SentDate
+		{
+			get
+			{
+				return this._SentDate;
+			}
+			set
+			{
+				if ((this._SentDate != value))
+				{
+					this._SentDate = value;
+				}
+			}
+		}
+	}
+	
+	public partial class sp_Email_NewsletterLastSentResult
+	{
+		
+		private System.DateTime _SentDate;
+		
+		public sp_Email_NewsletterLastSentResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SentDate", DbType="DateTime NOT NULL")]
+		public System.DateTime SentDate
+		{
+			get
+			{
+				return this._SentDate;
+			}
+			set
+			{
+				if ((this._SentDate != value))
+				{
+					this._SentDate = value;
 				}
 			}
 		}

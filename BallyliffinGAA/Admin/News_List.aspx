@@ -47,7 +47,7 @@
                                     <telerik:GridTemplateColumn HeaderText="Headline" DataField="NewsHeadline" SortExpression="NewsHeadline" UniqueName="NewsHeadline" AutoPostBackOnFilter="True" CurrentFilterFunction="Contains" FilterControlWidth="140px" FilterImageToolTip="Search" FilterImageUrl="images/Search.gif">
                                     <ItemTemplate>
                                     
-                                    <asp:HyperLink runat="server" Text=' <%# Eval("NewsHeadline") %>' NavigateUrl='<%# "~/Admin/News_Details.aspx?key="+Eval("NewsKey")+"&returnurl=News_List.aspx"+Request.Url.Query %>'></asp:HyperLink>
+                                    <asp:HyperLink runat="server" CssClass="namelink" Text='<%# Eval("NewsHeadline") %>' NavigateUrl='<%# "~/Admin/News_Details.aspx?key="+Eval("NewsKey")+"&returnurl=News_List.aspx"+Request.Url.Query %>'></asp:HyperLink>
                                     </ItemTemplate>
                                     </telerik:GridTemplateColumn>            
                                     

@@ -72,4029 +72,4595 @@ namespace Ballyliffin_Gaa
 				return this.GetTable<New>();
 			}
 		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Divisions_Delete")]
-		public int sp_Divisions_Delete([global::System.Data.Linq.Mapping.ParameterAttribute(Name="DivisionID", DbType="Int")] System.Nullable<int> divisionID)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), divisionID);
-			return ((int)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_visitorContacts_ViewAll")]
-		public ISingleResult<sp_visitorContacts_ViewAllResult> sp_visitorContacts_ViewAll()
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
-			return ((ISingleResult<sp_visitorContacts_ViewAllResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Divisions_Insert")]
-		public int sp_Divisions_Insert([global::System.Data.Linq.Mapping.ParameterAttribute(Name="DivisionDesc", DbType="VarChar(200)")] string divisionDesc)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), divisionDesc);
-			return ((int)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Divisions_ShortView")]
-		public ISingleResult<sp_Divisions_ShortViewResult> sp_Divisions_ShortView([global::System.Data.Linq.Mapping.ParameterAttribute(Name="DivisionID", DbType="Int")] System.Nullable<int> divisionID)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), divisionID);
-			return ((ISingleResult<sp_Divisions_ShortViewResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Divisions_SignleRecord")]
-		public ISingleResult<sp_Divisions_SignleRecordResult> sp_Divisions_SignleRecord([global::System.Data.Linq.Mapping.ParameterAttribute(Name="DivisionKey", DbType="UniqueIdentifier")] System.Nullable<System.Guid> divisionKey)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), divisionKey);
-			return ((ISingleResult<sp_Divisions_SignleRecordResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Divisions_Update")]
-		public int sp_Divisions_Update([global::System.Data.Linq.Mapping.ParameterAttribute(Name="DivisionKey", DbType="UniqueIdentifier")] System.Nullable<System.Guid> divisionKey, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="DivisionDesc", DbType="VarChar(200)")] string divisionDesc, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IsDeleted", DbType="Bit")] System.Nullable<bool> isDeleted, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="rowversion")] System.Data.Linq.Binary timestamp, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Result", DbType="Bit")] ref System.Nullable<bool> result)
-		{
-			IExecuteResult result1 = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), divisionKey, divisionDesc, isDeleted, timestamp, result);
-			result = ((System.Nullable<bool>)(result1.GetParameterValue(4)));
-			return ((int)(result1.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Divisions_ViewAll")]
-		public ISingleResult<sp_Divisions_ViewAllResult> sp_Divisions_ViewAll()
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
-			return ((ISingleResult<sp_Divisions_ViewAllResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Emails_Delete")]
-		public int sp_Emails_Delete([global::System.Data.Linq.Mapping.ParameterAttribute(Name="EmailID", DbType="Int")] System.Nullable<int> emailID)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), emailID);
-			return ((int)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Emails_Insert")]
-		public int sp_Emails_Insert([global::System.Data.Linq.Mapping.ParameterAttribute(Name="EmailTo", DbType="VarChar(200)")] string emailTo, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="EmailFrom", DbType="VarChar(200)")] string emailFrom, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="EmailSubject", DbType="VarChar(200)")] string emailSubject, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="EmailMessage", DbType="VarChar(MAX)")] string emailMessage, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SentDate", DbType="DateTime")] System.Nullable<System.DateTime> sentDate)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), emailTo, emailFrom, emailSubject, emailMessage, sentDate);
-			return ((int)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Emails_ShortView")]
-		public ISingleResult<sp_Emails_ShortViewResult> sp_Emails_ShortView([global::System.Data.Linq.Mapping.ParameterAttribute(Name="EmailID", DbType="Int")] System.Nullable<int> emailID)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), emailID);
-			return ((ISingleResult<sp_Emails_ShortViewResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Emails_SignleRecord")]
-		public ISingleResult<sp_Emails_SignleRecordResult> sp_Emails_SignleRecord([global::System.Data.Linq.Mapping.ParameterAttribute(Name="EmailKey", DbType="UniqueIdentifier")] System.Nullable<System.Guid> emailKey)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), emailKey);
-			return ((ISingleResult<sp_Emails_SignleRecordResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Emails_Update")]
-		public int sp_Emails_Update([global::System.Data.Linq.Mapping.ParameterAttribute(Name="EmailKey", DbType="UniqueIdentifier")] System.Nullable<System.Guid> emailKey, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="EmailTo", DbType="VarChar(200)")] string emailTo, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="EmailFrom", DbType="VarChar(200)")] string emailFrom, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="EmailSubject", DbType="VarChar(200)")] string emailSubject, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="EmailMessage", DbType="VarChar(MAX)")] string emailMessage, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SentDate", DbType="DateTime")] System.Nullable<System.DateTime> sentDate, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IsDeleted", DbType="Bit")] System.Nullable<bool> isDeleted, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="rowversion")] System.Data.Linq.Binary timestamp, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Result", DbType="Bit")] ref System.Nullable<bool> result)
-		{
-			IExecuteResult result1 = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), emailKey, emailTo, emailFrom, emailSubject, emailMessage, sentDate, isDeleted, timestamp, result);
-			result = ((System.Nullable<bool>)(result1.GetParameterValue(8)));
-			return ((int)(result1.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Emails_ViewAll")]
-		public ISingleResult<sp_Emails_ViewAllResult> sp_Emails_ViewAll()
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
-			return ((ISingleResult<sp_Emails_ViewAllResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_News_Delete")]
-		public int sp_News_Delete([global::System.Data.Linq.Mapping.ParameterAttribute(Name="NewsID", DbType="Int")] System.Nullable<int> newsID)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), newsID);
-			return ((int)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_News_Insert")]
-		public int sp_News_Insert([global::System.Data.Linq.Mapping.ParameterAttribute(Name="NewsHeadLine", DbType="VarChar(200)")] string newsHeadLine, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="NewsContent", DbType="VarChar(MAX)")] string newsContent, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="NewsDate", DbType="Date")] System.Nullable<System.DateTime> newsDate)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), newsHeadLine, newsContent, newsDate);
-			return ((int)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_News_ShortView")]
-		public ISingleResult<sp_News_ShortViewResult> sp_News_ShortView([global::System.Data.Linq.Mapping.ParameterAttribute(Name="NewsID", DbType="Int")] System.Nullable<int> newsID)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), newsID);
-			return ((ISingleResult<sp_News_ShortViewResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_News_SignleRecord")]
-		public ISingleResult<sp_News_SignleRecordResult> sp_News_SignleRecord([global::System.Data.Linq.Mapping.ParameterAttribute(Name="NewsKey", DbType="UniqueIdentifier")] System.Nullable<System.Guid> newsKey)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), newsKey);
-			return ((ISingleResult<sp_News_SignleRecordResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_News_Update")]
-		public int sp_News_Update([global::System.Data.Linq.Mapping.ParameterAttribute(Name="NewsKey", DbType="UniqueIdentifier")] System.Nullable<System.Guid> newsKey, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="NewsHeadLine", DbType="VarChar(200)")] string newsHeadLine, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="NewsContent", DbType="VarChar(MAX)")] string newsContent, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="NewsDate", DbType="Date")] System.Nullable<System.DateTime> newsDate, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IsDeleted", DbType="Bit")] System.Nullable<bool> isDeleted, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="rowversion")] System.Data.Linq.Binary timestamp, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Result", DbType="Bit")] ref System.Nullable<bool> result)
-		{
-			IExecuteResult result1 = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), newsKey, newsHeadLine, newsContent, newsDate, isDeleted, timestamp, result);
-			result = ((System.Nullable<bool>)(result1.GetParameterValue(6)));
-			return ((int)(result1.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_News_ViewAll")]
-		public ISingleResult<sp_News_ViewAllResult> sp_News_ViewAll()
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
-			return ((ISingleResult<sp_News_ViewAllResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Roles_Delete")]
-		public int sp_Roles_Delete([global::System.Data.Linq.Mapping.ParameterAttribute(Name="RoleID", DbType="Int")] System.Nullable<int> roleID)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), roleID);
-			return ((int)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Roles_Insert")]
-		public int sp_Roles_Insert([global::System.Data.Linq.Mapping.ParameterAttribute(Name="RoleDesc", DbType="VarChar(200)")] string roleDesc)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), roleDesc);
-			return ((int)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Roles_ShortView")]
-		public ISingleResult<sp_Roles_ShortViewResult> sp_Roles_ShortView([global::System.Data.Linq.Mapping.ParameterAttribute(Name="RoleID", DbType="Int")] System.Nullable<int> roleID)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), roleID);
-			return ((ISingleResult<sp_Roles_ShortViewResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Roles_SignleRecord")]
-		public ISingleResult<sp_Roles_SignleRecordResult> sp_Roles_SignleRecord([global::System.Data.Linq.Mapping.ParameterAttribute(Name="RoleKey", DbType="UniqueIdentifier")] System.Nullable<System.Guid> roleKey)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), roleKey);
-			return ((ISingleResult<sp_Roles_SignleRecordResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Roles_Update")]
-		public int sp_Roles_Update([global::System.Data.Linq.Mapping.ParameterAttribute(Name="RoleKey", DbType="UniqueIdentifier")] System.Nullable<System.Guid> roleKey, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="RoleDesc", DbType="VarChar(200)")] string roleDesc, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IsDeleted", DbType="Bit")] System.Nullable<bool> isDeleted, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="rowversion")] System.Data.Linq.Binary timestamp, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Result", DbType="Bit")] ref System.Nullable<bool> result)
-		{
-			IExecuteResult result1 = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), roleKey, roleDesc, isDeleted, timestamp, result);
-			result = ((System.Nullable<bool>)(result1.GetParameterValue(4)));
-			return ((int)(result1.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Roles_ViewAll")]
-		public ISingleResult<sp_Roles_ViewAllResult> sp_Roles_ViewAll()
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
-			return ((ISingleResult<sp_Roles_ViewAllResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Teams_Delete")]
-		public int sp_Teams_Delete([global::System.Data.Linq.Mapping.ParameterAttribute(Name="TeamID", DbType="Int")] System.Nullable<int> teamID)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), teamID);
-			return ((int)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Teams_Insert")]
-		public int sp_Teams_Insert([global::System.Data.Linq.Mapping.ParameterAttribute(Name="TeamDesc", DbType="VarChar(200)")] string teamDesc, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="DivisionID", DbType="Int")] System.Nullable<int> divisionID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IsOurs", DbType="Bit")] System.Nullable<bool> isOurs)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), teamDesc, divisionID, isOurs);
-			return ((int)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Teams_ShortView")]
-		public ISingleResult<sp_Teams_ShortViewResult> sp_Teams_ShortView([global::System.Data.Linq.Mapping.ParameterAttribute(Name="TeamID", DbType="Int")] System.Nullable<int> teamID)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), teamID);
-			return ((ISingleResult<sp_Teams_ShortViewResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Teams_SignleRecord")]
-		public ISingleResult<sp_Teams_SignleRecordResult> sp_Teams_SignleRecord([global::System.Data.Linq.Mapping.ParameterAttribute(Name="TeamKey", DbType="UniqueIdentifier")] System.Nullable<System.Guid> teamKey)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), teamKey);
-			return ((ISingleResult<sp_Teams_SignleRecordResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Teams_Update")]
-		public int sp_Teams_Update([global::System.Data.Linq.Mapping.ParameterAttribute(Name="TeamKey", DbType="UniqueIdentifier")] System.Nullable<System.Guid> teamKey, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="TeamDesc", DbType="VarChar(200)")] string teamDesc, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="DivisionID", DbType="Int")] System.Nullable<int> divisionID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IsOurs", DbType="Bit")] System.Nullable<bool> isOurs, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IsDeleted", DbType="Bit")] System.Nullable<bool> isDeleted, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="rowversion")] System.Data.Linq.Binary timestamp, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Result", DbType="Bit")] ref System.Nullable<bool> result)
-		{
-			IExecuteResult result1 = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), teamKey, teamDesc, divisionID, isOurs, isDeleted, timestamp, result);
-			result = ((System.Nullable<bool>)(result1.GetParameterValue(6)));
-			return ((int)(result1.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Teams_ViewAll")]
-		public ISingleResult<sp_Teams_ViewAllResult> sp_Teams_ViewAll()
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
-			return ((ISingleResult<sp_Teams_ViewAllResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_visitorContacts_Delete")]
-		public int sp_visitorContacts_Delete([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> visitorContactID)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), visitorContactID);
-			return ((int)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_visitorContacts_Insert")]
-		public int sp_visitorContacts_Insert([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(200)")] string visitorContactDesc, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ContactName", DbType="VarChar(50)")] string contactName, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="EmailAddress", DbType="VarChar(200)")] string emailAddress, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Message", DbType="VarChar(MAX)")] string message, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ContactDate", DbType="DateTime")] System.Nullable<System.DateTime> contactDate)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), visitorContactDesc, contactName, emailAddress, message, contactDate);
-			return ((int)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_visitorContacts_ShortView")]
-		public ISingleResult<sp_visitorContacts_ShortViewResult> sp_visitorContacts_ShortView([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> visitorContactID)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), visitorContactID);
-			return ((ISingleResult<sp_visitorContacts_ShortViewResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_visitorContacts_SignleRecord")]
-		public ISingleResult<sp_visitorContacts_SignleRecordResult> sp_visitorContacts_SignleRecord([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="UniqueIdentifier")] System.Nullable<System.Guid> visitorContactKey)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), visitorContactKey);
-			return ((ISingleResult<sp_visitorContacts_SignleRecordResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_visitorContacts_Update")]
-		public int sp_visitorContacts_Update([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="UniqueIdentifier")] System.Nullable<System.Guid> visitorContactKey, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(200)")] string visitorContactDesc, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ContactName", DbType="VarChar(50)")] string contactName, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="EmailAddress", DbType="VarChar(200)")] string emailAddress, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Message", DbType="VarChar(MAX)")] string message, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ContactDate", DbType="DateTime")] System.Nullable<System.DateTime> contactDate, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IsDeleted", DbType="Bit")] System.Nullable<bool> isDeleted, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="rowversion")] System.Data.Linq.Binary timestamp, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Result", DbType="Bit")] ref System.Nullable<bool> result)
-		{
-			IExecuteResult result1 = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), visitorContactKey, visitorContactDesc, contactName, emailAddress, message, contactDate, isDeleted, timestamp, result);
-			result = ((System.Nullable<bool>)(result1.GetParameterValue(8)));
-			return ((int)(result1.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Venues_Delete")]
-		public int sp_Venues_Delete([global::System.Data.Linq.Mapping.ParameterAttribute(Name="VenueID", DbType="Int")] System.Nullable<int> venueID)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), venueID);
-			return ((int)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Venues_ViewAll")]
-		public ISingleResult<sp_Venues_ViewAllResult> sp_Venues_ViewAll()
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
-			return ((ISingleResult<sp_Venues_ViewAllResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Venues_Insert")]
-		public int sp_Venues_Insert([global::System.Data.Linq.Mapping.ParameterAttribute(Name="VenueDesc", DbType="VarChar(200)")] string venueDesc)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), venueDesc);
-			return ((int)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Venues_ShortView")]
-		public ISingleResult<sp_Venues_ShortViewResult> sp_Venues_ShortView([global::System.Data.Linq.Mapping.ParameterAttribute(Name="VenueID", DbType="Int")] System.Nullable<int> venueID)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), venueID);
-			return ((ISingleResult<sp_Venues_ShortViewResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Venues_SignleRecord")]
-		public ISingleResult<sp_Venues_SignleRecordResult> sp_Venues_SignleRecord([global::System.Data.Linq.Mapping.ParameterAttribute(Name="VenueKey", DbType="UniqueIdentifier")] System.Nullable<System.Guid> venueKey)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), venueKey);
-			return ((ISingleResult<sp_Venues_SignleRecordResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Venues_Update")]
-		public int sp_Venues_Update([global::System.Data.Linq.Mapping.ParameterAttribute(Name="VenueKey", DbType="UniqueIdentifier")] System.Nullable<System.Guid> venueKey, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="VenueDesc", DbType="VarChar(200)")] string venueDesc, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IsDeleted", DbType="Bit")] System.Nullable<bool> isDeleted, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="rowversion")] System.Data.Linq.Binary timestamp, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Result", DbType="Bit")] ref System.Nullable<bool> result)
-		{
-			IExecuteResult result1 = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), venueKey, venueDesc, isDeleted, timestamp, result);
-			result = ((System.Nullable<bool>)(result1.GetParameterValue(4)));
-			return ((int)(result1.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_NewsLetter_Contents")]
-		public ISingleResult<sp_NewsLetter_ContentsResult> sp_NewsLetter_Contents()
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
-			return ((ISingleResult<sp_NewsLetter_ContentsResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_email_getAddresses")]
-		public ISingleResult<sp_email_getAddressesResult> sp_email_getAddresses()
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
-			return ((ISingleResult<sp_email_getAddressesResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_MembersByRole_ShortView")]
-		public ISingleResult<sp_MembersByRole_ShortViewResult> sp_MembersByRole_ShortView()
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
-			return ((ISingleResult<sp_MembersByRole_ShortViewResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Members_ViewAll")]
-		public ISingleResult<sp_Members_ViewAllResult> sp_Members_ViewAll([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Role", DbType="Int")] System.Nullable<int> role)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), role);
-			return ((ISingleResult<sp_Members_ViewAllResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Members_Delete")]
-		public int sp_Members_Delete([global::System.Data.Linq.Mapping.ParameterAttribute(Name="MemberID", DbType="Int")] System.Nullable<int> memberID)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), memberID);
-			return ((int)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Members_Insert")]
-		public int sp_Members_Insert([global::System.Data.Linq.Mapping.ParameterAttribute(Name="FirstName", DbType="VarChar(50)")] string firstName, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="LastName", DbType="VarChar(50)")] string lastName, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="EmailAddress", DbType="VarChar(200)")] string emailAddress, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PhoneNo", DbType="VarChar(15)")] string phoneNo, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="TeamID", DbType="Int")] System.Nullable<int> teamID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="RoleID", DbType="Int")] System.Nullable<int> roleID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="DOB", DbType="Date")] System.Nullable<System.DateTime> dOB, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="DateJoined", DbType="Date")] System.Nullable<System.DateTime> dateJoined)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), firstName, lastName, emailAddress, phoneNo, teamID, roleID, dOB, dateJoined);
-			return ((int)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Members_ShortView")]
-		public ISingleResult<sp_Members_ShortViewResult> sp_Members_ShortView([global::System.Data.Linq.Mapping.ParameterAttribute(Name="MemberID", DbType="Int")] System.Nullable<int> memberID)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), memberID);
-			return ((ISingleResult<sp_Members_ShortViewResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Members_SignleRecord")]
-		public ISingleResult<sp_Members_SignleRecordResult> sp_Members_SignleRecord([global::System.Data.Linq.Mapping.ParameterAttribute(Name="MemberKey", DbType="UniqueIdentifier")] System.Nullable<System.Guid> memberKey)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), memberKey);
-			return ((ISingleResult<sp_Members_SignleRecordResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Members_Update")]
-		public int sp_Members_Update([global::System.Data.Linq.Mapping.ParameterAttribute(Name="MemberKey", DbType="UniqueIdentifier")] System.Nullable<System.Guid> memberKey, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="FirstName", DbType="VarChar(50)")] string firstName, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="LastName", DbType="VarChar(50)")] string lastName, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="EmailAddress", DbType="VarChar(200)")] string emailAddress, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PhoneNo", DbType="VarChar(15)")] string phoneNo, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="TeamID", DbType="Int")] System.Nullable<int> teamID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="RoleID", DbType="Int")] System.Nullable<int> roleID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="DOB", DbType="Date")] System.Nullable<System.DateTime> dOB, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="DateJoined", DbType="Date")] System.Nullable<System.DateTime> dateJoined, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IsDeleted", DbType="Bit")] System.Nullable<bool> isDeleted, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="rowversion")] System.Data.Linq.Binary timestamp, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Result", DbType="Bit")] ref System.Nullable<bool> result)
-		{
-			IExecuteResult result1 = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), memberKey, firstName, lastName, emailAddress, phoneNo, teamID, roleID, dOB, dateJoined, isDeleted, timestamp, result);
-			result = ((System.Nullable<bool>)(result1.GetParameterValue(11)));
-			return ((int)(result1.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Matches_ViewAll")]
-		public ISingleResult<sp_Matches_ViewAllResult> sp_Matches_ViewAll()
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
-			return ((ISingleResult<sp_Matches_ViewAllResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Matches_Delete")]
-		public int sp_Matches_Delete([global::System.Data.Linq.Mapping.ParameterAttribute(Name="MatchID", DbType="Int")] System.Nullable<int> matchID)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), matchID);
-			return ((int)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Matches_Insert")]
-		public int sp_Matches_Insert([global::System.Data.Linq.Mapping.ParameterAttribute(Name="TeamAID", DbType="Int")] System.Nullable<int> teamAID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="TeamBID", DbType="Int")] System.Nullable<int> teamBID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="RefereeID", DbType="Int")] System.Nullable<int> refereeID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="TeamAScore", DbType="Int")] System.Nullable<int> teamAScore, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="TeamBScore", DbType="Int")] System.Nullable<int> teamBScore, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IsPlayed", DbType="Bit")] System.Nullable<bool> isPlayed, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="MatchDate", DbType="DateTime")] System.Nullable<System.DateTime> matchDate, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="VenueID", DbType="Int")] System.Nullable<int> venueID)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), teamAID, teamBID, refereeID, teamAScore, teamBScore, isPlayed, matchDate, venueID);
-			return ((int)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Matches_SignleRecord")]
-		public ISingleResult<sp_Matches_SignleRecordResult> sp_Matches_SignleRecord([global::System.Data.Linq.Mapping.ParameterAttribute(Name="MatchKey", DbType="UniqueIdentifier")] System.Nullable<System.Guid> matchKey)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), matchKey);
-			return ((ISingleResult<sp_Matches_SignleRecordResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Matches_Update")]
-		public int sp_Matches_Update([global::System.Data.Linq.Mapping.ParameterAttribute(Name="MatchKey", DbType="UniqueIdentifier")] System.Nullable<System.Guid> matchKey, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="TeamAID", DbType="Int")] System.Nullable<int> teamAID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="TeamBID", DbType="Int")] System.Nullable<int> teamBID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="RefereeID", DbType="Int")] System.Nullable<int> refereeID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="TeamAScore", DbType="Int")] System.Nullable<int> teamAScore, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="TeamBScore", DbType="Int")] System.Nullable<int> teamBScore, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IsPlayed", DbType="Bit")] System.Nullable<bool> isPlayed, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="MatchDate", DbType="DateTime")] System.Nullable<System.DateTime> matchDate, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="VenueID", DbType="Int")] System.Nullable<int> venueID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IsDeleted", DbType="Bit")] System.Nullable<bool> isDeleted, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="rowversion")] System.Data.Linq.Binary timestamp, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Result", DbType="Bit")] ref System.Nullable<bool> result)
-		{
-			IExecuteResult result1 = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), matchKey, teamAID, teamBID, refereeID, teamAScore, teamBScore, isPlayed, matchDate, venueID, isDeleted, timestamp, result);
-			result = ((System.Nullable<bool>)(result1.GetParameterValue(11)));
-			return ((int)(result1.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Managers_ShortView")]
-		public ISingleResult<sp_Managers_ShortViewResult> sp_Managers_ShortView([global::System.Data.Linq.Mapping.ParameterAttribute(Name="MemberID", DbType="Int")] System.Nullable<int> memberID)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), memberID);
-			return ((ISingleResult<sp_Managers_ShortViewResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.aspnet_Membership_GetAllUsers")]
-		public int aspnet_Membership_GetAllUsers([global::System.Data.Linq.Mapping.ParameterAttribute(Name="ApplicationName", DbType="NVarChar(256)")] string applicationName, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PageIndex", DbType="Int")] System.Nullable<int> pageIndex, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PageSize", DbType="Int")] System.Nullable<int> pageSize)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), applicationName, pageIndex, pageSize);
-			return ((int)(result.ReturnValue));
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.News")]
-	public partial class New : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _NewsID;
-		
-		private string _NewsHeadLine;
-		
-		private string _NewsContent;
-		
-		private System.DateTime _NewsDate;
-		
-		private bool _IsDeleted;
-		
-		private System.Guid _NewsKey;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnNewsIDChanging(int value);
-    partial void OnNewsIDChanged();
-    partial void OnNewsHeadLineChanging(string value);
-    partial void OnNewsHeadLineChanged();
-    partial void OnNewsContentChanging(string value);
-    partial void OnNewsContentChanged();
-    partial void OnNewsDateChanging(System.DateTime value);
-    partial void OnNewsDateChanged();
-    partial void OnIsDeletedChanging(bool value);
-    partial void OnIsDeletedChanged();
-    partial void OnNewsKeyChanging(System.Guid value);
-    partial void OnNewsKeyChanged();
-    #endregion
-		
-		public New()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NewsID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int NewsID
-		{
-			get
-			{
-				return this._NewsID;
-			}
-			set
-			{
-				if ((this._NewsID != value))
-				{
-					this.OnNewsIDChanging(value);
-					this.SendPropertyChanging();
-					this._NewsID = value;
-					this.SendPropertyChanged("NewsID");
-					this.OnNewsIDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NewsHeadLine", DbType="VarChar(200) NOT NULL", CanBeNull=false)]
-		public string NewsHeadLine
-		{
-			get
-			{
-				return this._NewsHeadLine;
-			}
-			set
-			{
-				if ((this._NewsHeadLine != value))
-				{
-					this.OnNewsHeadLineChanging(value);
-					this.SendPropertyChanging();
-					this._NewsHeadLine = value;
-					this.SendPropertyChanged("NewsHeadLine");
-					this.OnNewsHeadLineChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NewsContent", DbType="VarChar(MAX)")]
-		public string NewsContent
-		{
-			get
-			{
-				return this._NewsContent;
-			}
-			set
-			{
-				if ((this._NewsContent != value))
-				{
-					this.OnNewsContentChanging(value);
-					this.SendPropertyChanging();
-					this._NewsContent = value;
-					this.SendPropertyChanged("NewsContent");
-					this.OnNewsContentChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NewsDate", DbType="Date NOT NULL")]
-		public System.DateTime NewsDate
-		{
-			get
-			{
-				return this._NewsDate;
-			}
-			set
-			{
-				if ((this._NewsDate != value))
-				{
-					this.OnNewsDateChanging(value);
-					this.SendPropertyChanging();
-					this._NewsDate = value;
-					this.SendPropertyChanged("NewsDate");
-					this.OnNewsDateChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsDeleted", DbType="Bit NOT NULL")]
-		public bool IsDeleted
-		{
-			get
-			{
-				return this._IsDeleted;
-			}
-			set
-			{
-				if ((this._IsDeleted != value))
-				{
-					this.OnIsDeletedChanging(value);
-					this.SendPropertyChanging();
-					this._IsDeleted = value;
-					this.SendPropertyChanged("IsDeleted");
-					this.OnIsDeletedChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NewsKey", DbType="UniqueIdentifier NOT NULL")]
-		public System.Guid NewsKey
-		{
-			get
-			{
-				return this._NewsKey;
-			}
-			set
-			{
-				if ((this._NewsKey != value))
-				{
-					this.OnNewsKeyChanging(value);
-					this.SendPropertyChanging();
-					this._NewsKey = value;
-					this.SendPropertyChanged("NewsKey");
-					this.OnNewsKeyChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	public partial class sp_visitorContacts_ViewAllResult
-	{
-		
-		private int _VisitorContactID;
-		
-		private string _VisitorContactDesc;
-		
-		private string _ContactName;
-		
-		private string _EmailAddress;
-		
-		private string _ContactMessage;
-		
-		private System.DateTime _ContactDate;
-		
-		private bool _IsDeleted;
-		
-		private System.Guid _VisitorContactKey;
-		
-		private System.Data.Linq.Binary _timestamp;
-		
-		public sp_visitorContacts_ViewAllResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VisitorContactID", DbType="Int NOT NULL")]
-		public int VisitorContactID
-		{
-			get
-			{
-				return this._VisitorContactID;
-			}
-			set
-			{
-				if ((this._VisitorContactID != value))
-				{
-					this._VisitorContactID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VisitorContactDesc", DbType="VarChar(200)")]
-		public string VisitorContactDesc
-		{
-			get
-			{
-				return this._VisitorContactDesc;
-			}
-			set
-			{
-				if ((this._VisitorContactDesc != value))
-				{
-					this._VisitorContactDesc = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ContactName", DbType="VarChar(200)")]
-		public string ContactName
-		{
-			get
-			{
-				return this._ContactName;
-			}
-			set
-			{
-				if ((this._ContactName != value))
-				{
-					this._ContactName = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmailAddress", DbType="VarChar(200) NOT NULL", CanBeNull=false)]
-		public string EmailAddress
-		{
-			get
-			{
-				return this._EmailAddress;
-			}
-			set
-			{
-				if ((this._EmailAddress != value))
-				{
-					this._EmailAddress = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ContactMessage", DbType="VarChar(MAX)")]
-		public string ContactMessage
-		{
-			get
-			{
-				return this._ContactMessage;
-			}
-			set
-			{
-				if ((this._ContactMessage != value))
-				{
-					this._ContactMessage = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ContactDate", DbType="DateTime NOT NULL")]
-		public System.DateTime ContactDate
-		{
-			get
-			{
-				return this._ContactDate;
-			}
-			set
-			{
-				if ((this._ContactDate != value))
-				{
-					this._ContactDate = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsDeleted", DbType="Bit NOT NULL")]
-		public bool IsDeleted
-		{
-			get
-			{
-				return this._IsDeleted;
-			}
-			set
-			{
-				if ((this._IsDeleted != value))
-				{
-					this._IsDeleted = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VisitorContactKey", DbType="UniqueIdentifier NOT NULL")]
-		public System.Guid VisitorContactKey
-		{
-			get
-			{
-				return this._VisitorContactKey;
-			}
-			set
-			{
-				if ((this._VisitorContactKey != value))
-				{
-					this._VisitorContactKey = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_timestamp", DbType="rowversion NOT NULL", CanBeNull=false)]
-		public System.Data.Linq.Binary timestamp
-		{
-			get
-			{
-				return this._timestamp;
-			}
-			set
-			{
-				if ((this._timestamp != value))
-				{
-					this._timestamp = value;
-				}
-			}
-		}
-	}
-	
-	public partial class sp_Divisions_ShortViewResult
-	{
-		
-		private int _DivisionID;
-		
-		private string _DivisionDesc;
-		
-		public sp_Divisions_ShortViewResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DivisionID", DbType="Int NOT NULL")]
-		public int DivisionID
-		{
-			get
-			{
-				return this._DivisionID;
-			}
-			set
-			{
-				if ((this._DivisionID != value))
-				{
-					this._DivisionID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DivisionDesc", DbType="VarChar(200) NOT NULL", CanBeNull=false)]
-		public string DivisionDesc
-		{
-			get
-			{
-				return this._DivisionDesc;
-			}
-			set
-			{
-				if ((this._DivisionDesc != value))
-				{
-					this._DivisionDesc = value;
-				}
-			}
-		}
-	}
-	
-	public partial class sp_Divisions_SignleRecordResult
-	{
-		
-		private int _DivisionID;
-		
-		private string _DivisionDesc;
-		
-		private bool _IsDeleted;
-		
-		private System.Guid _DivisionKey;
-		
-		private System.Data.Linq.Binary _timestamp;
-		
-		public sp_Divisions_SignleRecordResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DivisionID", DbType="Int NOT NULL")]
-		public int DivisionID
-		{
-			get
-			{
-				return this._DivisionID;
-			}
-			set
-			{
-				if ((this._DivisionID != value))
-				{
-					this._DivisionID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DivisionDesc", DbType="VarChar(200) NOT NULL", CanBeNull=false)]
-		public string DivisionDesc
-		{
-			get
-			{
-				return this._DivisionDesc;
-			}
-			set
-			{
-				if ((this._DivisionDesc != value))
-				{
-					this._DivisionDesc = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsDeleted", DbType="Bit NOT NULL")]
-		public bool IsDeleted
-		{
-			get
-			{
-				return this._IsDeleted;
-			}
-			set
-			{
-				if ((this._IsDeleted != value))
-				{
-					this._IsDeleted = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DivisionKey", DbType="UniqueIdentifier NOT NULL")]
-		public System.Guid DivisionKey
-		{
-			get
-			{
-				return this._DivisionKey;
-			}
-			set
-			{
-				if ((this._DivisionKey != value))
-				{
-					this._DivisionKey = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_timestamp", DbType="rowversion NOT NULL", CanBeNull=false)]
-		public System.Data.Linq.Binary timestamp
-		{
-			get
-			{
-				return this._timestamp;
-			}
-			set
-			{
-				if ((this._timestamp != value))
-				{
-					this._timestamp = value;
-				}
-			}
-		}
-	}
-	
-	public partial class sp_Divisions_ViewAllResult
-	{
-		
-		private int _DivisionID;
-		
-		private string _DivisionDesc;
-		
-		private bool _IsDeleted;
-		
-		private System.Guid _DivisionKey;
-		
-		private System.Data.Linq.Binary _timestamp;
-		
-		public sp_Divisions_ViewAllResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DivisionID", DbType="Int NOT NULL")]
-		public int DivisionID
-		{
-			get
-			{
-				return this._DivisionID;
-			}
-			set
-			{
-				if ((this._DivisionID != value))
-				{
-					this._DivisionID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DivisionDesc", DbType="VarChar(200) NOT NULL", CanBeNull=false)]
-		public string DivisionDesc
-		{
-			get
-			{
-				return this._DivisionDesc;
-			}
-			set
-			{
-				if ((this._DivisionDesc != value))
-				{
-					this._DivisionDesc = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsDeleted", DbType="Bit NOT NULL")]
-		public bool IsDeleted
-		{
-			get
-			{
-				return this._IsDeleted;
-			}
-			set
-			{
-				if ((this._IsDeleted != value))
-				{
-					this._IsDeleted = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DivisionKey", DbType="UniqueIdentifier NOT NULL")]
-		public System.Guid DivisionKey
-		{
-			get
-			{
-				return this._DivisionKey;
-			}
-			set
-			{
-				if ((this._DivisionKey != value))
-				{
-					this._DivisionKey = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_timestamp", DbType="rowversion NOT NULL", CanBeNull=false)]
-		public System.Data.Linq.Binary timestamp
-		{
-			get
-			{
-				return this._timestamp;
-			}
-			set
-			{
-				if ((this._timestamp != value))
-				{
-					this._timestamp = value;
-				}
-			}
-		}
-	}
-	
-	public partial class sp_Emails_ShortViewResult
-	{
-		
-		private int _EmailID;
-		
-		private string _EmailSubject;
-		
-		public sp_Emails_ShortViewResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmailID", DbType="Int NOT NULL")]
-		public int EmailID
-		{
-			get
-			{
-				return this._EmailID;
-			}
-			set
-			{
-				if ((this._EmailID != value))
-				{
-					this._EmailID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmailSubject", DbType="VarChar(200) NOT NULL", CanBeNull=false)]
-		public string EmailSubject
-		{
-			get
-			{
-				return this._EmailSubject;
-			}
-			set
-			{
-				if ((this._EmailSubject != value))
-				{
-					this._EmailSubject = value;
-				}
-			}
-		}
-	}
-	
-	public partial class sp_Emails_SignleRecordResult
-	{
-		
-		private int _EmailID;
-		
-		private string _EmailTo;
-		
-		private string _EmailFrom;
-		
-		private string _EmailSubject;
-		
-		private string _EmailMessage;
-		
-		private System.DateTime _SentDate;
-		
-		private bool _IsDeleted;
-		
-		private System.Guid _EmailKey;
-		
-		private System.Data.Linq.Binary _timestamp;
-		
-		public sp_Emails_SignleRecordResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmailID", DbType="Int NOT NULL")]
-		public int EmailID
-		{
-			get
-			{
-				return this._EmailID;
-			}
-			set
-			{
-				if ((this._EmailID != value))
-				{
-					this._EmailID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmailTo", DbType="VarChar(200) NOT NULL", CanBeNull=false)]
-		public string EmailTo
-		{
-			get
-			{
-				return this._EmailTo;
-			}
-			set
-			{
-				if ((this._EmailTo != value))
-				{
-					this._EmailTo = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmailFrom", DbType="VarChar(200) NOT NULL", CanBeNull=false)]
-		public string EmailFrom
-		{
-			get
-			{
-				return this._EmailFrom;
-			}
-			set
-			{
-				if ((this._EmailFrom != value))
-				{
-					this._EmailFrom = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmailSubject", DbType="VarChar(200) NOT NULL", CanBeNull=false)]
-		public string EmailSubject
-		{
-			get
-			{
-				return this._EmailSubject;
-			}
-			set
-			{
-				if ((this._EmailSubject != value))
-				{
-					this._EmailSubject = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmailMessage", DbType="VarChar(MAX)")]
-		public string EmailMessage
-		{
-			get
-			{
-				return this._EmailMessage;
-			}
-			set
-			{
-				if ((this._EmailMessage != value))
-				{
-					this._EmailMessage = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SentDate", DbType="DateTime NOT NULL")]
-		public System.DateTime SentDate
-		{
-			get
-			{
-				return this._SentDate;
-			}
-			set
-			{
-				if ((this._SentDate != value))
-				{
-					this._SentDate = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsDeleted", DbType="Bit NOT NULL")]
-		public bool IsDeleted
-		{
-			get
-			{
-				return this._IsDeleted;
-			}
-			set
-			{
-				if ((this._IsDeleted != value))
-				{
-					this._IsDeleted = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmailKey", DbType="UniqueIdentifier NOT NULL")]
-		public System.Guid EmailKey
-		{
-			get
-			{
-				return this._EmailKey;
-			}
-			set
-			{
-				if ((this._EmailKey != value))
-				{
-					this._EmailKey = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_timestamp", DbType="rowversion NOT NULL", CanBeNull=false)]
-		public System.Data.Linq.Binary timestamp
-		{
-			get
-			{
-				return this._timestamp;
-			}
-			set
-			{
-				if ((this._timestamp != value))
-				{
-					this._timestamp = value;
-				}
-			}
-		}
-	}
-	
-	public partial class sp_Emails_ViewAllResult
-	{
-		
-		private int _EmailID;
-		
-		private string _EmailTo;
-		
-		private string _EmailFrom;
-		
-		private string _EmailSubject;
-		
-		private string _EmailMessage;
-		
-		private System.DateTime _SentDate;
-		
-		private bool _IsDeleted;
-		
-		private System.Guid _EmailKey;
-		
-		private System.Data.Linq.Binary _timestamp;
-		
-		public sp_Emails_ViewAllResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmailID", DbType="Int NOT NULL")]
-		public int EmailID
-		{
-			get
-			{
-				return this._EmailID;
-			}
-			set
-			{
-				if ((this._EmailID != value))
-				{
-					this._EmailID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmailTo", DbType="VarChar(200) NOT NULL", CanBeNull=false)]
-		public string EmailTo
-		{
-			get
-			{
-				return this._EmailTo;
-			}
-			set
-			{
-				if ((this._EmailTo != value))
-				{
-					this._EmailTo = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmailFrom", DbType="VarChar(200) NOT NULL", CanBeNull=false)]
-		public string EmailFrom
-		{
-			get
-			{
-				return this._EmailFrom;
-			}
-			set
-			{
-				if ((this._EmailFrom != value))
-				{
-					this._EmailFrom = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmailSubject", DbType="VarChar(200) NOT NULL", CanBeNull=false)]
-		public string EmailSubject
-		{
-			get
-			{
-				return this._EmailSubject;
-			}
-			set
-			{
-				if ((this._EmailSubject != value))
-				{
-					this._EmailSubject = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmailMessage", DbType="VarChar(MAX)")]
-		public string EmailMessage
-		{
-			get
-			{
-				return this._EmailMessage;
-			}
-			set
-			{
-				if ((this._EmailMessage != value))
-				{
-					this._EmailMessage = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SentDate", DbType="DateTime NOT NULL")]
-		public System.DateTime SentDate
-		{
-			get
-			{
-				return this._SentDate;
-			}
-			set
-			{
-				if ((this._SentDate != value))
-				{
-					this._SentDate = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsDeleted", DbType="Bit NOT NULL")]
-		public bool IsDeleted
-		{
-			get
-			{
-				return this._IsDeleted;
-			}
-			set
-			{
-				if ((this._IsDeleted != value))
-				{
-					this._IsDeleted = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmailKey", DbType="UniqueIdentifier NOT NULL")]
-		public System.Guid EmailKey
-		{
-			get
-			{
-				return this._EmailKey;
-			}
-			set
-			{
-				if ((this._EmailKey != value))
-				{
-					this._EmailKey = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_timestamp", DbType="rowversion NOT NULL", CanBeNull=false)]
-		public System.Data.Linq.Binary timestamp
-		{
-			get
-			{
-				return this._timestamp;
-			}
-			set
-			{
-				if ((this._timestamp != value))
-				{
-					this._timestamp = value;
-				}
-			}
-		}
-	}
-	
-	public partial class sp_News_ShortViewResult
-	{
-		
-		private int _NewsID;
-		
-		private string _NewsHeadline;
-		
-		public sp_News_ShortViewResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NewsID", DbType="Int NOT NULL")]
-		public int NewsID
-		{
-			get
-			{
-				return this._NewsID;
-			}
-			set
-			{
-				if ((this._NewsID != value))
-				{
-					this._NewsID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NewsHeadline", DbType="VarChar(200) NOT NULL", CanBeNull=false)]
-		public string NewsHeadline
-		{
-			get
-			{
-				return this._NewsHeadline;
-			}
-			set
-			{
-				if ((this._NewsHeadline != value))
-				{
-					this._NewsHeadline = value;
-				}
-			}
-		}
-	}
-	
-	public partial class sp_News_SignleRecordResult
-	{
-		
-		private int _NewsID;
-		
-		private string _NewsHeadLine;
-		
-		private string _NewsContent;
-		
-		private System.DateTime _NewsDate;
-		
-		private bool _IsDeleted;
-		
-		private System.Guid _NewsKey;
-		
-		private System.Data.Linq.Binary _timestamp;
-		
-		public sp_News_SignleRecordResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NewsID", DbType="Int NOT NULL")]
-		public int NewsID
-		{
-			get
-			{
-				return this._NewsID;
-			}
-			set
-			{
-				if ((this._NewsID != value))
-				{
-					this._NewsID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NewsHeadLine", DbType="VarChar(200) NOT NULL", CanBeNull=false)]
-		public string NewsHeadLine
-		{
-			get
-			{
-				return this._NewsHeadLine;
-			}
-			set
-			{
-				if ((this._NewsHeadLine != value))
-				{
-					this._NewsHeadLine = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NewsContent", DbType="VarChar(MAX)")]
-		public string NewsContent
-		{
-			get
-			{
-				return this._NewsContent;
-			}
-			set
-			{
-				if ((this._NewsContent != value))
-				{
-					this._NewsContent = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NewsDate", DbType="Date NOT NULL")]
-		public System.DateTime NewsDate
-		{
-			get
-			{
-				return this._NewsDate;
-			}
-			set
-			{
-				if ((this._NewsDate != value))
-				{
-					this._NewsDate = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsDeleted", DbType="Bit NOT NULL")]
-		public bool IsDeleted
-		{
-			get
-			{
-				return this._IsDeleted;
-			}
-			set
-			{
-				if ((this._IsDeleted != value))
-				{
-					this._IsDeleted = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NewsKey", DbType="UniqueIdentifier NOT NULL")]
-		public System.Guid NewsKey
-		{
-			get
-			{
-				return this._NewsKey;
-			}
-			set
-			{
-				if ((this._NewsKey != value))
-				{
-					this._NewsKey = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_timestamp", DbType="rowversion NOT NULL", CanBeNull=false)]
-		public System.Data.Linq.Binary timestamp
-		{
-			get
-			{
-				return this._timestamp;
-			}
-			set
-			{
-				if ((this._timestamp != value))
-				{
-					this._timestamp = value;
-				}
-			}
-		}
-	}
-	
-	public partial class sp_News_ViewAllResult
-	{
-		
-		private int _NewsID;
-		
-		private string _NewsHeadLine;
-		
-		private string _NewsContent;
-		
-		private System.DateTime _NewsDate;
-		
-		private bool _IsDeleted;
-		
-		private System.Guid _NewsKey;
-		
-		private System.Data.Linq.Binary _timestamp;
-		
-		public sp_News_ViewAllResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NewsID", DbType="Int NOT NULL")]
-		public int NewsID
-		{
-			get
-			{
-				return this._NewsID;
-			}
-			set
-			{
-				if ((this._NewsID != value))
-				{
-					this._NewsID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NewsHeadLine", DbType="VarChar(200) NOT NULL", CanBeNull=false)]
-		public string NewsHeadLine
-		{
-			get
-			{
-				return this._NewsHeadLine;
-			}
-			set
-			{
-				if ((this._NewsHeadLine != value))
-				{
-					this._NewsHeadLine = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NewsContent", DbType="VarChar(MAX)")]
-		public string NewsContent
-		{
-			get
-			{
-				return this._NewsContent;
-			}
-			set
-			{
-				if ((this._NewsContent != value))
-				{
-					this._NewsContent = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NewsDate", DbType="Date NOT NULL")]
-		public System.DateTime NewsDate
-		{
-			get
-			{
-				return this._NewsDate;
-			}
-			set
-			{
-				if ((this._NewsDate != value))
-				{
-					this._NewsDate = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsDeleted", DbType="Bit NOT NULL")]
-		public bool IsDeleted
-		{
-			get
-			{
-				return this._IsDeleted;
-			}
-			set
-			{
-				if ((this._IsDeleted != value))
-				{
-					this._IsDeleted = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NewsKey", DbType="UniqueIdentifier NOT NULL")]
-		public System.Guid NewsKey
-		{
-			get
-			{
-				return this._NewsKey;
-			}
-			set
-			{
-				if ((this._NewsKey != value))
-				{
-					this._NewsKey = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_timestamp", DbType="rowversion NOT NULL", CanBeNull=false)]
-		public System.Data.Linq.Binary timestamp
-		{
-			get
-			{
-				return this._timestamp;
-			}
-			set
-			{
-				if ((this._timestamp != value))
-				{
-					this._timestamp = value;
-				}
-			}
-		}
-	}
-	
-	public partial class sp_Roles_ShortViewResult
-	{
-		
-		private int _RoleID;
-		
-		private string _RoleDesc;
-		
-		public sp_Roles_ShortViewResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RoleID", DbType="Int NOT NULL")]
-		public int RoleID
-		{
-			get
-			{
-				return this._RoleID;
-			}
-			set
-			{
-				if ((this._RoleID != value))
-				{
-					this._RoleID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RoleDesc", DbType="VarChar(200) NOT NULL", CanBeNull=false)]
-		public string RoleDesc
-		{
-			get
-			{
-				return this._RoleDesc;
-			}
-			set
-			{
-				if ((this._RoleDesc != value))
-				{
-					this._RoleDesc = value;
-				}
-			}
-		}
-	}
-	
-	public partial class sp_Roles_SignleRecordResult
-	{
-		
-		private int _RoleID;
-		
-		private string _RoleDesc;
-		
-		private bool _IsDeleted;
-		
-		private System.Guid _RoleKey;
-		
-		private System.Data.Linq.Binary _timestamp;
-		
-		public sp_Roles_SignleRecordResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RoleID", DbType="Int NOT NULL")]
-		public int RoleID
-		{
-			get
-			{
-				return this._RoleID;
-			}
-			set
-			{
-				if ((this._RoleID != value))
-				{
-					this._RoleID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RoleDesc", DbType="VarChar(200) NOT NULL", CanBeNull=false)]
-		public string RoleDesc
-		{
-			get
-			{
-				return this._RoleDesc;
-			}
-			set
-			{
-				if ((this._RoleDesc != value))
-				{
-					this._RoleDesc = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsDeleted", DbType="Bit NOT NULL")]
-		public bool IsDeleted
-		{
-			get
-			{
-				return this._IsDeleted;
-			}
-			set
-			{
-				if ((this._IsDeleted != value))
-				{
-					this._IsDeleted = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RoleKey", DbType="UniqueIdentifier NOT NULL")]
-		public System.Guid RoleKey
-		{
-			get
-			{
-				return this._RoleKey;
-			}
-			set
-			{
-				if ((this._RoleKey != value))
-				{
-					this._RoleKey = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_timestamp", DbType="rowversion NOT NULL", CanBeNull=false)]
-		public System.Data.Linq.Binary timestamp
-		{
-			get
-			{
-				return this._timestamp;
-			}
-			set
-			{
-				if ((this._timestamp != value))
-				{
-					this._timestamp = value;
-				}
-			}
-		}
-	}
-	
-	public partial class sp_Roles_ViewAllResult
-	{
-		
-		private int _RoleID;
-		
-		private string _RoleDesc;
-		
-		private bool _IsDeleted;
-		
-		private System.Guid _RoleKey;
-		
-		private System.Data.Linq.Binary _timestamp;
-		
-		public sp_Roles_ViewAllResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RoleID", DbType="Int NOT NULL")]
-		public int RoleID
-		{
-			get
-			{
-				return this._RoleID;
-			}
-			set
-			{
-				if ((this._RoleID != value))
-				{
-					this._RoleID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RoleDesc", DbType="VarChar(200) NOT NULL", CanBeNull=false)]
-		public string RoleDesc
-		{
-			get
-			{
-				return this._RoleDesc;
-			}
-			set
-			{
-				if ((this._RoleDesc != value))
-				{
-					this._RoleDesc = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsDeleted", DbType="Bit NOT NULL")]
-		public bool IsDeleted
-		{
-			get
-			{
-				return this._IsDeleted;
-			}
-			set
-			{
-				if ((this._IsDeleted != value))
-				{
-					this._IsDeleted = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RoleKey", DbType="UniqueIdentifier NOT NULL")]
-		public System.Guid RoleKey
-		{
-			get
-			{
-				return this._RoleKey;
-			}
-			set
-			{
-				if ((this._RoleKey != value))
-				{
-					this._RoleKey = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_timestamp", DbType="rowversion NOT NULL", CanBeNull=false)]
-		public System.Data.Linq.Binary timestamp
-		{
-			get
-			{
-				return this._timestamp;
-			}
-			set
-			{
-				if ((this._timestamp != value))
-				{
-					this._timestamp = value;
-				}
-			}
-		}
-	}
-	
-	public partial class sp_Teams_ShortViewResult
-	{
-		
-		private int _TeamID;
-		
-		private string _TeamDesc;
-		
-		public sp_Teams_ShortViewResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TeamID", DbType="Int NOT NULL")]
-		public int TeamID
-		{
-			get
-			{
-				return this._TeamID;
-			}
-			set
-			{
-				if ((this._TeamID != value))
-				{
-					this._TeamID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TeamDesc", DbType="VarChar(200) NOT NULL", CanBeNull=false)]
-		public string TeamDesc
-		{
-			get
-			{
-				return this._TeamDesc;
-			}
-			set
-			{
-				if ((this._TeamDesc != value))
-				{
-					this._TeamDesc = value;
-				}
-			}
-		}
-	}
-	
-	public partial class sp_Teams_SignleRecordResult
-	{
-		
-		private int _TeamID;
-		
-		private string _TeamDesc;
-		
-		private int _DivisionID;
-		
-		private bool _IsOurs;
-		
-		private bool _IsDeleted;
-		
-		private System.Guid _TeamKey;
-		
-		private System.Data.Linq.Binary _timestamp;
-		
-		private string _DivisionDesc;
-		
-		public sp_Teams_SignleRecordResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TeamID", DbType="Int NOT NULL")]
-		public int TeamID
-		{
-			get
-			{
-				return this._TeamID;
-			}
-			set
-			{
-				if ((this._TeamID != value))
-				{
-					this._TeamID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TeamDesc", DbType="VarChar(200) NOT NULL", CanBeNull=false)]
-		public string TeamDesc
-		{
-			get
-			{
-				return this._TeamDesc;
-			}
-			set
-			{
-				if ((this._TeamDesc != value))
-				{
-					this._TeamDesc = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DivisionID", DbType="Int NOT NULL")]
-		public int DivisionID
-		{
-			get
-			{
-				return this._DivisionID;
-			}
-			set
-			{
-				if ((this._DivisionID != value))
-				{
-					this._DivisionID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsOurs", DbType="Bit NOT NULL")]
-		public bool IsOurs
-		{
-			get
-			{
-				return this._IsOurs;
-			}
-			set
-			{
-				if ((this._IsOurs != value))
-				{
-					this._IsOurs = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsDeleted", DbType="Bit NOT NULL")]
-		public bool IsDeleted
-		{
-			get
-			{
-				return this._IsDeleted;
-			}
-			set
-			{
-				if ((this._IsDeleted != value))
-				{
-					this._IsDeleted = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TeamKey", DbType="UniqueIdentifier NOT NULL")]
-		public System.Guid TeamKey
-		{
-			get
-			{
-				return this._TeamKey;
-			}
-			set
-			{
-				if ((this._TeamKey != value))
-				{
-					this._TeamKey = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_timestamp", DbType="rowversion NOT NULL", CanBeNull=false)]
-		public System.Data.Linq.Binary timestamp
-		{
-			get
-			{
-				return this._timestamp;
-			}
-			set
-			{
-				if ((this._timestamp != value))
-				{
-					this._timestamp = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DivisionDesc", DbType="VarChar(200) NOT NULL", CanBeNull=false)]
-		public string DivisionDesc
-		{
-			get
-			{
-				return this._DivisionDesc;
-			}
-			set
-			{
-				if ((this._DivisionDesc != value))
-				{
-					this._DivisionDesc = value;
-				}
-			}
-		}
-	}
-	
-	public partial class sp_Teams_ViewAllResult
-	{
-		
-		private int _TeamID;
-		
-		private string _TeamDesc;
-		
-		private int _DivisionID;
-		
-		private bool _IsOurs;
-		
-		private bool _IsDeleted;
-		
-		private System.Guid _TeamKey;
-		
-		private System.Data.Linq.Binary _timestamp;
-		
-		private string _DivisionDesc;
-		
-		public sp_Teams_ViewAllResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TeamID", DbType="Int NOT NULL")]
-		public int TeamID
-		{
-			get
-			{
-				return this._TeamID;
-			}
-			set
-			{
-				if ((this._TeamID != value))
-				{
-					this._TeamID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TeamDesc", DbType="VarChar(200) NOT NULL", CanBeNull=false)]
-		public string TeamDesc
-		{
-			get
-			{
-				return this._TeamDesc;
-			}
-			set
-			{
-				if ((this._TeamDesc != value))
-				{
-					this._TeamDesc = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DivisionID", DbType="Int NOT NULL")]
-		public int DivisionID
-		{
-			get
-			{
-				return this._DivisionID;
-			}
-			set
-			{
-				if ((this._DivisionID != value))
-				{
-					this._DivisionID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsOurs", DbType="Bit NOT NULL")]
-		public bool IsOurs
-		{
-			get
-			{
-				return this._IsOurs;
-			}
-			set
-			{
-				if ((this._IsOurs != value))
-				{
-					this._IsOurs = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsDeleted", DbType="Bit NOT NULL")]
-		public bool IsDeleted
-		{
-			get
-			{
-				return this._IsDeleted;
-			}
-			set
-			{
-				if ((this._IsDeleted != value))
-				{
-					this._IsDeleted = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TeamKey", DbType="UniqueIdentifier NOT NULL")]
-		public System.Guid TeamKey
-		{
-			get
-			{
-				return this._TeamKey;
-			}
-			set
-			{
-				if ((this._TeamKey != value))
-				{
-					this._TeamKey = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_timestamp", DbType="rowversion NOT NULL", CanBeNull=false)]
-		public System.Data.Linq.Binary timestamp
-		{
-			get
-			{
-				return this._timestamp;
-			}
-			set
-			{
-				if ((this._timestamp != value))
-				{
-					this._timestamp = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DivisionDesc", DbType="VarChar(200) NOT NULL", CanBeNull=false)]
-		public string DivisionDesc
-		{
-			get
-			{
-				return this._DivisionDesc;
-			}
-			set
-			{
-				if ((this._DivisionDesc != value))
-				{
-					this._DivisionDesc = value;
-				}
-			}
-		}
-	}
-	
-	public partial class sp_visitorContacts_ShortViewResult
-	{
-		
-		private int _visitorContactID;
-		
-		private string _visitorContactDesc;
-		
-		public sp_visitorContacts_ShortViewResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_visitorContactID", DbType="Int NOT NULL")]
-		public int visitorContactID
-		{
-			get
-			{
-				return this._visitorContactID;
-			}
-			set
-			{
-				if ((this._visitorContactID != value))
-				{
-					this._visitorContactID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_visitorContactDesc", DbType="VarChar(200)")]
-		public string visitorContactDesc
-		{
-			get
-			{
-				return this._visitorContactDesc;
-			}
-			set
-			{
-				if ((this._visitorContactDesc != value))
-				{
-					this._visitorContactDesc = value;
-				}
-			}
-		}
-	}
-	
-	public partial class sp_visitorContacts_SignleRecordResult
-	{
-		
-		private int _VisitorContactID;
-		
-		private string _VisitorContactDesc;
-		
-		private string _ContactName;
-		
-		private string _EmailAddress;
-		
-		private string _ContactMessage;
-		
-		private System.DateTime _ContactDate;
-		
-		private bool _IsDeleted;
-		
-		private System.Guid _VisitorContactKey;
-		
-		private System.Data.Linq.Binary _timestamp;
-		
-		public sp_visitorContacts_SignleRecordResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VisitorContactID", DbType="Int NOT NULL")]
-		public int VisitorContactID
-		{
-			get
-			{
-				return this._VisitorContactID;
-			}
-			set
-			{
-				if ((this._VisitorContactID != value))
-				{
-					this._VisitorContactID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VisitorContactDesc", DbType="VarChar(200)")]
-		public string VisitorContactDesc
-		{
-			get
-			{
-				return this._VisitorContactDesc;
-			}
-			set
-			{
-				if ((this._VisitorContactDesc != value))
-				{
-					this._VisitorContactDesc = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ContactName", DbType="VarChar(200)")]
-		public string ContactName
-		{
-			get
-			{
-				return this._ContactName;
-			}
-			set
-			{
-				if ((this._ContactName != value))
-				{
-					this._ContactName = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmailAddress", DbType="VarChar(200) NOT NULL", CanBeNull=false)]
-		public string EmailAddress
-		{
-			get
-			{
-				return this._EmailAddress;
-			}
-			set
-			{
-				if ((this._EmailAddress != value))
-				{
-					this._EmailAddress = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ContactMessage", DbType="VarChar(MAX)")]
-		public string ContactMessage
-		{
-			get
-			{
-				return this._ContactMessage;
-			}
-			set
-			{
-				if ((this._ContactMessage != value))
-				{
-					this._ContactMessage = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ContactDate", DbType="DateTime NOT NULL")]
-		public System.DateTime ContactDate
-		{
-			get
-			{
-				return this._ContactDate;
-			}
-			set
-			{
-				if ((this._ContactDate != value))
-				{
-					this._ContactDate = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsDeleted", DbType="Bit NOT NULL")]
-		public bool IsDeleted
-		{
-			get
-			{
-				return this._IsDeleted;
-			}
-			set
-			{
-				if ((this._IsDeleted != value))
-				{
-					this._IsDeleted = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VisitorContactKey", DbType="UniqueIdentifier NOT NULL")]
-		public System.Guid VisitorContactKey
-		{
-			get
-			{
-				return this._VisitorContactKey;
-			}
-			set
-			{
-				if ((this._VisitorContactKey != value))
-				{
-					this._VisitorContactKey = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_timestamp", DbType="rowversion NOT NULL", CanBeNull=false)]
-		public System.Data.Linq.Binary timestamp
-		{
-			get
-			{
-				return this._timestamp;
-			}
-			set
-			{
-				if ((this._timestamp != value))
-				{
-					this._timestamp = value;
-				}
-			}
-		}
-	}
-	
-	public partial class sp_Venues_ViewAllResult
-	{
-		
-		private int _VenueID;
-		
-		private string _VenueDesc;
-		
-		private bool _IsDeleted;
-		
-		private System.Guid _VenueKey;
-		
-		private System.Data.Linq.Binary _timestamp;
-		
-		public sp_Venues_ViewAllResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VenueID", DbType="Int NOT NULL")]
-		public int VenueID
-		{
-			get
-			{
-				return this._VenueID;
-			}
-			set
-			{
-				if ((this._VenueID != value))
-				{
-					this._VenueID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VenueDesc", DbType="VarChar(200) NOT NULL", CanBeNull=false)]
-		public string VenueDesc
-		{
-			get
-			{
-				return this._VenueDesc;
-			}
-			set
-			{
-				if ((this._VenueDesc != value))
-				{
-					this._VenueDesc = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsDeleted", DbType="Bit NOT NULL")]
-		public bool IsDeleted
-		{
-			get
-			{
-				return this._IsDeleted;
-			}
-			set
-			{
-				if ((this._IsDeleted != value))
-				{
-					this._IsDeleted = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VenueKey", DbType="UniqueIdentifier NOT NULL")]
-		public System.Guid VenueKey
-		{
-			get
-			{
-				return this._VenueKey;
-			}
-			set
-			{
-				if ((this._VenueKey != value))
-				{
-					this._VenueKey = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_timestamp", DbType="rowversion NOT NULL", CanBeNull=false)]
-		public System.Data.Linq.Binary timestamp
-		{
-			get
-			{
-				return this._timestamp;
-			}
-			set
-			{
-				if ((this._timestamp != value))
-				{
-					this._timestamp = value;
-				}
-			}
-		}
-	}
-	
-	public partial class sp_Venues_ShortViewResult
-	{
-		
-		private int _VenueID;
-		
-		private string _VenueDesc;
-		
-		public sp_Venues_ShortViewResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VenueID", DbType="Int NOT NULL")]
-		public int VenueID
-		{
-			get
-			{
-				return this._VenueID;
-			}
-			set
-			{
-				if ((this._VenueID != value))
-				{
-					this._VenueID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VenueDesc", DbType="VarChar(200) NOT NULL", CanBeNull=false)]
-		public string VenueDesc
-		{
-			get
-			{
-				return this._VenueDesc;
-			}
-			set
-			{
-				if ((this._VenueDesc != value))
-				{
-					this._VenueDesc = value;
-				}
-			}
-		}
-	}
-	
-	public partial class sp_Venues_SignleRecordResult
-	{
-		
-		private int _VenueID;
-		
-		private string _VenueDesc;
-		
-		private bool _IsDeleted;
-		
-		private System.Guid _VenueKey;
-		
-		private System.Data.Linq.Binary _timestamp;
-		
-		public sp_Venues_SignleRecordResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VenueID", DbType="Int NOT NULL")]
-		public int VenueID
-		{
-			get
-			{
-				return this._VenueID;
-			}
-			set
-			{
-				if ((this._VenueID != value))
-				{
-					this._VenueID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VenueDesc", DbType="VarChar(200) NOT NULL", CanBeNull=false)]
-		public string VenueDesc
-		{
-			get
-			{
-				return this._VenueDesc;
-			}
-			set
-			{
-				if ((this._VenueDesc != value))
-				{
-					this._VenueDesc = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsDeleted", DbType="Bit NOT NULL")]
-		public bool IsDeleted
-		{
-			get
-			{
-				return this._IsDeleted;
-			}
-			set
-			{
-				if ((this._IsDeleted != value))
-				{
-					this._IsDeleted = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VenueKey", DbType="UniqueIdentifier NOT NULL")]
-		public System.Guid VenueKey
-		{
-			get
-			{
-				return this._VenueKey;
-			}
-			set
-			{
-				if ((this._VenueKey != value))
-				{
-					this._VenueKey = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_timestamp", DbType="rowversion NOT NULL", CanBeNull=false)]
-		public System.Data.Linq.Binary timestamp
-		{
-			get
-			{
-				return this._timestamp;
-			}
-			set
-			{
-				if ((this._timestamp != value))
-				{
-					this._timestamp = value;
-				}
-			}
-		}
-	}
-	
-	public partial class sp_NewsLetter_ContentsResult
-	{
-		
-		private int _NewsID;
-		
-		private string _NewsHeadLine;
-		
-		private string _NewsContent;
-		
-		private System.DateTime _NewsDate;
-		
-		private bool _IsDeleted;
-		
-		private System.Guid _NewsKey;
-		
-		private System.Data.Linq.Binary _timestamp;
-		
-		public sp_NewsLetter_ContentsResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NewsID", DbType="Int NOT NULL")]
-		public int NewsID
-		{
-			get
-			{
-				return this._NewsID;
-			}
-			set
-			{
-				if ((this._NewsID != value))
-				{
-					this._NewsID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NewsHeadLine", DbType="VarChar(200) NOT NULL", CanBeNull=false)]
-		public string NewsHeadLine
-		{
-			get
-			{
-				return this._NewsHeadLine;
-			}
-			set
-			{
-				if ((this._NewsHeadLine != value))
-				{
-					this._NewsHeadLine = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NewsContent", DbType="VarChar(MAX)")]
-		public string NewsContent
-		{
-			get
-			{
-				return this._NewsContent;
-			}
-			set
-			{
-				if ((this._NewsContent != value))
-				{
-					this._NewsContent = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NewsDate", DbType="Date NOT NULL")]
-		public System.DateTime NewsDate
-		{
-			get
-			{
-				return this._NewsDate;
-			}
-			set
-			{
-				if ((this._NewsDate != value))
-				{
-					this._NewsDate = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsDeleted", DbType="Bit NOT NULL")]
-		public bool IsDeleted
-		{
-			get
-			{
-				return this._IsDeleted;
-			}
-			set
-			{
-				if ((this._IsDeleted != value))
-				{
-					this._IsDeleted = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NewsKey", DbType="UniqueIdentifier NOT NULL")]
-		public System.Guid NewsKey
-		{
-			get
-			{
-				return this._NewsKey;
-			}
-			set
-			{
-				if ((this._NewsKey != value))
-				{
-					this._NewsKey = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_timestamp", DbType="rowversion NOT NULL", CanBeNull=false)]
-		public System.Data.Linq.Binary timestamp
-		{
-			get
-			{
-				return this._timestamp;
-			}
-			set
-			{
-				if ((this._timestamp != value))
-				{
-					this._timestamp = value;
-				}
-			}
-		}
-	}
-	
-	public partial class sp_email_getAddressesResult
-	{
-		
-		private string _EmailAddress;
-		
-		public sp_email_getAddressesResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmailAddress", DbType="VarChar(200)")]
-		public string EmailAddress
-		{
-			get
-			{
-				return this._EmailAddress;
-			}
-			set
-			{
-				if ((this._EmailAddress != value))
-				{
-					this._EmailAddress = value;
-				}
-			}
-		}
-	}
-	
-	public partial class sp_MembersByRole_ShortViewResult
-	{
-		
-		private int _RoleID;
-		
-		private string _RoleDesc;
-		
-		private System.Nullable<int> _Total;
-		
-		public sp_MembersByRole_ShortViewResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RoleID", DbType="Int NOT NULL")]
-		public int RoleID
-		{
-			get
-			{
-				return this._RoleID;
-			}
-			set
-			{
-				if ((this._RoleID != value))
-				{
-					this._RoleID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RoleDesc", DbType="VarChar(200) NOT NULL", CanBeNull=false)]
-		public string RoleDesc
-		{
-			get
-			{
-				return this._RoleDesc;
-			}
-			set
-			{
-				if ((this._RoleDesc != value))
-				{
-					this._RoleDesc = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Total", DbType="Int")]
-		public System.Nullable<int> Total
-		{
-			get
-			{
-				return this._Total;
-			}
-			set
-			{
-				if ((this._Total != value))
-				{
-					this._Total = value;
-				}
-			}
-		}
-	}
-	
-	public partial class sp_Members_ViewAllResult
-	{
-		
-		private System.Nullable<int> _MemberID;
-		
-		private string _FirstName;
-		
-		private string _LastName;
-		
-		private string _EmailAddress;
-		
-		private string _PhoneNo;
-		
-		private System.Nullable<int> _TeamID;
-		
-		private System.Nullable<int> _RoleID;
-		
-		private System.Nullable<System.DateTime> _DOB;
-		
-		private System.Nullable<System.DateTime> _DateJoined;
-		
-		private System.Nullable<bool> _IsDeleted;
-		
-		private System.Nullable<System.Guid> _MemberKey;
-		
-		private System.Data.Linq.Binary _timestamp;
-		
-		private string _RoleDesc;
-		
-		private string _TeamDesc;
-		
-		public sp_Members_ViewAllResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemberID", DbType="Int")]
-		public System.Nullable<int> MemberID
-		{
-			get
-			{
-				return this._MemberID;
-			}
-			set
-			{
-				if ((this._MemberID != value))
-				{
-					this._MemberID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FirstName", DbType="VarChar(50)")]
-		public string FirstName
-		{
-			get
-			{
-				return this._FirstName;
-			}
-			set
-			{
-				if ((this._FirstName != value))
-				{
-					this._FirstName = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LastName", DbType="VarChar(50)")]
-		public string LastName
-		{
-			get
-			{
-				return this._LastName;
-			}
-			set
-			{
-				if ((this._LastName != value))
-				{
-					this._LastName = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmailAddress", DbType="VarChar(200)")]
-		public string EmailAddress
-		{
-			get
-			{
-				return this._EmailAddress;
-			}
-			set
-			{
-				if ((this._EmailAddress != value))
-				{
-					this._EmailAddress = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PhoneNo", DbType="VarChar(15)")]
-		public string PhoneNo
-		{
-			get
-			{
-				return this._PhoneNo;
-			}
-			set
-			{
-				if ((this._PhoneNo != value))
-				{
-					this._PhoneNo = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TeamID", DbType="Int")]
-		public System.Nullable<int> TeamID
-		{
-			get
-			{
-				return this._TeamID;
-			}
-			set
-			{
-				if ((this._TeamID != value))
-				{
-					this._TeamID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RoleID", DbType="Int")]
-		public System.Nullable<int> RoleID
-		{
-			get
-			{
-				return this._RoleID;
-			}
-			set
-			{
-				if ((this._RoleID != value))
-				{
-					this._RoleID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DOB", DbType="Date")]
-		public System.Nullable<System.DateTime> DOB
-		{
-			get
-			{
-				return this._DOB;
-			}
-			set
-			{
-				if ((this._DOB != value))
-				{
-					this._DOB = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DateJoined", DbType="Date")]
-		public System.Nullable<System.DateTime> DateJoined
-		{
-			get
-			{
-				return this._DateJoined;
-			}
-			set
-			{
-				if ((this._DateJoined != value))
-				{
-					this._DateJoined = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsDeleted", DbType="Bit")]
-		public System.Nullable<bool> IsDeleted
-		{
-			get
-			{
-				return this._IsDeleted;
-			}
-			set
-			{
-				if ((this._IsDeleted != value))
-				{
-					this._IsDeleted = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemberKey", DbType="UniqueIdentifier")]
-		public System.Nullable<System.Guid> MemberKey
-		{
-			get
-			{
-				return this._MemberKey;
-			}
-			set
-			{
-				if ((this._MemberKey != value))
-				{
-					this._MemberKey = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_timestamp", DbType="rowversion", CanBeNull=true)]
-		public System.Data.Linq.Binary timestamp
-		{
-			get
-			{
-				return this._timestamp;
-			}
-			set
-			{
-				if ((this._timestamp != value))
-				{
-					this._timestamp = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RoleDesc", DbType="VarChar(200)")]
-		public string RoleDesc
-		{
-			get
-			{
-				return this._RoleDesc;
-			}
-			set
-			{
-				if ((this._RoleDesc != value))
-				{
-					this._RoleDesc = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TeamDesc", DbType="VarChar(200) NOT NULL", CanBeNull=false)]
-		public string TeamDesc
-		{
-			get
-			{
-				return this._TeamDesc;
-			}
-			set
-			{
-				if ((this._TeamDesc != value))
-				{
-					this._TeamDesc = value;
-				}
-			}
-		}
-	}
-	
-	public partial class sp_Members_ShortViewResult
-	{
-		
-		private int _MemberID;
-		
-		private string _Column1;
-		
-		public sp_Members_ShortViewResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemberID", DbType="Int NOT NULL")]
-		public int MemberID
-		{
-			get
-			{
-				return this._MemberID;
-			}
-			set
-			{
-				if ((this._MemberID != value))
-				{
-					this._MemberID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="", Storage="_Column1", DbType="VarChar(101) NOT NULL", CanBeNull=false)]
-		public string Column1
-		{
-			get
-			{
-				return this._Column1;
-			}
-			set
-			{
-				if ((this._Column1 != value))
-				{
-					this._Column1 = value;
-				}
-			}
-		}
-	}
-	
-	public partial class sp_Members_SignleRecordResult
-	{
-		
-		private System.Nullable<int> _MemberID;
-		
-		private string _FirstName;
-		
-		private string _LastName;
-		
-		private string _EmailAddress;
-		
-		private string _PhoneNo;
-		
-		private System.Nullable<int> _TeamID;
-		
-		private System.Nullable<int> _RoleID;
-		
-		private System.Nullable<System.DateTime> _DOB;
-		
-		private System.Nullable<System.DateTime> _DateJoined;
-		
-		private System.Nullable<bool> _IsDeleted;
-		
-		private System.Nullable<System.Guid> _MemberKey;
-		
-		private System.Data.Linq.Binary _timestamp;
-		
-		private string _RoleDesc;
-		
-		private string _TeamDesc;
-		
-		public sp_Members_SignleRecordResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemberID", DbType="Int")]
-		public System.Nullable<int> MemberID
-		{
-			get
-			{
-				return this._MemberID;
-			}
-			set
-			{
-				if ((this._MemberID != value))
-				{
-					this._MemberID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FirstName", DbType="VarChar(50)")]
-		public string FirstName
-		{
-			get
-			{
-				return this._FirstName;
-			}
-			set
-			{
-				if ((this._FirstName != value))
-				{
-					this._FirstName = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LastName", DbType="VarChar(50)")]
-		public string LastName
-		{
-			get
-			{
-				return this._LastName;
-			}
-			set
-			{
-				if ((this._LastName != value))
-				{
-					this._LastName = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmailAddress", DbType="VarChar(200)")]
-		public string EmailAddress
-		{
-			get
-			{
-				return this._EmailAddress;
-			}
-			set
-			{
-				if ((this._EmailAddress != value))
-				{
-					this._EmailAddress = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PhoneNo", DbType="VarChar(15)")]
-		public string PhoneNo
-		{
-			get
-			{
-				return this._PhoneNo;
-			}
-			set
-			{
-				if ((this._PhoneNo != value))
-				{
-					this._PhoneNo = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TeamID", DbType="Int")]
-		public System.Nullable<int> TeamID
-		{
-			get
-			{
-				return this._TeamID;
-			}
-			set
-			{
-				if ((this._TeamID != value))
-				{
-					this._TeamID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RoleID", DbType="Int")]
-		public System.Nullable<int> RoleID
-		{
-			get
-			{
-				return this._RoleID;
-			}
-			set
-			{
-				if ((this._RoleID != value))
-				{
-					this._RoleID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DOB", DbType="Date")]
-		public System.Nullable<System.DateTime> DOB
-		{
-			get
-			{
-				return this._DOB;
-			}
-			set
-			{
-				if ((this._DOB != value))
-				{
-					this._DOB = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DateJoined", DbType="Date")]
-		public System.Nullable<System.DateTime> DateJoined
-		{
-			get
-			{
-				return this._DateJoined;
-			}
-			set
-			{
-				if ((this._DateJoined != value))
-				{
-					this._DateJoined = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsDeleted", DbType="Bit")]
-		public System.Nullable<bool> IsDeleted
-		{
-			get
-			{
-				return this._IsDeleted;
-			}
-			set
-			{
-				if ((this._IsDeleted != value))
-				{
-					this._IsDeleted = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemberKey", DbType="UniqueIdentifier")]
-		public System.Nullable<System.Guid> MemberKey
-		{
-			get
-			{
-				return this._MemberKey;
-			}
-			set
-			{
-				if ((this._MemberKey != value))
-				{
-					this._MemberKey = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_timestamp", DbType="rowversion", CanBeNull=true)]
-		public System.Data.Linq.Binary timestamp
-		{
-			get
-			{
-				return this._timestamp;
-			}
-			set
-			{
-				if ((this._timestamp != value))
-				{
-					this._timestamp = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RoleDesc", DbType="VarChar(200)")]
-		public string RoleDesc
-		{
-			get
-			{
-				return this._RoleDesc;
-			}
-			set
-			{
-				if ((this._RoleDesc != value))
-				{
-					this._RoleDesc = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TeamDesc", DbType="VarChar(200) NOT NULL", CanBeNull=false)]
-		public string TeamDesc
-		{
-			get
-			{
-				return this._TeamDesc;
-			}
-			set
-			{
-				if ((this._TeamDesc != value))
-				{
-					this._TeamDesc = value;
-				}
-			}
-		}
-	}
-	
-	public partial class sp_Matches_ViewAllResult
-	{
-		
-		private int _MatchID;
-		
-		private int _TeamAID;
-		
-		private int _TeamBID;
-		
-		private int _RefereeID;
-		
-		private System.Nullable<int> _TeamAScore;
-		
-		private System.Nullable<int> _TeamBScore;
-		
-		private bool _IsPlayed;
-		
-		private System.Nullable<System.DateTime> _MatchDate;
-		
-		private int _VenueID;
-		
-		private bool _IsDeleted;
-		
-		private System.Guid _MatchKey;
-		
-		private System.Data.Linq.Binary _timestamp;
-		
-		public sp_Matches_ViewAllResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MatchID", DbType="Int NOT NULL")]
-		public int MatchID
-		{
-			get
-			{
-				return this._MatchID;
-			}
-			set
-			{
-				if ((this._MatchID != value))
-				{
-					this._MatchID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TeamAID", DbType="Int NOT NULL")]
-		public int TeamAID
-		{
-			get
-			{
-				return this._TeamAID;
-			}
-			set
-			{
-				if ((this._TeamAID != value))
-				{
-					this._TeamAID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TeamBID", DbType="Int NOT NULL")]
-		public int TeamBID
-		{
-			get
-			{
-				return this._TeamBID;
-			}
-			set
-			{
-				if ((this._TeamBID != value))
-				{
-					this._TeamBID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RefereeID", DbType="Int NOT NULL")]
-		public int RefereeID
-		{
-			get
-			{
-				return this._RefereeID;
-			}
-			set
-			{
-				if ((this._RefereeID != value))
-				{
-					this._RefereeID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TeamAScore", DbType="Int")]
-		public System.Nullable<int> TeamAScore
-		{
-			get
-			{
-				return this._TeamAScore;
-			}
-			set
-			{
-				if ((this._TeamAScore != value))
-				{
-					this._TeamAScore = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TeamBScore", DbType="Int")]
-		public System.Nullable<int> TeamBScore
-		{
-			get
-			{
-				return this._TeamBScore;
-			}
-			set
-			{
-				if ((this._TeamBScore != value))
-				{
-					this._TeamBScore = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsPlayed", DbType="Bit NOT NULL")]
-		public bool IsPlayed
-		{
-			get
-			{
-				return this._IsPlayed;
-			}
-			set
-			{
-				if ((this._IsPlayed != value))
-				{
-					this._IsPlayed = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MatchDate", DbType="DateTime")]
-		public System.Nullable<System.DateTime> MatchDate
-		{
-			get
-			{
-				return this._MatchDate;
-			}
-			set
-			{
-				if ((this._MatchDate != value))
-				{
-					this._MatchDate = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VenueID", DbType="Int NOT NULL")]
-		public int VenueID
-		{
-			get
-			{
-				return this._VenueID;
-			}
-			set
-			{
-				if ((this._VenueID != value))
-				{
-					this._VenueID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsDeleted", DbType="Bit NOT NULL")]
-		public bool IsDeleted
-		{
-			get
-			{
-				return this._IsDeleted;
-			}
-			set
-			{
-				if ((this._IsDeleted != value))
-				{
-					this._IsDeleted = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MatchKey", DbType="UniqueIdentifier NOT NULL")]
-		public System.Guid MatchKey
-		{
-			get
-			{
-				return this._MatchKey;
-			}
-			set
-			{
-				if ((this._MatchKey != value))
-				{
-					this._MatchKey = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_timestamp", DbType="rowversion NOT NULL", CanBeNull=false)]
-		public System.Data.Linq.Binary timestamp
-		{
-			get
-			{
-				return this._timestamp;
-			}
-			set
-			{
-				if ((this._timestamp != value))
-				{
-					this._timestamp = value;
-				}
-			}
-		}
-	}
-	
-	public partial class sp_Matches_SignleRecordResult
-	{
-		
-		private int _MatchID;
-		
-		private int _TeamAID;
-		
-		private int _TeamBID;
-		
-		private int _RefereeID;
-		
-		private System.Nullable<int> _TeamAScore;
-		
-		private System.Nullable<int> _TeamBScore;
-		
-		private bool _IsPlayed;
-		
-		private System.Nullable<System.DateTime> _MatchDate;
-		
-		private int _VenueID;
-		
-		private bool _IsDeleted;
-		
-		private System.Guid _MatchKey;
-		
-		private System.Data.Linq.Binary _timestamp;
-		
-		public sp_Matches_SignleRecordResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MatchID", DbType="Int NOT NULL")]
-		public int MatchID
-		{
-			get
-			{
-				return this._MatchID;
-			}
-			set
-			{
-				if ((this._MatchID != value))
-				{
-					this._MatchID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TeamAID", DbType="Int NOT NULL")]
-		public int TeamAID
-		{
-			get
-			{
-				return this._TeamAID;
-			}
-			set
-			{
-				if ((this._TeamAID != value))
-				{
-					this._TeamAID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TeamBID", DbType="Int NOT NULL")]
-		public int TeamBID
-		{
-			get
-			{
-				return this._TeamBID;
-			}
-			set
-			{
-				if ((this._TeamBID != value))
-				{
-					this._TeamBID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RefereeID", DbType="Int NOT NULL")]
-		public int RefereeID
-		{
-			get
-			{
-				return this._RefereeID;
-			}
-			set
-			{
-				if ((this._RefereeID != value))
-				{
-					this._RefereeID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TeamAScore", DbType="Int")]
-		public System.Nullable<int> TeamAScore
-		{
-			get
-			{
-				return this._TeamAScore;
-			}
-			set
-			{
-				if ((this._TeamAScore != value))
-				{
-					this._TeamAScore = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TeamBScore", DbType="Int")]
-		public System.Nullable<int> TeamBScore
-		{
-			get
-			{
-				return this._TeamBScore;
-			}
-			set
-			{
-				if ((this._TeamBScore != value))
-				{
-					this._TeamBScore = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsPlayed", DbType="Bit NOT NULL")]
-		public bool IsPlayed
-		{
-			get
-			{
-				return this._IsPlayed;
-			}
-			set
-			{
-				if ((this._IsPlayed != value))
-				{
-					this._IsPlayed = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MatchDate", DbType="DateTime")]
-		public System.Nullable<System.DateTime> MatchDate
-		{
-			get
-			{
-				return this._MatchDate;
-			}
-			set
-			{
-				if ((this._MatchDate != value))
-				{
-					this._MatchDate = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VenueID", DbType="Int NOT NULL")]
-		public int VenueID
-		{
-			get
-			{
-				return this._VenueID;
-			}
-			set
-			{
-				if ((this._VenueID != value))
-				{
-					this._VenueID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsDeleted", DbType="Bit NOT NULL")]
-		public bool IsDeleted
-		{
-			get
-			{
-				return this._IsDeleted;
-			}
-			set
-			{
-				if ((this._IsDeleted != value))
-				{
-					this._IsDeleted = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MatchKey", DbType="UniqueIdentifier NOT NULL")]
-		public System.Guid MatchKey
-		{
-			get
-			{
-				return this._MatchKey;
-			}
-			set
-			{
-				if ((this._MatchKey != value))
-				{
-					this._MatchKey = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_timestamp", DbType="rowversion NOT NULL", CanBeNull=false)]
-		public System.Data.Linq.Binary timestamp
-		{
-			get
-			{
-				return this._timestamp;
-			}
-			set
-			{
-				if ((this._timestamp != value))
-				{
-					this._timestamp = value;
-				}
-			}
-		}
-	}
-	
-	public partial class sp_Managers_ShortViewResult
-	{
-		
-		private int _MemberID;
-		
-		private string _Column1;
-		
-		public sp_Managers_ShortViewResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemberID", DbType="Int NOT NULL")]
-		public int MemberID
-		{
-			get
-			{
-				return this._MemberID;
-			}
-			set
-			{
-				if ((this._MemberID != value))
-				{
-					this._MemberID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="", Storage="_Column1", DbType="VarChar(101) NOT NULL", CanBeNull=false)]
-		public string Column1
-		{
-			get
-			{
-				return this._Column1;
-			}
-			set
-			{
-				if ((this._Column1 != value))
-				{
-					this._Column1 = value;
-				}
-			}
-		}
-	}
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Divisions_Delete")]
+        public int sp_Divisions_Delete([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "DivisionID", DbType = "Int")] System.Nullable<int> divisionID)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), divisionID);
+            return ((int)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_visitorContacts_ViewAll")]
+        public ISingleResult<sp_visitorContacts_ViewAllResult> sp_visitorContacts_ViewAll()
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+            return ((ISingleResult<sp_visitorContacts_ViewAllResult>)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Divisions_Insert")]
+        public int sp_Divisions_Insert([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "DivisionDesc", DbType = "VarChar(200)")] string divisionDesc)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), divisionDesc);
+            return ((int)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Divisions_ShortView")]
+        public ISingleResult<sp_Divisions_ShortViewResult> sp_Divisions_ShortView([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "DivisionID", DbType = "Int")] System.Nullable<int> divisionID)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), divisionID);
+            return ((ISingleResult<sp_Divisions_ShortViewResult>)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Divisions_SignleRecord")]
+        public ISingleResult<sp_Divisions_SignleRecordResult> sp_Divisions_SignleRecord([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "DivisionKey", DbType = "UniqueIdentifier")] System.Nullable<System.Guid> divisionKey)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), divisionKey);
+            return ((ISingleResult<sp_Divisions_SignleRecordResult>)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Divisions_Update")]
+        public int sp_Divisions_Update([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "DivisionKey", DbType = "UniqueIdentifier")] System.Nullable<System.Guid> divisionKey, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "DivisionDesc", DbType = "VarChar(200)")] string divisionDesc, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "IsDeleted", DbType = "Bit")] System.Nullable<bool> isDeleted, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType = "rowversion")] System.Data.Linq.Binary timestamp, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "Result", DbType = "Bit")] ref System.Nullable<bool> result)
+        {
+            IExecuteResult result1 = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), divisionKey, divisionDesc, isDeleted, timestamp, result);
+            result = ((System.Nullable<bool>)(result1.GetParameterValue(4)));
+            return ((int)(result1.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Divisions_ViewAll")]
+        public ISingleResult<sp_Divisions_ViewAllResult> sp_Divisions_ViewAll()
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+            return ((ISingleResult<sp_Divisions_ViewAllResult>)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Emails_Delete")]
+        public int sp_Emails_Delete([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "EmailID", DbType = "Int")] System.Nullable<int> emailID)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), emailID);
+            return ((int)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Emails_Insert")]
+        public int sp_Emails_Insert([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "EmailTo", DbType = "VarChar(200)")] string emailTo, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "EmailFrom", DbType = "VarChar(200)")] string emailFrom, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "EmailSubject", DbType = "VarChar(200)")] string emailSubject, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "EmailMessage", DbType = "VarChar(MAX)")] string emailMessage, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "SentDate", DbType = "DateTime")] System.Nullable<System.DateTime> sentDate)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), emailTo, emailFrom, emailSubject, emailMessage, sentDate);
+            return ((int)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Emails_ShortView")]
+        public ISingleResult<sp_Emails_ShortViewResult> sp_Emails_ShortView([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "EmailID", DbType = "Int")] System.Nullable<int> emailID)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), emailID);
+            return ((ISingleResult<sp_Emails_ShortViewResult>)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Emails_SignleRecord")]
+        public ISingleResult<sp_Emails_SignleRecordResult> sp_Emails_SignleRecord([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "EmailKey", DbType = "UniqueIdentifier")] System.Nullable<System.Guid> emailKey)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), emailKey);
+            return ((ISingleResult<sp_Emails_SignleRecordResult>)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Emails_Update")]
+        public int sp_Emails_Update([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "EmailKey", DbType = "UniqueIdentifier")] System.Nullable<System.Guid> emailKey, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "EmailTo", DbType = "VarChar(200)")] string emailTo, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "EmailFrom", DbType = "VarChar(200)")] string emailFrom, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "EmailSubject", DbType = "VarChar(200)")] string emailSubject, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "EmailMessage", DbType = "VarChar(MAX)")] string emailMessage, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "SentDate", DbType = "DateTime")] System.Nullable<System.DateTime> sentDate, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "IsDeleted", DbType = "Bit")] System.Nullable<bool> isDeleted, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType = "rowversion")] System.Data.Linq.Binary timestamp, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "Result", DbType = "Bit")] ref System.Nullable<bool> result)
+        {
+            IExecuteResult result1 = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), emailKey, emailTo, emailFrom, emailSubject, emailMessage, sentDate, isDeleted, timestamp, result);
+            result = ((System.Nullable<bool>)(result1.GetParameterValue(8)));
+            return ((int)(result1.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Emails_ViewAll")]
+        public ISingleResult<sp_Emails_ViewAllResult> sp_Emails_ViewAll()
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+            return ((ISingleResult<sp_Emails_ViewAllResult>)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_News_Delete")]
+        public int sp_News_Delete([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "NewsID", DbType = "Int")] System.Nullable<int> newsID)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), newsID);
+            return ((int)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_News_Insert")]
+        public int sp_News_Insert([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "NewsHeadLine", DbType = "VarChar(200)")] string newsHeadLine, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "NewsContent", DbType = "VarChar(MAX)")] string newsContent, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "NewsDate", DbType = "Date")] System.Nullable<System.DateTime> newsDate)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), newsHeadLine, newsContent, newsDate);
+            return ((int)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_News_ShortView")]
+        public ISingleResult<sp_News_ShortViewResult> sp_News_ShortView([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "NewsID", DbType = "Int")] System.Nullable<int> newsID)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), newsID);
+            return ((ISingleResult<sp_News_ShortViewResult>)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_News_SignleRecord")]
+        public ISingleResult<sp_News_SignleRecordResult> sp_News_SignleRecord([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "NewsKey", DbType = "UniqueIdentifier")] System.Nullable<System.Guid> newsKey)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), newsKey);
+            return ((ISingleResult<sp_News_SignleRecordResult>)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_News_Update")]
+        public int sp_News_Update([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "NewsKey", DbType = "UniqueIdentifier")] System.Nullable<System.Guid> newsKey, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "NewsHeadLine", DbType = "VarChar(200)")] string newsHeadLine, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "NewsContent", DbType = "VarChar(MAX)")] string newsContent, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "NewsDate", DbType = "Date")] System.Nullable<System.DateTime> newsDate, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "IsDeleted", DbType = "Bit")] System.Nullable<bool> isDeleted, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType = "rowversion")] System.Data.Linq.Binary timestamp, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "Result", DbType = "Bit")] ref System.Nullable<bool> result)
+        {
+            IExecuteResult result1 = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), newsKey, newsHeadLine, newsContent, newsDate, isDeleted, timestamp, result);
+            result = ((System.Nullable<bool>)(result1.GetParameterValue(6)));
+            return ((int)(result1.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_News_ViewAll")]
+        public ISingleResult<sp_News_ViewAllResult> sp_News_ViewAll()
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+            return ((ISingleResult<sp_News_ViewAllResult>)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Roles_Delete")]
+        public int sp_Roles_Delete([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "RoleID", DbType = "Int")] System.Nullable<int> roleID)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), roleID);
+            return ((int)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Roles_Insert")]
+        public int sp_Roles_Insert([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "RoleDesc", DbType = "VarChar(200)")] string roleDesc)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), roleDesc);
+            return ((int)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Roles_ShortView")]
+        public ISingleResult<sp_Roles_ShortViewResult> sp_Roles_ShortView([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "RoleID", DbType = "Int")] System.Nullable<int> roleID)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), roleID);
+            return ((ISingleResult<sp_Roles_ShortViewResult>)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Roles_SignleRecord")]
+        public ISingleResult<sp_Roles_SignleRecordResult> sp_Roles_SignleRecord([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "RoleKey", DbType = "UniqueIdentifier")] System.Nullable<System.Guid> roleKey)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), roleKey);
+            return ((ISingleResult<sp_Roles_SignleRecordResult>)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Roles_Update")]
+        public int sp_Roles_Update([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "RoleKey", DbType = "UniqueIdentifier")] System.Nullable<System.Guid> roleKey, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "RoleDesc", DbType = "VarChar(200)")] string roleDesc, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "IsDeleted", DbType = "Bit")] System.Nullable<bool> isDeleted, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType = "rowversion")] System.Data.Linq.Binary timestamp, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "Result", DbType = "Bit")] ref System.Nullable<bool> result)
+        {
+            IExecuteResult result1 = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), roleKey, roleDesc, isDeleted, timestamp, result);
+            result = ((System.Nullable<bool>)(result1.GetParameterValue(4)));
+            return ((int)(result1.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Roles_ViewAll")]
+        public ISingleResult<sp_Roles_ViewAllResult> sp_Roles_ViewAll()
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+            return ((ISingleResult<sp_Roles_ViewAllResult>)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Teams_Delete")]
+        public int sp_Teams_Delete([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "TeamID", DbType = "Int")] System.Nullable<int> teamID)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), teamID);
+            return ((int)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Teams_Insert")]
+        public int sp_Teams_Insert([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "TeamDesc", DbType = "VarChar(200)")] string teamDesc, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "DivisionID", DbType = "Int")] System.Nullable<int> divisionID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "IsOurs", DbType = "Bit")] System.Nullable<bool> isOurs)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), teamDesc, divisionID, isOurs);
+            return ((int)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Teams_ShortView")]
+        public ISingleResult<sp_Teams_ShortViewResult> sp_Teams_ShortView([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "TeamID", DbType = "Int")] System.Nullable<int> teamID)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), teamID);
+            return ((ISingleResult<sp_Teams_ShortViewResult>)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Teams_SignleRecord")]
+        public ISingleResult<sp_Teams_SignleRecordResult> sp_Teams_SignleRecord([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "TeamKey", DbType = "UniqueIdentifier")] System.Nullable<System.Guid> teamKey)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), teamKey);
+            return ((ISingleResult<sp_Teams_SignleRecordResult>)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Teams_Update")]
+        public int sp_Teams_Update([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "TeamKey", DbType = "UniqueIdentifier")] System.Nullable<System.Guid> teamKey, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "TeamDesc", DbType = "VarChar(200)")] string teamDesc, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "DivisionID", DbType = "Int")] System.Nullable<int> divisionID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "IsOurs", DbType = "Bit")] System.Nullable<bool> isOurs, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "IsDeleted", DbType = "Bit")] System.Nullable<bool> isDeleted, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType = "rowversion")] System.Data.Linq.Binary timestamp, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "Result", DbType = "Bit")] ref System.Nullable<bool> result)
+        {
+            IExecuteResult result1 = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), teamKey, teamDesc, divisionID, isOurs, isDeleted, timestamp, result);
+            result = ((System.Nullable<bool>)(result1.GetParameterValue(6)));
+            return ((int)(result1.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Teams_ViewAll")]
+        public ISingleResult<sp_Teams_ViewAllResult> sp_Teams_ViewAll()
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+            return ((ISingleResult<sp_Teams_ViewAllResult>)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_visitorContacts_Delete")]
+        public int sp_visitorContacts_Delete([global::System.Data.Linq.Mapping.ParameterAttribute(DbType = "Int")] System.Nullable<int> visitorContactID)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), visitorContactID);
+            return ((int)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_visitorContacts_Insert")]
+        public int sp_visitorContacts_Insert([global::System.Data.Linq.Mapping.ParameterAttribute(DbType = "VarChar(200)")] string visitorContactDesc, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "ContactName", DbType = "VarChar(50)")] string contactName, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "EmailAddress", DbType = "VarChar(200)")] string emailAddress, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "Message", DbType = "VarChar(MAX)")] string message, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "ContactDate", DbType = "DateTime")] System.Nullable<System.DateTime> contactDate)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), visitorContactDesc, contactName, emailAddress, message, contactDate);
+            return ((int)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_visitorContacts_ShortView")]
+        public ISingleResult<sp_visitorContacts_ShortViewResult> sp_visitorContacts_ShortView([global::System.Data.Linq.Mapping.ParameterAttribute(DbType = "Int")] System.Nullable<int> visitorContactID)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), visitorContactID);
+            return ((ISingleResult<sp_visitorContacts_ShortViewResult>)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_visitorContacts_SignleRecord")]
+        public ISingleResult<sp_visitorContacts_SignleRecordResult> sp_visitorContacts_SignleRecord([global::System.Data.Linq.Mapping.ParameterAttribute(DbType = "UniqueIdentifier")] System.Nullable<System.Guid> visitorContactKey)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), visitorContactKey);
+            return ((ISingleResult<sp_visitorContacts_SignleRecordResult>)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_visitorContacts_Update")]
+        public int sp_visitorContacts_Update([global::System.Data.Linq.Mapping.ParameterAttribute(DbType = "UniqueIdentifier")] System.Nullable<System.Guid> visitorContactKey, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType = "VarChar(200)")] string visitorContactDesc, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "ContactName", DbType = "VarChar(50)")] string contactName, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "EmailAddress", DbType = "VarChar(200)")] string emailAddress, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "Message", DbType = "VarChar(MAX)")] string message, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "ContactDate", DbType = "DateTime")] System.Nullable<System.DateTime> contactDate, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "IsDeleted", DbType = "Bit")] System.Nullable<bool> isDeleted, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType = "rowversion")] System.Data.Linq.Binary timestamp, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "Result", DbType = "Bit")] ref System.Nullable<bool> result)
+        {
+            IExecuteResult result1 = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), visitorContactKey, visitorContactDesc, contactName, emailAddress, message, contactDate, isDeleted, timestamp, result);
+            result = ((System.Nullable<bool>)(result1.GetParameterValue(8)));
+            return ((int)(result1.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Venues_Delete")]
+        public int sp_Venues_Delete([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "VenueID", DbType = "Int")] System.Nullable<int> venueID)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), venueID);
+            return ((int)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Venues_ViewAll")]
+        public ISingleResult<sp_Venues_ViewAllResult> sp_Venues_ViewAll()
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+            return ((ISingleResult<sp_Venues_ViewAllResult>)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Venues_Insert")]
+        public int sp_Venues_Insert([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "VenueDesc", DbType = "VarChar(200)")] string venueDesc)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), venueDesc);
+            return ((int)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Venues_ShortView")]
+        public ISingleResult<sp_Venues_ShortViewResult> sp_Venues_ShortView([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "VenueID", DbType = "Int")] System.Nullable<int> venueID)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), venueID);
+            return ((ISingleResult<sp_Venues_ShortViewResult>)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Venues_SignleRecord")]
+        public ISingleResult<sp_Venues_SignleRecordResult> sp_Venues_SignleRecord([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "VenueKey", DbType = "UniqueIdentifier")] System.Nullable<System.Guid> venueKey)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), venueKey);
+            return ((ISingleResult<sp_Venues_SignleRecordResult>)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Venues_Update")]
+        public int sp_Venues_Update([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "VenueKey", DbType = "UniqueIdentifier")] System.Nullable<System.Guid> venueKey, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "VenueDesc", DbType = "VarChar(200)")] string venueDesc, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "IsDeleted", DbType = "Bit")] System.Nullable<bool> isDeleted, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType = "rowversion")] System.Data.Linq.Binary timestamp, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "Result", DbType = "Bit")] ref System.Nullable<bool> result)
+        {
+            IExecuteResult result1 = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), venueKey, venueDesc, isDeleted, timestamp, result);
+            result = ((System.Nullable<bool>)(result1.GetParameterValue(4)));
+            return ((int)(result1.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_NewsLetter_Contents")]
+        public ISingleResult<sp_NewsLetter_ContentsResult> sp_NewsLetter_Contents()
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+            return ((ISingleResult<sp_NewsLetter_ContentsResult>)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_email_getAddresses")]
+        public ISingleResult<sp_email_getAddressesResult> sp_email_getAddresses()
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+            return ((ISingleResult<sp_email_getAddressesResult>)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_MembersByRole_ShortView")]
+        public ISingleResult<sp_MembersByRole_ShortViewResult> sp_MembersByRole_ShortView()
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+            return ((ISingleResult<sp_MembersByRole_ShortViewResult>)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Members_ViewAll")]
+        public ISingleResult<sp_Members_ViewAllResult> sp_Members_ViewAll([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "Role", DbType = "Int")] System.Nullable<int> role)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), role);
+            return ((ISingleResult<sp_Members_ViewAllResult>)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Members_Delete")]
+        public int sp_Members_Delete([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "MemberID", DbType = "Int")] System.Nullable<int> memberID)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), memberID);
+            return ((int)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Members_Insert")]
+        public int sp_Members_Insert([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "FirstName", DbType = "VarChar(50)")] string firstName, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "LastName", DbType = "VarChar(50)")] string lastName, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "EmailAddress", DbType = "VarChar(200)")] string emailAddress, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "PhoneNo", DbType = "VarChar(15)")] string phoneNo, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "TeamID", DbType = "Int")] System.Nullable<int> teamID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "RoleID", DbType = "Int")] System.Nullable<int> roleID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "DOB", DbType = "Date")] System.Nullable<System.DateTime> dOB, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "DateJoined", DbType = "Date")] System.Nullable<System.DateTime> dateJoined)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), firstName, lastName, emailAddress, phoneNo, teamID, roleID, dOB, dateJoined);
+            return ((int)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Members_ShortView")]
+        public ISingleResult<sp_Members_ShortViewResult> sp_Members_ShortView([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "MemberID", DbType = "Int")] System.Nullable<int> memberID)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), memberID);
+            return ((ISingleResult<sp_Members_ShortViewResult>)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Members_SignleRecord")]
+        public ISingleResult<sp_Members_SignleRecordResult> sp_Members_SignleRecord([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "MemberKey", DbType = "UniqueIdentifier")] System.Nullable<System.Guid> memberKey)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), memberKey);
+            return ((ISingleResult<sp_Members_SignleRecordResult>)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Members_Update")]
+        public int sp_Members_Update([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "MemberKey", DbType = "UniqueIdentifier")] System.Nullable<System.Guid> memberKey, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "FirstName", DbType = "VarChar(50)")] string firstName, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "LastName", DbType = "VarChar(50)")] string lastName, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "EmailAddress", DbType = "VarChar(200)")] string emailAddress, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "PhoneNo", DbType = "VarChar(15)")] string phoneNo, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "TeamID", DbType = "Int")] System.Nullable<int> teamID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "RoleID", DbType = "Int")] System.Nullable<int> roleID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "DOB", DbType = "Date")] System.Nullable<System.DateTime> dOB, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "DateJoined", DbType = "Date")] System.Nullable<System.DateTime> dateJoined, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "IsDeleted", DbType = "Bit")] System.Nullable<bool> isDeleted, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType = "rowversion")] System.Data.Linq.Binary timestamp, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "Result", DbType = "Bit")] ref System.Nullable<bool> result)
+        {
+            IExecuteResult result1 = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), memberKey, firstName, lastName, emailAddress, phoneNo, teamID, roleID, dOB, dateJoined, isDeleted, timestamp, result);
+            result = ((System.Nullable<bool>)(result1.GetParameterValue(11)));
+            return ((int)(result1.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Matches_ViewAll")]
+        public ISingleResult<sp_Matches_ViewAllResult> sp_Matches_ViewAll()
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+            return ((ISingleResult<sp_Matches_ViewAllResult>)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Matches_Delete")]
+        public int sp_Matches_Delete([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "MatchID", DbType = "Int")] System.Nullable<int> matchID)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), matchID);
+            return ((int)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Matches_Insert")]
+        public int sp_Matches_Insert([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "TeamAID", DbType = "Int")] System.Nullable<int> teamAID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "TeamBID", DbType = "Int")] System.Nullable<int> teamBID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "RefereeID", DbType = "Int")] System.Nullable<int> refereeID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "TeamAScore", DbType = "Int")] System.Nullable<int> teamAScore, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "TeamBScore", DbType = "Int")] System.Nullable<int> teamBScore, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "IsPlayed", DbType = "Bit")] System.Nullable<bool> isPlayed, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "MatchDate", DbType = "DateTime")] System.Nullable<System.DateTime> matchDate, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "VenueID", DbType = "Int")] System.Nullable<int> venueID)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), teamAID, teamBID, refereeID, teamAScore, teamBScore, isPlayed, matchDate, venueID);
+            return ((int)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Matches_SignleRecord")]
+        public ISingleResult<sp_Matches_SignleRecordResult> sp_Matches_SignleRecord([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "MatchKey", DbType = "UniqueIdentifier")] System.Nullable<System.Guid> matchKey)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), matchKey);
+            return ((ISingleResult<sp_Matches_SignleRecordResult>)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Matches_Update")]
+        public int sp_Matches_Update([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "MatchKey", DbType = "UniqueIdentifier")] System.Nullable<System.Guid> matchKey, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "TeamAID", DbType = "Int")] System.Nullable<int> teamAID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "TeamBID", DbType = "Int")] System.Nullable<int> teamBID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "RefereeID", DbType = "Int")] System.Nullable<int> refereeID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "TeamAScore", DbType = "Int")] System.Nullable<int> teamAScore, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "TeamBScore", DbType = "Int")] System.Nullable<int> teamBScore, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "IsPlayed", DbType = "Bit")] System.Nullable<bool> isPlayed, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "MatchDate", DbType = "DateTime")] System.Nullable<System.DateTime> matchDate, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "VenueID", DbType = "Int")] System.Nullable<int> venueID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "IsDeleted", DbType = "Bit")] System.Nullable<bool> isDeleted, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType = "rowversion")] System.Data.Linq.Binary timestamp, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "Result", DbType = "Bit")] ref System.Nullable<bool> result)
+        {
+            IExecuteResult result1 = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), matchKey, teamAID, teamBID, refereeID, teamAScore, teamBScore, isPlayed, matchDate, venueID, isDeleted, timestamp, result);
+            result = ((System.Nullable<bool>)(result1.GetParameterValue(11)));
+            return ((int)(result1.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Managers_ShortView")]
+        public ISingleResult<sp_Managers_ShortViewResult> sp_Managers_ShortView([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "MemberID", DbType = "Int")] System.Nullable<int> memberID)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), memberID);
+            return ((ISingleResult<sp_Managers_ShortViewResult>)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.aspnet_Membership_GetAllUsers")]
+        public int aspnet_Membership_GetAllUsers([global::System.Data.Linq.Mapping.ParameterAttribute(Name = "ApplicationName", DbType = "NVarChar(256)")] string applicationName, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "PageIndex", DbType = "Int")] System.Nullable<int> pageIndex, [global::System.Data.Linq.Mapping.ParameterAttribute(Name = "PageSize", DbType = "Int")] System.Nullable<int> pageSize)
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), applicationName, pageIndex, pageSize);
+            return ((int)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Email_MatchReminders")]
+        public ISingleResult<sp_Email_MatchRemindersResult> sp_Email_MatchReminders()
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+            return ((ISingleResult<sp_Email_MatchRemindersResult>)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Email_ReminderLastSent")]
+        public ISingleResult<sp_Email_ReminderLastSentResult> sp_Email_ReminderLastSent()
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+            return ((ISingleResult<sp_Email_ReminderLastSentResult>)(result.ReturnValue));
+        }
+
+        [global::System.Data.Linq.Mapping.FunctionAttribute(Name = "dbo.sp_Email_NewsletterLastSent")]
+        public ISingleResult<sp_Email_NewsletterLastSentResult> sp_Email_NewsletterLastSent()
+        {
+            IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+            return ((ISingleResult<sp_Email_NewsletterLastSentResult>)(result.ReturnValue));
+        }
+    }
+
+    [global::System.Data.Linq.Mapping.TableAttribute(Name = "dbo.News")]
+    public partial class New : INotifyPropertyChanging, INotifyPropertyChanged
+    {
+
+        private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+
+        private int _NewsID;
+
+        private string _NewsHeadLine;
+
+        private string _NewsContent;
+
+        private System.DateTime _NewsDate;
+
+        private bool _IsDeleted;
+
+        private System.Guid _NewsKey;
+
+        #region Extensibility Method Definitions
+        partial void OnLoaded();
+        partial void OnValidate(System.Data.Linq.ChangeAction action);
+        partial void OnCreated();
+        partial void OnNewsIDChanging(int value);
+        partial void OnNewsIDChanged();
+        partial void OnNewsHeadLineChanging(string value);
+        partial void OnNewsHeadLineChanged();
+        partial void OnNewsContentChanging(string value);
+        partial void OnNewsContentChanged();
+        partial void OnNewsDateChanging(System.DateTime value);
+        partial void OnNewsDateChanged();
+        partial void OnIsDeletedChanging(bool value);
+        partial void OnIsDeletedChanged();
+        partial void OnNewsKeyChanging(System.Guid value);
+        partial void OnNewsKeyChanged();
+        #endregion
+
+        public New()
+        {
+            OnCreated();
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_NewsID", AutoSync = AutoSync.OnInsert, DbType = "Int NOT NULL IDENTITY", IsPrimaryKey = true, IsDbGenerated = true)]
+        public int NewsID
+        {
+            get
+            {
+                return this._NewsID;
+            }
+            set
+            {
+                if ((this._NewsID != value))
+                {
+                    this.OnNewsIDChanging(value);
+                    this.SendPropertyChanging();
+                    this._NewsID = value;
+                    this.SendPropertyChanged("NewsID");
+                    this.OnNewsIDChanged();
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_NewsHeadLine", DbType = "VarChar(200) NOT NULL", CanBeNull = false)]
+        public string NewsHeadLine
+        {
+            get
+            {
+                return this._NewsHeadLine;
+            }
+            set
+            {
+                if ((this._NewsHeadLine != value))
+                {
+                    this.OnNewsHeadLineChanging(value);
+                    this.SendPropertyChanging();
+                    this._NewsHeadLine = value;
+                    this.SendPropertyChanged("NewsHeadLine");
+                    this.OnNewsHeadLineChanged();
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_NewsContent", DbType = "VarChar(MAX)")]
+        public string NewsContent
+        {
+            get
+            {
+                return this._NewsContent;
+            }
+            set
+            {
+                if ((this._NewsContent != value))
+                {
+                    this.OnNewsContentChanging(value);
+                    this.SendPropertyChanging();
+                    this._NewsContent = value;
+                    this.SendPropertyChanged("NewsContent");
+                    this.OnNewsContentChanged();
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_NewsDate", DbType = "Date NOT NULL")]
+        public System.DateTime NewsDate
+        {
+            get
+            {
+                return this._NewsDate;
+            }
+            set
+            {
+                if ((this._NewsDate != value))
+                {
+                    this.OnNewsDateChanging(value);
+                    this.SendPropertyChanging();
+                    this._NewsDate = value;
+                    this.SendPropertyChanged("NewsDate");
+                    this.OnNewsDateChanged();
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_IsDeleted", DbType = "Bit NOT NULL")]
+        public bool IsDeleted
+        {
+            get
+            {
+                return this._IsDeleted;
+            }
+            set
+            {
+                if ((this._IsDeleted != value))
+                {
+                    this.OnIsDeletedChanging(value);
+                    this.SendPropertyChanging();
+                    this._IsDeleted = value;
+                    this.SendPropertyChanged("IsDeleted");
+                    this.OnIsDeletedChanged();
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_NewsKey", DbType = "UniqueIdentifier NOT NULL")]
+        public System.Guid NewsKey
+        {
+            get
+            {
+                return this._NewsKey;
+            }
+            set
+            {
+                if ((this._NewsKey != value))
+                {
+                    this.OnNewsKeyChanging(value);
+                    this.SendPropertyChanging();
+                    this._NewsKey = value;
+                    this.SendPropertyChanged("NewsKey");
+                    this.OnNewsKeyChanged();
+                }
+            }
+        }
+
+        public event PropertyChangingEventHandler PropertyChanging;
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void SendPropertyChanging()
+        {
+            if ((this.PropertyChanging != null))
+            {
+                this.PropertyChanging(this, emptyChangingEventArgs);
+            }
+        }
+
+        protected virtual void SendPropertyChanged(String propertyName)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    public partial class sp_visitorContacts_ViewAllResult
+    {
+
+        private int _VisitorContactID;
+
+        private string _VisitorContactDesc;
+
+        private string _ContactName;
+
+        private string _EmailAddress;
+
+        private string _ContactMessage;
+
+        private System.DateTime _ContactDate;
+
+        private bool _IsDeleted;
+
+        private System.Guid _VisitorContactKey;
+
+        private System.Data.Linq.Binary _timestamp;
+
+        public sp_visitorContacts_ViewAllResult()
+        {
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_VisitorContactID", DbType = "Int NOT NULL")]
+        public int VisitorContactID
+        {
+            get
+            {
+                return this._VisitorContactID;
+            }
+            set
+            {
+                if ((this._VisitorContactID != value))
+                {
+                    this._VisitorContactID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_VisitorContactDesc", DbType = "VarChar(200)")]
+        public string VisitorContactDesc
+        {
+            get
+            {
+                return this._VisitorContactDesc;
+            }
+            set
+            {
+                if ((this._VisitorContactDesc != value))
+                {
+                    this._VisitorContactDesc = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_ContactName", DbType = "VarChar(200)")]
+        public string ContactName
+        {
+            get
+            {
+                return this._ContactName;
+            }
+            set
+            {
+                if ((this._ContactName != value))
+                {
+                    this._ContactName = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_EmailAddress", DbType = "VarChar(200) NOT NULL", CanBeNull = false)]
+        public string EmailAddress
+        {
+            get
+            {
+                return this._EmailAddress;
+            }
+            set
+            {
+                if ((this._EmailAddress != value))
+                {
+                    this._EmailAddress = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_ContactMessage", DbType = "VarChar(MAX)")]
+        public string ContactMessage
+        {
+            get
+            {
+                return this._ContactMessage;
+            }
+            set
+            {
+                if ((this._ContactMessage != value))
+                {
+                    this._ContactMessage = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_ContactDate", DbType = "DateTime NOT NULL")]
+        public System.DateTime ContactDate
+        {
+            get
+            {
+                return this._ContactDate;
+            }
+            set
+            {
+                if ((this._ContactDate != value))
+                {
+                    this._ContactDate = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_IsDeleted", DbType = "Bit NOT NULL")]
+        public bool IsDeleted
+        {
+            get
+            {
+                return this._IsDeleted;
+            }
+            set
+            {
+                if ((this._IsDeleted != value))
+                {
+                    this._IsDeleted = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_VisitorContactKey", DbType = "UniqueIdentifier NOT NULL")]
+        public System.Guid VisitorContactKey
+        {
+            get
+            {
+                return this._VisitorContactKey;
+            }
+            set
+            {
+                if ((this._VisitorContactKey != value))
+                {
+                    this._VisitorContactKey = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_timestamp", DbType = "rowversion NOT NULL", CanBeNull = false)]
+        public System.Data.Linq.Binary timestamp
+        {
+            get
+            {
+                return this._timestamp;
+            }
+            set
+            {
+                if ((this._timestamp != value))
+                {
+                    this._timestamp = value;
+                }
+            }
+        }
+    }
+
+    public partial class sp_Divisions_ShortViewResult
+    {
+
+        private int _DivisionID;
+
+        private string _DivisionDesc;
+
+        public sp_Divisions_ShortViewResult()
+        {
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_DivisionID", DbType = "Int NOT NULL")]
+        public int DivisionID
+        {
+            get
+            {
+                return this._DivisionID;
+            }
+            set
+            {
+                if ((this._DivisionID != value))
+                {
+                    this._DivisionID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_DivisionDesc", DbType = "VarChar(200) NOT NULL", CanBeNull = false)]
+        public string DivisionDesc
+        {
+            get
+            {
+                return this._DivisionDesc;
+            }
+            set
+            {
+                if ((this._DivisionDesc != value))
+                {
+                    this._DivisionDesc = value;
+                }
+            }
+        }
+    }
+
+    public partial class sp_Divisions_SignleRecordResult
+    {
+
+        private int _DivisionID;
+
+        private string _DivisionDesc;
+
+        private bool _IsDeleted;
+
+        private System.Guid _DivisionKey;
+
+        private System.Data.Linq.Binary _timestamp;
+
+        public sp_Divisions_SignleRecordResult()
+        {
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_DivisionID", DbType = "Int NOT NULL")]
+        public int DivisionID
+        {
+            get
+            {
+                return this._DivisionID;
+            }
+            set
+            {
+                if ((this._DivisionID != value))
+                {
+                    this._DivisionID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_DivisionDesc", DbType = "VarChar(200) NOT NULL", CanBeNull = false)]
+        public string DivisionDesc
+        {
+            get
+            {
+                return this._DivisionDesc;
+            }
+            set
+            {
+                if ((this._DivisionDesc != value))
+                {
+                    this._DivisionDesc = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_IsDeleted", DbType = "Bit NOT NULL")]
+        public bool IsDeleted
+        {
+            get
+            {
+                return this._IsDeleted;
+            }
+            set
+            {
+                if ((this._IsDeleted != value))
+                {
+                    this._IsDeleted = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_DivisionKey", DbType = "UniqueIdentifier NOT NULL")]
+        public System.Guid DivisionKey
+        {
+            get
+            {
+                return this._DivisionKey;
+            }
+            set
+            {
+                if ((this._DivisionKey != value))
+                {
+                    this._DivisionKey = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_timestamp", DbType = "rowversion NOT NULL", CanBeNull = false)]
+        public System.Data.Linq.Binary timestamp
+        {
+            get
+            {
+                return this._timestamp;
+            }
+            set
+            {
+                if ((this._timestamp != value))
+                {
+                    this._timestamp = value;
+                }
+            }
+        }
+    }
+
+    public partial class sp_Divisions_ViewAllResult
+    {
+
+        private int _DivisionID;
+
+        private string _DivisionDesc;
+
+        private bool _IsDeleted;
+
+        private System.Guid _DivisionKey;
+
+        private System.Data.Linq.Binary _timestamp;
+
+        public sp_Divisions_ViewAllResult()
+        {
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_DivisionID", DbType = "Int NOT NULL")]
+        public int DivisionID
+        {
+            get
+            {
+                return this._DivisionID;
+            }
+            set
+            {
+                if ((this._DivisionID != value))
+                {
+                    this._DivisionID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_DivisionDesc", DbType = "VarChar(200) NOT NULL", CanBeNull = false)]
+        public string DivisionDesc
+        {
+            get
+            {
+                return this._DivisionDesc;
+            }
+            set
+            {
+                if ((this._DivisionDesc != value))
+                {
+                    this._DivisionDesc = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_IsDeleted", DbType = "Bit NOT NULL")]
+        public bool IsDeleted
+        {
+            get
+            {
+                return this._IsDeleted;
+            }
+            set
+            {
+                if ((this._IsDeleted != value))
+                {
+                    this._IsDeleted = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_DivisionKey", DbType = "UniqueIdentifier NOT NULL")]
+        public System.Guid DivisionKey
+        {
+            get
+            {
+                return this._DivisionKey;
+            }
+            set
+            {
+                if ((this._DivisionKey != value))
+                {
+                    this._DivisionKey = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_timestamp", DbType = "rowversion NOT NULL", CanBeNull = false)]
+        public System.Data.Linq.Binary timestamp
+        {
+            get
+            {
+                return this._timestamp;
+            }
+            set
+            {
+                if ((this._timestamp != value))
+                {
+                    this._timestamp = value;
+                }
+            }
+        }
+    }
+
+    public partial class sp_Emails_ShortViewResult
+    {
+
+        private int _EmailID;
+
+        private string _EmailSubject;
+
+        public sp_Emails_ShortViewResult()
+        {
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_EmailID", DbType = "Int NOT NULL")]
+        public int EmailID
+        {
+            get
+            {
+                return this._EmailID;
+            }
+            set
+            {
+                if ((this._EmailID != value))
+                {
+                    this._EmailID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_EmailSubject", DbType = "VarChar(200) NOT NULL", CanBeNull = false)]
+        public string EmailSubject
+        {
+            get
+            {
+                return this._EmailSubject;
+            }
+            set
+            {
+                if ((this._EmailSubject != value))
+                {
+                    this._EmailSubject = value;
+                }
+            }
+        }
+    }
+
+    public partial class sp_Emails_SignleRecordResult
+    {
+
+        private int _EmailID;
+
+        private string _EmailTo;
+
+        private string _EmailFrom;
+
+        private string _EmailSubject;
+
+        private string _EmailMessage;
+
+        private System.DateTime _SentDate;
+
+        private bool _IsDeleted;
+
+        private System.Guid _EmailKey;
+
+        private System.Data.Linq.Binary _timestamp;
+
+        public sp_Emails_SignleRecordResult()
+        {
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_EmailID", DbType = "Int NOT NULL")]
+        public int EmailID
+        {
+            get
+            {
+                return this._EmailID;
+            }
+            set
+            {
+                if ((this._EmailID != value))
+                {
+                    this._EmailID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_EmailTo", DbType = "VarChar(200) NOT NULL", CanBeNull = false)]
+        public string EmailTo
+        {
+            get
+            {
+                return this._EmailTo;
+            }
+            set
+            {
+                if ((this._EmailTo != value))
+                {
+                    this._EmailTo = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_EmailFrom", DbType = "VarChar(200) NOT NULL", CanBeNull = false)]
+        public string EmailFrom
+        {
+            get
+            {
+                return this._EmailFrom;
+            }
+            set
+            {
+                if ((this._EmailFrom != value))
+                {
+                    this._EmailFrom = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_EmailSubject", DbType = "VarChar(200) NOT NULL", CanBeNull = false)]
+        public string EmailSubject
+        {
+            get
+            {
+                return this._EmailSubject;
+            }
+            set
+            {
+                if ((this._EmailSubject != value))
+                {
+                    this._EmailSubject = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_EmailMessage", DbType = "VarChar(MAX)")]
+        public string EmailMessage
+        {
+            get
+            {
+                return this._EmailMessage;
+            }
+            set
+            {
+                if ((this._EmailMessage != value))
+                {
+                    this._EmailMessage = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_SentDate", DbType = "DateTime NOT NULL")]
+        public System.DateTime SentDate
+        {
+            get
+            {
+                return this._SentDate;
+            }
+            set
+            {
+                if ((this._SentDate != value))
+                {
+                    this._SentDate = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_IsDeleted", DbType = "Bit NOT NULL")]
+        public bool IsDeleted
+        {
+            get
+            {
+                return this._IsDeleted;
+            }
+            set
+            {
+                if ((this._IsDeleted != value))
+                {
+                    this._IsDeleted = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_EmailKey", DbType = "UniqueIdentifier NOT NULL")]
+        public System.Guid EmailKey
+        {
+            get
+            {
+                return this._EmailKey;
+            }
+            set
+            {
+                if ((this._EmailKey != value))
+                {
+                    this._EmailKey = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_timestamp", DbType = "rowversion NOT NULL", CanBeNull = false)]
+        public System.Data.Linq.Binary timestamp
+        {
+            get
+            {
+                return this._timestamp;
+            }
+            set
+            {
+                if ((this._timestamp != value))
+                {
+                    this._timestamp = value;
+                }
+            }
+        }
+    }
+
+    public partial class sp_Emails_ViewAllResult
+    {
+
+        private int _EmailID;
+
+        private string _EmailTo;
+
+        private string _EmailFrom;
+
+        private string _EmailSubject;
+
+        private string _EmailMessage;
+
+        private System.DateTime _SentDate;
+
+        private bool _IsDeleted;
+
+        private System.Guid _EmailKey;
+
+        private System.Data.Linq.Binary _timestamp;
+
+        public sp_Emails_ViewAllResult()
+        {
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_EmailID", DbType = "Int NOT NULL")]
+        public int EmailID
+        {
+            get
+            {
+                return this._EmailID;
+            }
+            set
+            {
+                if ((this._EmailID != value))
+                {
+                    this._EmailID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_EmailTo", DbType = "VarChar(200) NOT NULL", CanBeNull = false)]
+        public string EmailTo
+        {
+            get
+            {
+                return this._EmailTo;
+            }
+            set
+            {
+                if ((this._EmailTo != value))
+                {
+                    this._EmailTo = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_EmailFrom", DbType = "VarChar(200) NOT NULL", CanBeNull = false)]
+        public string EmailFrom
+        {
+            get
+            {
+                return this._EmailFrom;
+            }
+            set
+            {
+                if ((this._EmailFrom != value))
+                {
+                    this._EmailFrom = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_EmailSubject", DbType = "VarChar(200) NOT NULL", CanBeNull = false)]
+        public string EmailSubject
+        {
+            get
+            {
+                return this._EmailSubject;
+            }
+            set
+            {
+                if ((this._EmailSubject != value))
+                {
+                    this._EmailSubject = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_EmailMessage", DbType = "VarChar(MAX)")]
+        public string EmailMessage
+        {
+            get
+            {
+                return this._EmailMessage;
+            }
+            set
+            {
+                if ((this._EmailMessage != value))
+                {
+                    this._EmailMessage = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_SentDate", DbType = "DateTime NOT NULL")]
+        public System.DateTime SentDate
+        {
+            get
+            {
+                return this._SentDate;
+            }
+            set
+            {
+                if ((this._SentDate != value))
+                {
+                    this._SentDate = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_IsDeleted", DbType = "Bit NOT NULL")]
+        public bool IsDeleted
+        {
+            get
+            {
+                return this._IsDeleted;
+            }
+            set
+            {
+                if ((this._IsDeleted != value))
+                {
+                    this._IsDeleted = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_EmailKey", DbType = "UniqueIdentifier NOT NULL")]
+        public System.Guid EmailKey
+        {
+            get
+            {
+                return this._EmailKey;
+            }
+            set
+            {
+                if ((this._EmailKey != value))
+                {
+                    this._EmailKey = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_timestamp", DbType = "rowversion NOT NULL", CanBeNull = false)]
+        public System.Data.Linq.Binary timestamp
+        {
+            get
+            {
+                return this._timestamp;
+            }
+            set
+            {
+                if ((this._timestamp != value))
+                {
+                    this._timestamp = value;
+                }
+            }
+        }
+    }
+
+    public partial class sp_News_ShortViewResult
+    {
+
+        private int _NewsID;
+
+        private string _NewsHeadline;
+
+        public sp_News_ShortViewResult()
+        {
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_NewsID", DbType = "Int NOT NULL")]
+        public int NewsID
+        {
+            get
+            {
+                return this._NewsID;
+            }
+            set
+            {
+                if ((this._NewsID != value))
+                {
+                    this._NewsID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_NewsHeadline", DbType = "VarChar(200) NOT NULL", CanBeNull = false)]
+        public string NewsHeadline
+        {
+            get
+            {
+                return this._NewsHeadline;
+            }
+            set
+            {
+                if ((this._NewsHeadline != value))
+                {
+                    this._NewsHeadline = value;
+                }
+            }
+        }
+    }
+
+    public partial class sp_News_SignleRecordResult
+    {
+
+        private int _NewsID;
+
+        private string _NewsHeadLine;
+
+        private string _NewsContent;
+
+        private System.DateTime _NewsDate;
+
+        private bool _IsDeleted;
+
+        private System.Guid _NewsKey;
+
+        private System.Data.Linq.Binary _timestamp;
+
+        public sp_News_SignleRecordResult()
+        {
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_NewsID", DbType = "Int NOT NULL")]
+        public int NewsID
+        {
+            get
+            {
+                return this._NewsID;
+            }
+            set
+            {
+                if ((this._NewsID != value))
+                {
+                    this._NewsID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_NewsHeadLine", DbType = "VarChar(200) NOT NULL", CanBeNull = false)]
+        public string NewsHeadLine
+        {
+            get
+            {
+                return this._NewsHeadLine;
+            }
+            set
+            {
+                if ((this._NewsHeadLine != value))
+                {
+                    this._NewsHeadLine = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_NewsContent", DbType = "VarChar(MAX)")]
+        public string NewsContent
+        {
+            get
+            {
+                return this._NewsContent;
+            }
+            set
+            {
+                if ((this._NewsContent != value))
+                {
+                    this._NewsContent = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_NewsDate", DbType = "Date NOT NULL")]
+        public System.DateTime NewsDate
+        {
+            get
+            {
+                return this._NewsDate;
+            }
+            set
+            {
+                if ((this._NewsDate != value))
+                {
+                    this._NewsDate = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_IsDeleted", DbType = "Bit NOT NULL")]
+        public bool IsDeleted
+        {
+            get
+            {
+                return this._IsDeleted;
+            }
+            set
+            {
+                if ((this._IsDeleted != value))
+                {
+                    this._IsDeleted = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_NewsKey", DbType = "UniqueIdentifier NOT NULL")]
+        public System.Guid NewsKey
+        {
+            get
+            {
+                return this._NewsKey;
+            }
+            set
+            {
+                if ((this._NewsKey != value))
+                {
+                    this._NewsKey = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_timestamp", DbType = "rowversion NOT NULL", CanBeNull = false)]
+        public System.Data.Linq.Binary timestamp
+        {
+            get
+            {
+                return this._timestamp;
+            }
+            set
+            {
+                if ((this._timestamp != value))
+                {
+                    this._timestamp = value;
+                }
+            }
+        }
+    }
+
+    public partial class sp_News_ViewAllResult
+    {
+
+        private int _NewsID;
+
+        private string _NewsHeadLine;
+
+        private string _NewsContent;
+
+        private System.DateTime _NewsDate;
+
+        private bool _IsDeleted;
+
+        private System.Guid _NewsKey;
+
+        private System.Data.Linq.Binary _timestamp;
+
+        public sp_News_ViewAllResult()
+        {
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_NewsID", DbType = "Int NOT NULL")]
+        public int NewsID
+        {
+            get
+            {
+                return this._NewsID;
+            }
+            set
+            {
+                if ((this._NewsID != value))
+                {
+                    this._NewsID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_NewsHeadLine", DbType = "VarChar(200) NOT NULL", CanBeNull = false)]
+        public string NewsHeadLine
+        {
+            get
+            {
+                return this._NewsHeadLine;
+            }
+            set
+            {
+                if ((this._NewsHeadLine != value))
+                {
+                    this._NewsHeadLine = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_NewsContent", DbType = "VarChar(MAX)")]
+        public string NewsContent
+        {
+            get
+            {
+                return this._NewsContent;
+            }
+            set
+            {
+                if ((this._NewsContent != value))
+                {
+                    this._NewsContent = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_NewsDate", DbType = "Date NOT NULL")]
+        public System.DateTime NewsDate
+        {
+            get
+            {
+                return this._NewsDate;
+            }
+            set
+            {
+                if ((this._NewsDate != value))
+                {
+                    this._NewsDate = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_IsDeleted", DbType = "Bit NOT NULL")]
+        public bool IsDeleted
+        {
+            get
+            {
+                return this._IsDeleted;
+            }
+            set
+            {
+                if ((this._IsDeleted != value))
+                {
+                    this._IsDeleted = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_NewsKey", DbType = "UniqueIdentifier NOT NULL")]
+        public System.Guid NewsKey
+        {
+            get
+            {
+                return this._NewsKey;
+            }
+            set
+            {
+                if ((this._NewsKey != value))
+                {
+                    this._NewsKey = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_timestamp", DbType = "rowversion NOT NULL", CanBeNull = false)]
+        public System.Data.Linq.Binary timestamp
+        {
+            get
+            {
+                return this._timestamp;
+            }
+            set
+            {
+                if ((this._timestamp != value))
+                {
+                    this._timestamp = value;
+                }
+            }
+        }
+    }
+
+    public partial class sp_Roles_ShortViewResult
+    {
+
+        private int _RoleID;
+
+        private string _RoleDesc;
+
+        public sp_Roles_ShortViewResult()
+        {
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_RoleID", DbType = "Int NOT NULL")]
+        public int RoleID
+        {
+            get
+            {
+                return this._RoleID;
+            }
+            set
+            {
+                if ((this._RoleID != value))
+                {
+                    this._RoleID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_RoleDesc", DbType = "VarChar(200) NOT NULL", CanBeNull = false)]
+        public string RoleDesc
+        {
+            get
+            {
+                return this._RoleDesc;
+            }
+            set
+            {
+                if ((this._RoleDesc != value))
+                {
+                    this._RoleDesc = value;
+                }
+            }
+        }
+    }
+
+    public partial class sp_Roles_SignleRecordResult
+    {
+
+        private int _RoleID;
+
+        private string _RoleDesc;
+
+        private bool _IsDeleted;
+
+        private System.Guid _RoleKey;
+
+        private System.Data.Linq.Binary _timestamp;
+
+        public sp_Roles_SignleRecordResult()
+        {
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_RoleID", DbType = "Int NOT NULL")]
+        public int RoleID
+        {
+            get
+            {
+                return this._RoleID;
+            }
+            set
+            {
+                if ((this._RoleID != value))
+                {
+                    this._RoleID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_RoleDesc", DbType = "VarChar(200) NOT NULL", CanBeNull = false)]
+        public string RoleDesc
+        {
+            get
+            {
+                return this._RoleDesc;
+            }
+            set
+            {
+                if ((this._RoleDesc != value))
+                {
+                    this._RoleDesc = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_IsDeleted", DbType = "Bit NOT NULL")]
+        public bool IsDeleted
+        {
+            get
+            {
+                return this._IsDeleted;
+            }
+            set
+            {
+                if ((this._IsDeleted != value))
+                {
+                    this._IsDeleted = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_RoleKey", DbType = "UniqueIdentifier NOT NULL")]
+        public System.Guid RoleKey
+        {
+            get
+            {
+                return this._RoleKey;
+            }
+            set
+            {
+                if ((this._RoleKey != value))
+                {
+                    this._RoleKey = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_timestamp", DbType = "rowversion NOT NULL", CanBeNull = false)]
+        public System.Data.Linq.Binary timestamp
+        {
+            get
+            {
+                return this._timestamp;
+            }
+            set
+            {
+                if ((this._timestamp != value))
+                {
+                    this._timestamp = value;
+                }
+            }
+        }
+    }
+
+    public partial class sp_Roles_ViewAllResult
+    {
+
+        private int _RoleID;
+
+        private string _RoleDesc;
+
+        private bool _IsDeleted;
+
+        private System.Guid _RoleKey;
+
+        private System.Data.Linq.Binary _timestamp;
+
+        public sp_Roles_ViewAllResult()
+        {
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_RoleID", DbType = "Int NOT NULL")]
+        public int RoleID
+        {
+            get
+            {
+                return this._RoleID;
+            }
+            set
+            {
+                if ((this._RoleID != value))
+                {
+                    this._RoleID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_RoleDesc", DbType = "VarChar(200) NOT NULL", CanBeNull = false)]
+        public string RoleDesc
+        {
+            get
+            {
+                return this._RoleDesc;
+            }
+            set
+            {
+                if ((this._RoleDesc != value))
+                {
+                    this._RoleDesc = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_IsDeleted", DbType = "Bit NOT NULL")]
+        public bool IsDeleted
+        {
+            get
+            {
+                return this._IsDeleted;
+            }
+            set
+            {
+                if ((this._IsDeleted != value))
+                {
+                    this._IsDeleted = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_RoleKey", DbType = "UniqueIdentifier NOT NULL")]
+        public System.Guid RoleKey
+        {
+            get
+            {
+                return this._RoleKey;
+            }
+            set
+            {
+                if ((this._RoleKey != value))
+                {
+                    this._RoleKey = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_timestamp", DbType = "rowversion NOT NULL", CanBeNull = false)]
+        public System.Data.Linq.Binary timestamp
+        {
+            get
+            {
+                return this._timestamp;
+            }
+            set
+            {
+                if ((this._timestamp != value))
+                {
+                    this._timestamp = value;
+                }
+            }
+        }
+    }
+
+    public partial class sp_Teams_ShortViewResult
+    {
+
+        private int _TeamID;
+
+        private string _TeamDesc;
+
+        public sp_Teams_ShortViewResult()
+        {
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_TeamID", DbType = "Int NOT NULL")]
+        public int TeamID
+        {
+            get
+            {
+                return this._TeamID;
+            }
+            set
+            {
+                if ((this._TeamID != value))
+                {
+                    this._TeamID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_TeamDesc", DbType = "VarChar(200) NOT NULL", CanBeNull = false)]
+        public string TeamDesc
+        {
+            get
+            {
+                return this._TeamDesc;
+            }
+            set
+            {
+                if ((this._TeamDesc != value))
+                {
+                    this._TeamDesc = value;
+                }
+            }
+        }
+    }
+
+    public partial class sp_Teams_SignleRecordResult
+    {
+
+        private int _TeamID;
+
+        private string _TeamDesc;
+
+        private int _DivisionID;
+
+        private bool _IsOurs;
+
+        private bool _IsDeleted;
+
+        private System.Guid _TeamKey;
+
+        private System.Data.Linq.Binary _timestamp;
+
+        private string _DivisionDesc;
+
+        public sp_Teams_SignleRecordResult()
+        {
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_TeamID", DbType = "Int NOT NULL")]
+        public int TeamID
+        {
+            get
+            {
+                return this._TeamID;
+            }
+            set
+            {
+                if ((this._TeamID != value))
+                {
+                    this._TeamID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_TeamDesc", DbType = "VarChar(200) NOT NULL", CanBeNull = false)]
+        public string TeamDesc
+        {
+            get
+            {
+                return this._TeamDesc;
+            }
+            set
+            {
+                if ((this._TeamDesc != value))
+                {
+                    this._TeamDesc = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_DivisionID", DbType = "Int NOT NULL")]
+        public int DivisionID
+        {
+            get
+            {
+                return this._DivisionID;
+            }
+            set
+            {
+                if ((this._DivisionID != value))
+                {
+                    this._DivisionID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_IsOurs", DbType = "Bit NOT NULL")]
+        public bool IsOurs
+        {
+            get
+            {
+                return this._IsOurs;
+            }
+            set
+            {
+                if ((this._IsOurs != value))
+                {
+                    this._IsOurs = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_IsDeleted", DbType = "Bit NOT NULL")]
+        public bool IsDeleted
+        {
+            get
+            {
+                return this._IsDeleted;
+            }
+            set
+            {
+                if ((this._IsDeleted != value))
+                {
+                    this._IsDeleted = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_TeamKey", DbType = "UniqueIdentifier NOT NULL")]
+        public System.Guid TeamKey
+        {
+            get
+            {
+                return this._TeamKey;
+            }
+            set
+            {
+                if ((this._TeamKey != value))
+                {
+                    this._TeamKey = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_timestamp", DbType = "rowversion NOT NULL", CanBeNull = false)]
+        public System.Data.Linq.Binary timestamp
+        {
+            get
+            {
+                return this._timestamp;
+            }
+            set
+            {
+                if ((this._timestamp != value))
+                {
+                    this._timestamp = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_DivisionDesc", DbType = "VarChar(200) NOT NULL", CanBeNull = false)]
+        public string DivisionDesc
+        {
+            get
+            {
+                return this._DivisionDesc;
+            }
+            set
+            {
+                if ((this._DivisionDesc != value))
+                {
+                    this._DivisionDesc = value;
+                }
+            }
+        }
+    }
+
+    public partial class sp_Teams_ViewAllResult
+    {
+
+        private int _TeamID;
+
+        private string _TeamDesc;
+
+        private int _DivisionID;
+
+        private bool _IsOurs;
+
+        private bool _IsDeleted;
+
+        private System.Guid _TeamKey;
+
+        private System.Data.Linq.Binary _timestamp;
+
+        private string _DivisionDesc;
+
+        public sp_Teams_ViewAllResult()
+        {
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_TeamID", DbType = "Int NOT NULL")]
+        public int TeamID
+        {
+            get
+            {
+                return this._TeamID;
+            }
+            set
+            {
+                if ((this._TeamID != value))
+                {
+                    this._TeamID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_TeamDesc", DbType = "VarChar(200) NOT NULL", CanBeNull = false)]
+        public string TeamDesc
+        {
+            get
+            {
+                return this._TeamDesc;
+            }
+            set
+            {
+                if ((this._TeamDesc != value))
+                {
+                    this._TeamDesc = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_DivisionID", DbType = "Int NOT NULL")]
+        public int DivisionID
+        {
+            get
+            {
+                return this._DivisionID;
+            }
+            set
+            {
+                if ((this._DivisionID != value))
+                {
+                    this._DivisionID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_IsOurs", DbType = "Bit NOT NULL")]
+        public bool IsOurs
+        {
+            get
+            {
+                return this._IsOurs;
+            }
+            set
+            {
+                if ((this._IsOurs != value))
+                {
+                    this._IsOurs = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_IsDeleted", DbType = "Bit NOT NULL")]
+        public bool IsDeleted
+        {
+            get
+            {
+                return this._IsDeleted;
+            }
+            set
+            {
+                if ((this._IsDeleted != value))
+                {
+                    this._IsDeleted = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_TeamKey", DbType = "UniqueIdentifier NOT NULL")]
+        public System.Guid TeamKey
+        {
+            get
+            {
+                return this._TeamKey;
+            }
+            set
+            {
+                if ((this._TeamKey != value))
+                {
+                    this._TeamKey = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_timestamp", DbType = "rowversion NOT NULL", CanBeNull = false)]
+        public System.Data.Linq.Binary timestamp
+        {
+            get
+            {
+                return this._timestamp;
+            }
+            set
+            {
+                if ((this._timestamp != value))
+                {
+                    this._timestamp = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_DivisionDesc", DbType = "VarChar(200) NOT NULL", CanBeNull = false)]
+        public string DivisionDesc
+        {
+            get
+            {
+                return this._DivisionDesc;
+            }
+            set
+            {
+                if ((this._DivisionDesc != value))
+                {
+                    this._DivisionDesc = value;
+                }
+            }
+        }
+    }
+
+    public partial class sp_visitorContacts_ShortViewResult
+    {
+
+        private int _visitorContactID;
+
+        private string _visitorContactDesc;
+
+        public sp_visitorContacts_ShortViewResult()
+        {
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_visitorContactID", DbType = "Int NOT NULL")]
+        public int visitorContactID
+        {
+            get
+            {
+                return this._visitorContactID;
+            }
+            set
+            {
+                if ((this._visitorContactID != value))
+                {
+                    this._visitorContactID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_visitorContactDesc", DbType = "VarChar(200)")]
+        public string visitorContactDesc
+        {
+            get
+            {
+                return this._visitorContactDesc;
+            }
+            set
+            {
+                if ((this._visitorContactDesc != value))
+                {
+                    this._visitorContactDesc = value;
+                }
+            }
+        }
+    }
+
+    public partial class sp_visitorContacts_SignleRecordResult
+    {
+
+        private int _VisitorContactID;
+
+        private string _VisitorContactDesc;
+
+        private string _ContactName;
+
+        private string _EmailAddress;
+
+        private string _ContactMessage;
+
+        private System.DateTime _ContactDate;
+
+        private bool _IsDeleted;
+
+        private System.Guid _VisitorContactKey;
+
+        private System.Data.Linq.Binary _timestamp;
+
+        public sp_visitorContacts_SignleRecordResult()
+        {
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_VisitorContactID", DbType = "Int NOT NULL")]
+        public int VisitorContactID
+        {
+            get
+            {
+                return this._VisitorContactID;
+            }
+            set
+            {
+                if ((this._VisitorContactID != value))
+                {
+                    this._VisitorContactID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_VisitorContactDesc", DbType = "VarChar(200)")]
+        public string VisitorContactDesc
+        {
+            get
+            {
+                return this._VisitorContactDesc;
+            }
+            set
+            {
+                if ((this._VisitorContactDesc != value))
+                {
+                    this._VisitorContactDesc = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_ContactName", DbType = "VarChar(200)")]
+        public string ContactName
+        {
+            get
+            {
+                return this._ContactName;
+            }
+            set
+            {
+                if ((this._ContactName != value))
+                {
+                    this._ContactName = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_EmailAddress", DbType = "VarChar(200) NOT NULL", CanBeNull = false)]
+        public string EmailAddress
+        {
+            get
+            {
+                return this._EmailAddress;
+            }
+            set
+            {
+                if ((this._EmailAddress != value))
+                {
+                    this._EmailAddress = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_ContactMessage", DbType = "VarChar(MAX)")]
+        public string ContactMessage
+        {
+            get
+            {
+                return this._ContactMessage;
+            }
+            set
+            {
+                if ((this._ContactMessage != value))
+                {
+                    this._ContactMessage = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_ContactDate", DbType = "DateTime NOT NULL")]
+        public System.DateTime ContactDate
+        {
+            get
+            {
+                return this._ContactDate;
+            }
+            set
+            {
+                if ((this._ContactDate != value))
+                {
+                    this._ContactDate = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_IsDeleted", DbType = "Bit NOT NULL")]
+        public bool IsDeleted
+        {
+            get
+            {
+                return this._IsDeleted;
+            }
+            set
+            {
+                if ((this._IsDeleted != value))
+                {
+                    this._IsDeleted = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_VisitorContactKey", DbType = "UniqueIdentifier NOT NULL")]
+        public System.Guid VisitorContactKey
+        {
+            get
+            {
+                return this._VisitorContactKey;
+            }
+            set
+            {
+                if ((this._VisitorContactKey != value))
+                {
+                    this._VisitorContactKey = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_timestamp", DbType = "rowversion NOT NULL", CanBeNull = false)]
+        public System.Data.Linq.Binary timestamp
+        {
+            get
+            {
+                return this._timestamp;
+            }
+            set
+            {
+                if ((this._timestamp != value))
+                {
+                    this._timestamp = value;
+                }
+            }
+        }
+    }
+
+    public partial class sp_Venues_ViewAllResult
+    {
+
+        private int _VenueID;
+
+        private string _VenueDesc;
+
+        private bool _IsDeleted;
+
+        private System.Guid _VenueKey;
+
+        private System.Data.Linq.Binary _timestamp;
+
+        public sp_Venues_ViewAllResult()
+        {
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_VenueID", DbType = "Int NOT NULL")]
+        public int VenueID
+        {
+            get
+            {
+                return this._VenueID;
+            }
+            set
+            {
+                if ((this._VenueID != value))
+                {
+                    this._VenueID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_VenueDesc", DbType = "VarChar(200) NOT NULL", CanBeNull = false)]
+        public string VenueDesc
+        {
+            get
+            {
+                return this._VenueDesc;
+            }
+            set
+            {
+                if ((this._VenueDesc != value))
+                {
+                    this._VenueDesc = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_IsDeleted", DbType = "Bit NOT NULL")]
+        public bool IsDeleted
+        {
+            get
+            {
+                return this._IsDeleted;
+            }
+            set
+            {
+                if ((this._IsDeleted != value))
+                {
+                    this._IsDeleted = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_VenueKey", DbType = "UniqueIdentifier NOT NULL")]
+        public System.Guid VenueKey
+        {
+            get
+            {
+                return this._VenueKey;
+            }
+            set
+            {
+                if ((this._VenueKey != value))
+                {
+                    this._VenueKey = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_timestamp", DbType = "rowversion NOT NULL", CanBeNull = false)]
+        public System.Data.Linq.Binary timestamp
+        {
+            get
+            {
+                return this._timestamp;
+            }
+            set
+            {
+                if ((this._timestamp != value))
+                {
+                    this._timestamp = value;
+                }
+            }
+        }
+    }
+
+    public partial class sp_Venues_ShortViewResult
+    {
+
+        private int _VenueID;
+
+        private string _VenueDesc;
+
+        public sp_Venues_ShortViewResult()
+        {
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_VenueID", DbType = "Int NOT NULL")]
+        public int VenueID
+        {
+            get
+            {
+                return this._VenueID;
+            }
+            set
+            {
+                if ((this._VenueID != value))
+                {
+                    this._VenueID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_VenueDesc", DbType = "VarChar(200) NOT NULL", CanBeNull = false)]
+        public string VenueDesc
+        {
+            get
+            {
+                return this._VenueDesc;
+            }
+            set
+            {
+                if ((this._VenueDesc != value))
+                {
+                    this._VenueDesc = value;
+                }
+            }
+        }
+    }
+
+    public partial class sp_Venues_SignleRecordResult
+    {
+
+        private int _VenueID;
+
+        private string _VenueDesc;
+
+        private bool _IsDeleted;
+
+        private System.Guid _VenueKey;
+
+        private System.Data.Linq.Binary _timestamp;
+
+        public sp_Venues_SignleRecordResult()
+        {
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_VenueID", DbType = "Int NOT NULL")]
+        public int VenueID
+        {
+            get
+            {
+                return this._VenueID;
+            }
+            set
+            {
+                if ((this._VenueID != value))
+                {
+                    this._VenueID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_VenueDesc", DbType = "VarChar(200) NOT NULL", CanBeNull = false)]
+        public string VenueDesc
+        {
+            get
+            {
+                return this._VenueDesc;
+            }
+            set
+            {
+                if ((this._VenueDesc != value))
+                {
+                    this._VenueDesc = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_IsDeleted", DbType = "Bit NOT NULL")]
+        public bool IsDeleted
+        {
+            get
+            {
+                return this._IsDeleted;
+            }
+            set
+            {
+                if ((this._IsDeleted != value))
+                {
+                    this._IsDeleted = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_VenueKey", DbType = "UniqueIdentifier NOT NULL")]
+        public System.Guid VenueKey
+        {
+            get
+            {
+                return this._VenueKey;
+            }
+            set
+            {
+                if ((this._VenueKey != value))
+                {
+                    this._VenueKey = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_timestamp", DbType = "rowversion NOT NULL", CanBeNull = false)]
+        public System.Data.Linq.Binary timestamp
+        {
+            get
+            {
+                return this._timestamp;
+            }
+            set
+            {
+                if ((this._timestamp != value))
+                {
+                    this._timestamp = value;
+                }
+            }
+        }
+    }
+
+    public partial class sp_NewsLetter_ContentsResult
+    {
+
+        private int _NewsID;
+
+        private string _NewsHeadLine;
+
+        private string _NewsContent;
+
+        private System.DateTime _NewsDate;
+
+        private bool _IsDeleted;
+
+        private System.Guid _NewsKey;
+
+        private System.Data.Linq.Binary _timestamp;
+
+        public sp_NewsLetter_ContentsResult()
+        {
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_NewsID", DbType = "Int NOT NULL")]
+        public int NewsID
+        {
+            get
+            {
+                return this._NewsID;
+            }
+            set
+            {
+                if ((this._NewsID != value))
+                {
+                    this._NewsID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_NewsHeadLine", DbType = "VarChar(200) NOT NULL", CanBeNull = false)]
+        public string NewsHeadLine
+        {
+            get
+            {
+                return this._NewsHeadLine;
+            }
+            set
+            {
+                if ((this._NewsHeadLine != value))
+                {
+                    this._NewsHeadLine = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_NewsContent", DbType = "VarChar(MAX)")]
+        public string NewsContent
+        {
+            get
+            {
+                return this._NewsContent;
+            }
+            set
+            {
+                if ((this._NewsContent != value))
+                {
+                    this._NewsContent = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_NewsDate", DbType = "Date NOT NULL")]
+        public System.DateTime NewsDate
+        {
+            get
+            {
+                return this._NewsDate;
+            }
+            set
+            {
+                if ((this._NewsDate != value))
+                {
+                    this._NewsDate = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_IsDeleted", DbType = "Bit NOT NULL")]
+        public bool IsDeleted
+        {
+            get
+            {
+                return this._IsDeleted;
+            }
+            set
+            {
+                if ((this._IsDeleted != value))
+                {
+                    this._IsDeleted = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_NewsKey", DbType = "UniqueIdentifier NOT NULL")]
+        public System.Guid NewsKey
+        {
+            get
+            {
+                return this._NewsKey;
+            }
+            set
+            {
+                if ((this._NewsKey != value))
+                {
+                    this._NewsKey = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_timestamp", DbType = "rowversion NOT NULL", CanBeNull = false)]
+        public System.Data.Linq.Binary timestamp
+        {
+            get
+            {
+                return this._timestamp;
+            }
+            set
+            {
+                if ((this._timestamp != value))
+                {
+                    this._timestamp = value;
+                }
+            }
+        }
+    }
+
+    public partial class sp_email_getAddressesResult
+    {
+
+        private string _EmailAddress;
+
+        public sp_email_getAddressesResult()
+        {
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_EmailAddress", DbType = "VarChar(200)")]
+        public string EmailAddress
+        {
+            get
+            {
+                return this._EmailAddress;
+            }
+            set
+            {
+                if ((this._EmailAddress != value))
+                {
+                    this._EmailAddress = value;
+                }
+            }
+        }
+    }
+
+    public partial class sp_MembersByRole_ShortViewResult
+    {
+
+        private int _RoleID;
+
+        private string _RoleDesc;
+
+        private System.Nullable<int> _Total;
+
+        public sp_MembersByRole_ShortViewResult()
+        {
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_RoleID", DbType = "Int NOT NULL")]
+        public int RoleID
+        {
+            get
+            {
+                return this._RoleID;
+            }
+            set
+            {
+                if ((this._RoleID != value))
+                {
+                    this._RoleID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_RoleDesc", DbType = "VarChar(200) NOT NULL", CanBeNull = false)]
+        public string RoleDesc
+        {
+            get
+            {
+                return this._RoleDesc;
+            }
+            set
+            {
+                if ((this._RoleDesc != value))
+                {
+                    this._RoleDesc = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_Total", DbType = "Int")]
+        public System.Nullable<int> Total
+        {
+            get
+            {
+                return this._Total;
+            }
+            set
+            {
+                if ((this._Total != value))
+                {
+                    this._Total = value;
+                }
+            }
+        }
+    }
+
+    public partial class sp_Members_ViewAllResult
+    {
+
+        private System.Nullable<int> _MemberID;
+
+        private string _FirstName;
+
+        private string _LastName;
+
+        private string _EmailAddress;
+
+        private string _PhoneNo;
+
+        private System.Nullable<int> _TeamID;
+
+        private System.Nullable<int> _RoleID;
+
+        private System.Nullable<System.DateTime> _DOB;
+
+        private System.Nullable<System.DateTime> _DateJoined;
+
+        private System.Nullable<bool> _IsDeleted;
+
+        private System.Nullable<System.Guid> _MemberKey;
+
+        private System.Data.Linq.Binary _timestamp;
+
+        private string _RoleDesc;
+
+        private string _TeamDesc;
+
+        public sp_Members_ViewAllResult()
+        {
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_MemberID", DbType = "Int")]
+        public System.Nullable<int> MemberID
+        {
+            get
+            {
+                return this._MemberID;
+            }
+            set
+            {
+                if ((this._MemberID != value))
+                {
+                    this._MemberID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_FirstName", DbType = "VarChar(50)")]
+        public string FirstName
+        {
+            get
+            {
+                return this._FirstName;
+            }
+            set
+            {
+                if ((this._FirstName != value))
+                {
+                    this._FirstName = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_LastName", DbType = "VarChar(50)")]
+        public string LastName
+        {
+            get
+            {
+                return this._LastName;
+            }
+            set
+            {
+                if ((this._LastName != value))
+                {
+                    this._LastName = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_EmailAddress", DbType = "VarChar(200)")]
+        public string EmailAddress
+        {
+            get
+            {
+                return this._EmailAddress;
+            }
+            set
+            {
+                if ((this._EmailAddress != value))
+                {
+                    this._EmailAddress = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_PhoneNo", DbType = "VarChar(15)")]
+        public string PhoneNo
+        {
+            get
+            {
+                return this._PhoneNo;
+            }
+            set
+            {
+                if ((this._PhoneNo != value))
+                {
+                    this._PhoneNo = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_TeamID", DbType = "Int")]
+        public System.Nullable<int> TeamID
+        {
+            get
+            {
+                return this._TeamID;
+            }
+            set
+            {
+                if ((this._TeamID != value))
+                {
+                    this._TeamID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_RoleID", DbType = "Int")]
+        public System.Nullable<int> RoleID
+        {
+            get
+            {
+                return this._RoleID;
+            }
+            set
+            {
+                if ((this._RoleID != value))
+                {
+                    this._RoleID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_DOB", DbType = "Date")]
+        public System.Nullable<System.DateTime> DOB
+        {
+            get
+            {
+                return this._DOB;
+            }
+            set
+            {
+                if ((this._DOB != value))
+                {
+                    this._DOB = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_DateJoined", DbType = "Date")]
+        public System.Nullable<System.DateTime> DateJoined
+        {
+            get
+            {
+                return this._DateJoined;
+            }
+            set
+            {
+                if ((this._DateJoined != value))
+                {
+                    this._DateJoined = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_IsDeleted", DbType = "Bit")]
+        public System.Nullable<bool> IsDeleted
+        {
+            get
+            {
+                return this._IsDeleted;
+            }
+            set
+            {
+                if ((this._IsDeleted != value))
+                {
+                    this._IsDeleted = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_MemberKey", DbType = "UniqueIdentifier")]
+        public System.Nullable<System.Guid> MemberKey
+        {
+            get
+            {
+                return this._MemberKey;
+            }
+            set
+            {
+                if ((this._MemberKey != value))
+                {
+                    this._MemberKey = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_timestamp", DbType = "rowversion")]
+        public System.Data.Linq.Binary timestamp
+        {
+            get
+            {
+                return this._timestamp;
+            }
+            set
+            {
+                if ((this._timestamp != value))
+                {
+                    this._timestamp = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_RoleDesc", DbType = "VarChar(200)")]
+        public string RoleDesc
+        {
+            get
+            {
+                return this._RoleDesc;
+            }
+            set
+            {
+                if ((this._RoleDesc != value))
+                {
+                    this._RoleDesc = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_TeamDesc", DbType = "VarChar(200) NOT NULL", CanBeNull = false)]
+        public string TeamDesc
+        {
+            get
+            {
+                return this._TeamDesc;
+            }
+            set
+            {
+                if ((this._TeamDesc != value))
+                {
+                    this._TeamDesc = value;
+                }
+            }
+        }
+    }
+
+    public partial class sp_Members_ShortViewResult
+    {
+
+        private int _MemberID;
+
+        private string _Column1;
+
+        public sp_Members_ShortViewResult()
+        {
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_MemberID", DbType = "Int NOT NULL")]
+        public int MemberID
+        {
+            get
+            {
+                return this._MemberID;
+            }
+            set
+            {
+                if ((this._MemberID != value))
+                {
+                    this._MemberID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Name = "", Storage = "_Column1", DbType = "VarChar(101) NOT NULL", CanBeNull = false)]
+        public string Column1
+        {
+            get
+            {
+                return this._Column1;
+            }
+            set
+            {
+                if ((this._Column1 != value))
+                {
+                    this._Column1 = value;
+                }
+            }
+        }
+    }
+
+    public partial class sp_Members_SignleRecordResult
+    {
+
+        private System.Nullable<int> _MemberID;
+
+        private string _FirstName;
+
+        private string _LastName;
+
+        private string _EmailAddress;
+
+        private string _PhoneNo;
+
+        private System.Nullable<int> _TeamID;
+
+        private System.Nullable<int> _RoleID;
+
+        private System.Nullable<System.DateTime> _DOB;
+
+        private System.Nullable<System.DateTime> _DateJoined;
+
+        private System.Nullable<bool> _IsDeleted;
+
+        private System.Nullable<System.Guid> _MemberKey;
+
+        private System.Data.Linq.Binary _timestamp;
+
+        private string _RoleDesc;
+
+        private string _TeamDesc;
+
+        public sp_Members_SignleRecordResult()
+        {
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_MemberID", DbType = "Int")]
+        public System.Nullable<int> MemberID
+        {
+            get
+            {
+                return this._MemberID;
+            }
+            set
+            {
+                if ((this._MemberID != value))
+                {
+                    this._MemberID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_FirstName", DbType = "VarChar(50)")]
+        public string FirstName
+        {
+            get
+            {
+                return this._FirstName;
+            }
+            set
+            {
+                if ((this._FirstName != value))
+                {
+                    this._FirstName = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_LastName", DbType = "VarChar(50)")]
+        public string LastName
+        {
+            get
+            {
+                return this._LastName;
+            }
+            set
+            {
+                if ((this._LastName != value))
+                {
+                    this._LastName = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_EmailAddress", DbType = "VarChar(200)")]
+        public string EmailAddress
+        {
+            get
+            {
+                return this._EmailAddress;
+            }
+            set
+            {
+                if ((this._EmailAddress != value))
+                {
+                    this._EmailAddress = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_PhoneNo", DbType = "VarChar(15)")]
+        public string PhoneNo
+        {
+            get
+            {
+                return this._PhoneNo;
+            }
+            set
+            {
+                if ((this._PhoneNo != value))
+                {
+                    this._PhoneNo = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_TeamID", DbType = "Int")]
+        public System.Nullable<int> TeamID
+        {
+            get
+            {
+                return this._TeamID;
+            }
+            set
+            {
+                if ((this._TeamID != value))
+                {
+                    this._TeamID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_RoleID", DbType = "Int")]
+        public System.Nullable<int> RoleID
+        {
+            get
+            {
+                return this._RoleID;
+            }
+            set
+            {
+                if ((this._RoleID != value))
+                {
+                    this._RoleID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_DOB", DbType = "Date")]
+        public System.Nullable<System.DateTime> DOB
+        {
+            get
+            {
+                return this._DOB;
+            }
+            set
+            {
+                if ((this._DOB != value))
+                {
+                    this._DOB = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_DateJoined", DbType = "Date")]
+        public System.Nullable<System.DateTime> DateJoined
+        {
+            get
+            {
+                return this._DateJoined;
+            }
+            set
+            {
+                if ((this._DateJoined != value))
+                {
+                    this._DateJoined = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_IsDeleted", DbType = "Bit")]
+        public System.Nullable<bool> IsDeleted
+        {
+            get
+            {
+                return this._IsDeleted;
+            }
+            set
+            {
+                if ((this._IsDeleted != value))
+                {
+                    this._IsDeleted = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_MemberKey", DbType = "UniqueIdentifier")]
+        public System.Nullable<System.Guid> MemberKey
+        {
+            get
+            {
+                return this._MemberKey;
+            }
+            set
+            {
+                if ((this._MemberKey != value))
+                {
+                    this._MemberKey = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_timestamp", DbType = "rowversion")]
+        public System.Data.Linq.Binary timestamp
+        {
+            get
+            {
+                return this._timestamp;
+            }
+            set
+            {
+                if ((this._timestamp != value))
+                {
+                    this._timestamp = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_RoleDesc", DbType = "VarChar(200)")]
+        public string RoleDesc
+        {
+            get
+            {
+                return this._RoleDesc;
+            }
+            set
+            {
+                if ((this._RoleDesc != value))
+                {
+                    this._RoleDesc = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_TeamDesc", DbType = "VarChar(200) NOT NULL", CanBeNull = false)]
+        public string TeamDesc
+        {
+            get
+            {
+                return this._TeamDesc;
+            }
+            set
+            {
+                if ((this._TeamDesc != value))
+                {
+                    this._TeamDesc = value;
+                }
+            }
+        }
+    }
+
+    public partial class sp_Matches_ViewAllResult
+    {
+
+        private int _MatchID;
+
+        private int _TeamAID;
+
+        private int _TeamBID;
+
+        private int _RefereeID;
+
+        private System.Nullable<int> _TeamAScore;
+
+        private System.Nullable<int> _TeamBScore;
+
+        private bool _IsPlayed;
+
+        private System.Nullable<System.DateTime> _MatchDate;
+
+        private int _VenueID;
+
+        private bool _IsDeleted;
+
+        private System.Guid _MatchKey;
+
+        private System.Data.Linq.Binary _timestamp;
+
+        public sp_Matches_ViewAllResult()
+        {
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_MatchID", DbType = "Int NOT NULL")]
+        public int MatchID
+        {
+            get
+            {
+                return this._MatchID;
+            }
+            set
+            {
+                if ((this._MatchID != value))
+                {
+                    this._MatchID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_TeamAID", DbType = "Int NOT NULL")]
+        public int TeamAID
+        {
+            get
+            {
+                return this._TeamAID;
+            }
+            set
+            {
+                if ((this._TeamAID != value))
+                {
+                    this._TeamAID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_TeamBID", DbType = "Int NOT NULL")]
+        public int TeamBID
+        {
+            get
+            {
+                return this._TeamBID;
+            }
+            set
+            {
+                if ((this._TeamBID != value))
+                {
+                    this._TeamBID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_RefereeID", DbType = "Int NOT NULL")]
+        public int RefereeID
+        {
+            get
+            {
+                return this._RefereeID;
+            }
+            set
+            {
+                if ((this._RefereeID != value))
+                {
+                    this._RefereeID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_TeamAScore", DbType = "Int")]
+        public System.Nullable<int> TeamAScore
+        {
+            get
+            {
+                return this._TeamAScore;
+            }
+            set
+            {
+                if ((this._TeamAScore != value))
+                {
+                    this._TeamAScore = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_TeamBScore", DbType = "Int")]
+        public System.Nullable<int> TeamBScore
+        {
+            get
+            {
+                return this._TeamBScore;
+            }
+            set
+            {
+                if ((this._TeamBScore != value))
+                {
+                    this._TeamBScore = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_IsPlayed", DbType = "Bit NOT NULL")]
+        public bool IsPlayed
+        {
+            get
+            {
+                return this._IsPlayed;
+            }
+            set
+            {
+                if ((this._IsPlayed != value))
+                {
+                    this._IsPlayed = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_MatchDate", DbType = "DateTime")]
+        public System.Nullable<System.DateTime> MatchDate
+        {
+            get
+            {
+                return this._MatchDate;
+            }
+            set
+            {
+                if ((this._MatchDate != value))
+                {
+                    this._MatchDate = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_VenueID", DbType = "Int NOT NULL")]
+        public int VenueID
+        {
+            get
+            {
+                return this._VenueID;
+            }
+            set
+            {
+                if ((this._VenueID != value))
+                {
+                    this._VenueID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_IsDeleted", DbType = "Bit NOT NULL")]
+        public bool IsDeleted
+        {
+            get
+            {
+                return this._IsDeleted;
+            }
+            set
+            {
+                if ((this._IsDeleted != value))
+                {
+                    this._IsDeleted = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_MatchKey", DbType = "UniqueIdentifier NOT NULL")]
+        public System.Guid MatchKey
+        {
+            get
+            {
+                return this._MatchKey;
+            }
+            set
+            {
+                if ((this._MatchKey != value))
+                {
+                    this._MatchKey = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_timestamp", DbType = "rowversion NOT NULL", CanBeNull = false)]
+        public System.Data.Linq.Binary timestamp
+        {
+            get
+            {
+                return this._timestamp;
+            }
+            set
+            {
+                if ((this._timestamp != value))
+                {
+                    this._timestamp = value;
+                }
+            }
+        }
+    }
+
+    public partial class sp_Matches_SignleRecordResult
+    {
+
+        private int _MatchID;
+
+        private int _TeamAID;
+
+        private int _TeamBID;
+
+        private int _RefereeID;
+
+        private System.Nullable<int> _TeamAScore;
+
+        private System.Nullable<int> _TeamBScore;
+
+        private bool _IsPlayed;
+
+        private System.Nullable<System.DateTime> _MatchDate;
+
+        private int _VenueID;
+
+        private bool _IsDeleted;
+
+        private System.Guid _MatchKey;
+
+        private System.Data.Linq.Binary _timestamp;
+
+        public sp_Matches_SignleRecordResult()
+        {
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_MatchID", DbType = "Int NOT NULL")]
+        public int MatchID
+        {
+            get
+            {
+                return this._MatchID;
+            }
+            set
+            {
+                if ((this._MatchID != value))
+                {
+                    this._MatchID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_TeamAID", DbType = "Int NOT NULL")]
+        public int TeamAID
+        {
+            get
+            {
+                return this._TeamAID;
+            }
+            set
+            {
+                if ((this._TeamAID != value))
+                {
+                    this._TeamAID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_TeamBID", DbType = "Int NOT NULL")]
+        public int TeamBID
+        {
+            get
+            {
+                return this._TeamBID;
+            }
+            set
+            {
+                if ((this._TeamBID != value))
+                {
+                    this._TeamBID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_RefereeID", DbType = "Int NOT NULL")]
+        public int RefereeID
+        {
+            get
+            {
+                return this._RefereeID;
+            }
+            set
+            {
+                if ((this._RefereeID != value))
+                {
+                    this._RefereeID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_TeamAScore", DbType = "Int")]
+        public System.Nullable<int> TeamAScore
+        {
+            get
+            {
+                return this._TeamAScore;
+            }
+            set
+            {
+                if ((this._TeamAScore != value))
+                {
+                    this._TeamAScore = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_TeamBScore", DbType = "Int")]
+        public System.Nullable<int> TeamBScore
+        {
+            get
+            {
+                return this._TeamBScore;
+            }
+            set
+            {
+                if ((this._TeamBScore != value))
+                {
+                    this._TeamBScore = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_IsPlayed", DbType = "Bit NOT NULL")]
+        public bool IsPlayed
+        {
+            get
+            {
+                return this._IsPlayed;
+            }
+            set
+            {
+                if ((this._IsPlayed != value))
+                {
+                    this._IsPlayed = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_MatchDate", DbType = "DateTime")]
+        public System.Nullable<System.DateTime> MatchDate
+        {
+            get
+            {
+                return this._MatchDate;
+            }
+            set
+            {
+                if ((this._MatchDate != value))
+                {
+                    this._MatchDate = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_VenueID", DbType = "Int NOT NULL")]
+        public int VenueID
+        {
+            get
+            {
+                return this._VenueID;
+            }
+            set
+            {
+                if ((this._VenueID != value))
+                {
+                    this._VenueID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_IsDeleted", DbType = "Bit NOT NULL")]
+        public bool IsDeleted
+        {
+            get
+            {
+                return this._IsDeleted;
+            }
+            set
+            {
+                if ((this._IsDeleted != value))
+                {
+                    this._IsDeleted = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_MatchKey", DbType = "UniqueIdentifier NOT NULL")]
+        public System.Guid MatchKey
+        {
+            get
+            {
+                return this._MatchKey;
+            }
+            set
+            {
+                if ((this._MatchKey != value))
+                {
+                    this._MatchKey = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_timestamp", DbType = "rowversion NOT NULL", CanBeNull = false)]
+        public System.Data.Linq.Binary timestamp
+        {
+            get
+            {
+                return this._timestamp;
+            }
+            set
+            {
+                if ((this._timestamp != value))
+                {
+                    this._timestamp = value;
+                }
+            }
+        }
+    }
+
+    public partial class sp_Managers_ShortViewResult
+    {
+
+        private int _MemberID;
+
+        private string _Column1;
+
+        public sp_Managers_ShortViewResult()
+        {
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_MemberID", DbType = "Int NOT NULL")]
+        public int MemberID
+        {
+            get
+            {
+                return this._MemberID;
+            }
+            set
+            {
+                if ((this._MemberID != value))
+                {
+                    this._MemberID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Name = "", Storage = "_Column1", DbType = "VarChar(101) NOT NULL", CanBeNull = false)]
+        public string Column1
+        {
+            get
+            {
+                return this._Column1;
+            }
+            set
+            {
+                if ((this._Column1 != value))
+                {
+                    this._Column1 = value;
+                }
+            }
+        }
+    }
+
+    public partial class sp_Email_MatchRemindersResult
+    {
+
+        private int _MatchID;
+
+        private int _TeamAID;
+
+        private int _TeamBID;
+
+        private int _RefereeID;
+
+        private System.Nullable<int> _TeamAScore;
+
+        private System.Nullable<int> _TeamBScore;
+
+        private bool _IsPlayed;
+
+        private System.Nullable<System.DateTime> _MatchDate;
+
+        private int _VenueID;
+
+        private bool _IsDeleted;
+
+        private System.Guid _MatchKey;
+
+        private System.Data.Linq.Binary _timestamp;
+
+        private System.Nullable<int> _MemberID;
+
+        private string _FirstName;
+
+        private string _LastName;
+
+        private string _EmailAddress;
+
+        private string _PhoneNo;
+
+        private System.Nullable<int> _TeamID;
+
+        private System.Nullable<int> _RoleID;
+
+        private System.Nullable<System.DateTime> _DOB;
+
+        private System.Nullable<System.DateTime> _DateJoined;
+
+        private System.Nullable<bool> _IsDeleted1;
+
+        private System.Nullable<System.Guid> _MemberKey;
+
+        private System.Data.Linq.Binary _timestamp1;
+
+        private string _TeamA;
+
+        private string _TeamB;
+
+        private string _VenueDesc;
+
+        public sp_Email_MatchRemindersResult()
+        {
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_MatchID", DbType = "Int NOT NULL")]
+        public int MatchID
+        {
+            get
+            {
+                return this._MatchID;
+            }
+            set
+            {
+                if ((this._MatchID != value))
+                {
+                    this._MatchID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_TeamAID", DbType = "Int NOT NULL")]
+        public int TeamAID
+        {
+            get
+            {
+                return this._TeamAID;
+            }
+            set
+            {
+                if ((this._TeamAID != value))
+                {
+                    this._TeamAID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_TeamBID", DbType = "Int NOT NULL")]
+        public int TeamBID
+        {
+            get
+            {
+                return this._TeamBID;
+            }
+            set
+            {
+                if ((this._TeamBID != value))
+                {
+                    this._TeamBID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_RefereeID", DbType = "Int NOT NULL")]
+        public int RefereeID
+        {
+            get
+            {
+                return this._RefereeID;
+            }
+            set
+            {
+                if ((this._RefereeID != value))
+                {
+                    this._RefereeID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_TeamAScore", DbType = "Int")]
+        public System.Nullable<int> TeamAScore
+        {
+            get
+            {
+                return this._TeamAScore;
+            }
+            set
+            {
+                if ((this._TeamAScore != value))
+                {
+                    this._TeamAScore = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_TeamBScore", DbType = "Int")]
+        public System.Nullable<int> TeamBScore
+        {
+            get
+            {
+                return this._TeamBScore;
+            }
+            set
+            {
+                if ((this._TeamBScore != value))
+                {
+                    this._TeamBScore = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_IsPlayed", DbType = "Bit NOT NULL")]
+        public bool IsPlayed
+        {
+            get
+            {
+                return this._IsPlayed;
+            }
+            set
+            {
+                if ((this._IsPlayed != value))
+                {
+                    this._IsPlayed = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_MatchDate", DbType = "DateTime")]
+        public System.Nullable<System.DateTime> MatchDate
+        {
+            get
+            {
+                return this._MatchDate;
+            }
+            set
+            {
+                if ((this._MatchDate != value))
+                {
+                    this._MatchDate = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_VenueID", DbType = "Int NOT NULL")]
+        public int VenueID
+        {
+            get
+            {
+                return this._VenueID;
+            }
+            set
+            {
+                if ((this._VenueID != value))
+                {
+                    this._VenueID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_IsDeleted", DbType = "Bit NOT NULL")]
+        public bool IsDeleted
+        {
+            get
+            {
+                return this._IsDeleted;
+            }
+            set
+            {
+                if ((this._IsDeleted != value))
+                {
+                    this._IsDeleted = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_MatchKey", DbType = "UniqueIdentifier NOT NULL")]
+        public System.Guid MatchKey
+        {
+            get
+            {
+                return this._MatchKey;
+            }
+            set
+            {
+                if ((this._MatchKey != value))
+                {
+                    this._MatchKey = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_timestamp", DbType = "rowversion NOT NULL", CanBeNull = false)]
+        public System.Data.Linq.Binary timestamp
+        {
+            get
+            {
+                return this._timestamp;
+            }
+            set
+            {
+                if ((this._timestamp != value))
+                {
+                    this._timestamp = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_MemberID", DbType = "Int")]
+        public System.Nullable<int> MemberID
+        {
+            get
+            {
+                return this._MemberID;
+            }
+            set
+            {
+                if ((this._MemberID != value))
+                {
+                    this._MemberID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_FirstName", DbType = "VarChar(50)")]
+        public string FirstName
+        {
+            get
+            {
+                return this._FirstName;
+            }
+            set
+            {
+                if ((this._FirstName != value))
+                {
+                    this._FirstName = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_LastName", DbType = "VarChar(50)")]
+        public string LastName
+        {
+            get
+            {
+                return this._LastName;
+            }
+            set
+            {
+                if ((this._LastName != value))
+                {
+                    this._LastName = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_EmailAddress", DbType = "VarChar(200)")]
+        public string EmailAddress
+        {
+            get
+            {
+                return this._EmailAddress;
+            }
+            set
+            {
+                if ((this._EmailAddress != value))
+                {
+                    this._EmailAddress = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_PhoneNo", DbType = "VarChar(15)")]
+        public string PhoneNo
+        {
+            get
+            {
+                return this._PhoneNo;
+            }
+            set
+            {
+                if ((this._PhoneNo != value))
+                {
+                    this._PhoneNo = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_TeamID", DbType = "Int")]
+        public System.Nullable<int> TeamID
+        {
+            get
+            {
+                return this._TeamID;
+            }
+            set
+            {
+                if ((this._TeamID != value))
+                {
+                    this._TeamID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_RoleID", DbType = "Int")]
+        public System.Nullable<int> RoleID
+        {
+            get
+            {
+                return this._RoleID;
+            }
+            set
+            {
+                if ((this._RoleID != value))
+                {
+                    this._RoleID = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_DOB", DbType = "Date")]
+        public System.Nullable<System.DateTime> DOB
+        {
+            get
+            {
+                return this._DOB;
+            }
+            set
+            {
+                if ((this._DOB != value))
+                {
+                    this._DOB = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_DateJoined", DbType = "Date")]
+        public System.Nullable<System.DateTime> DateJoined
+        {
+            get
+            {
+                return this._DateJoined;
+            }
+            set
+            {
+                if ((this._DateJoined != value))
+                {
+                    this._DateJoined = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_IsDeleted1", DbType = "Bit")]
+        public System.Nullable<bool> IsDeleted1
+        {
+            get
+            {
+                return this._IsDeleted1;
+            }
+            set
+            {
+                if ((this._IsDeleted1 != value))
+                {
+                    this._IsDeleted1 = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_MemberKey", DbType = "UniqueIdentifier")]
+        public System.Nullable<System.Guid> MemberKey
+        {
+            get
+            {
+                return this._MemberKey;
+            }
+            set
+            {
+                if ((this._MemberKey != value))
+                {
+                    this._MemberKey = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_timestamp1", DbType = "rowversion")]
+        public System.Data.Linq.Binary timestamp1
+        {
+            get
+            {
+                return this._timestamp1;
+            }
+            set
+            {
+                if ((this._timestamp1 != value))
+                {
+                    this._timestamp1 = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_TeamA", DbType = "VarChar(200)")]
+        public string TeamA
+        {
+            get
+            {
+                return this._TeamA;
+            }
+            set
+            {
+                if ((this._TeamA != value))
+                {
+                    this._TeamA = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_TeamB", DbType = "VarChar(200)")]
+        public string TeamB
+        {
+            get
+            {
+                return this._TeamB;
+            }
+            set
+            {
+                if ((this._TeamB != value))
+                {
+                    this._TeamB = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_VenueDesc", DbType = "VarChar(200)")]
+        public string VenueDesc
+        {
+            get
+            {
+                return this._VenueDesc;
+            }
+            set
+            {
+                if ((this._VenueDesc != value))
+                {
+                    this._VenueDesc = value;
+                }
+            }
+        }
+    }
+
+    public partial class sp_Email_ReminderLastSentResult
+    {
+
+        private System.DateTime _SentDate;
+
+        public sp_Email_ReminderLastSentResult()
+        {
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_SentDate", DbType = "DateTime NOT NULL")]
+        public System.DateTime SentDate
+        {
+            get
+            {
+                return this._SentDate;
+            }
+            set
+            {
+                if ((this._SentDate != value))
+                {
+                    this._SentDate = value;
+                }
+            }
+        }
+    }
+
+    public partial class sp_Email_NewsletterLastSentResult
+    {
+
+        private System.DateTime _SentDate;
+
+        public sp_Email_NewsletterLastSentResult()
+        {
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_SentDate", DbType = "DateTime NOT NULL")]
+        public System.DateTime SentDate
+        {
+            get
+            {
+                return this._SentDate;
+            }
+            set
+            {
+                if ((this._SentDate != value))
+                {
+                    this._SentDate = value;
+                }
+            }
+        }
+    }
 }
 #pragma warning restore 1591

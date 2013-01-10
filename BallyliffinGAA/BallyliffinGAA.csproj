@@ -13,6 +13,7 @@
     <RootNamespace>BallyliffinGAA</RootNamespace>
     <AssemblyName>BallyliffinGAA</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -64,6 +65,7 @@
     <Content Include="Admin\Divisions_List.aspx" />
     <Content Include="Admin\Emails_Compose.aspx" />
     <Content Include="Admin\Emails_List.aspx" />
+    <Content Include="Admin\Emails_Reminders.aspx" />
     <Content Include="Admin\images\arrow.png" />
     <Content Include="Admin\images\ball.png" />
     <Content Include="Admin\images\Delete.gif" />
@@ -246,6 +248,13 @@
     </Compile>
     <Compile Include="Admin\Emails_List.aspx.designer.cs">
       <DependentUpon>Emails_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Emails_Reminders.aspx.cs">
+      <DependentUpon>Emails_Reminders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Emails_Reminders.aspx.designer.cs">
+      <DependentUpon>Emails_Reminders.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Matches_Add.aspx.cs">
       <DependentUpon>Matches_Add.aspx</DependentUpon>
